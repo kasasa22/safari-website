@@ -69,10 +69,10 @@
           </button>
           <button 
             class="filter-btn" 
-            :class="{ active: activeFilter === 'landscapes' }"
-            @click="setFilter('landscapes')"
+            :class="{ active: activeFilter === 'parks' }"
+            @click="setFilter('parks')"
           >
-            Landscapes
+            National Parks
           </button>
           <button 
             class="filter-btn" 
@@ -100,7 +100,7 @@
             v-for="(image, index) in filteredImages" 
             :key="index"
             class="gallery-item"
-            :class="image.size"
+            :class="[image.size, { 'featured': image.featured }]"
             @click="openLightbox(index)"
           >
             <img :src="image.src" :alt="image.title" class="gallery-image">
@@ -189,6 +189,56 @@ const visibleImages = ref(12)
 
 // Gallery images data
 const galleryImages = [
+  // Featured Park Images (shown first)
+  {
+    src: '/images/park.jpeg',
+    title: 'Bwindi Impenetrable Forest',
+    location: 'Bwindi Impenetrable National Park',
+    category: 'parks',
+    size: 'large',
+    featured: true
+  },
+  {
+    src: '/images/park1.jpeg',
+    title: 'Queen Elizabeth Park',
+    location: 'Queen Elizabeth National Park',
+    category: 'wildlife',
+    size: 'medium',
+    featured: true
+  },
+  {
+    src: '/images/park2.jpeg',
+    title: 'Murchison Falls Park',
+    location: 'Murchison Falls National Park',
+    category: 'parks',
+    size: 'large',
+    featured: true
+  },
+  {
+    src: '/images/park3.jpeg',
+    title: 'Kibale Forest Park',
+    location: 'Kibale Forest National Park',
+    category: 'wildlife',
+    size: 'medium',
+    featured: true
+  },
+  {
+    src: '/images/park4.jpeg',
+    title: 'Lake Mburo Park',
+    location: 'Lake Mburo National Park',
+    category: 'wildlife',
+    size: 'medium',
+    featured: true
+  },
+  {
+    src: '/images/park5.jpeg',
+    title: 'Rwenzori Mountains',
+    location: 'Rwenzori Mountains National Park',
+    category: 'parks',
+    size: 'large',
+    featured: true
+  },
+  // Existing images
   {
     src: '/much1.jpeg',
     title: 'Mountain Gorillas',
@@ -207,7 +257,7 @@ const galleryImages = [
     src: '/much3.jpeg',
     title: 'Murchison Falls',
     location: 'Murchison Falls National Park',
-    category: 'landscapes',
+    category: 'parks',
     size: 'medium'
   },
   {
@@ -242,7 +292,7 @@ const galleryImages = [
     src: '/much2.jpeg',
     title: 'Savanna Landscape',
     location: 'Kidepo Valley National Park',
-    category: 'landscapes',
+    category: 'parks',
     size: 'small'
   },
   {
@@ -263,7 +313,7 @@ const galleryImages = [
     src: '/much5.jpeg',
     title: 'Rwenzori Mountains',
     location: 'Rwenzori Mountains National Park',
-    category: 'landscapes',
+    category: 'parks',
     size: 'large'
   },
   {
@@ -890,5 +940,34 @@ onMounted(() => {
     max-width: 95vw;
     max-height: 60vh;
   }
+}
+/* Featured park images */
+.gallery-item.featured {
+  border: 3px solid var(--color-golden-yellow);
+  box-shadow: 0 8px 32px rgba(255, 193, 7, 0.4);
+}
+
+.gallery-item.featured:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 16px 48px rgba(255, 193, 7, 0.5);
+}
+
+.gallery-item.featured .image-overlay {
+  background: linear-gradient(
+    transparent 0%,
+    transparent 40%,
+    rgba(45, 80, 22, 0.9) 100%
+  );
+}
+
+.gallery-item.featured .image-title {
+  color: var(--color-golden-yellow);
+  font-weight: 700;
+}
+
+.gallery-item.featured .image-category {
+  background: var(--color-golden-yellow);
+  color: var(--color-forest-green-dark);
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
 }
 </style>
