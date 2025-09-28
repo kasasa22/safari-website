@@ -104,23 +104,9 @@
               </div>
 
             
-            <div class="nav-item has-dropdown" @mouseenter="showDropdown('safaris')" @mouseleave="hideDropdown('safaris')">
-              <button class="nav-link">
-                SAFARI TYPES
-                <svg class="arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
-              </button>
-              <div class="dropdown" :class="{ 'dropdown--active': activeDropdown === 'safaris' }">
-                <NuxtLink to="/safaris/gorilla-trekking" class="dropdown-link">Gorilla Trekking</NuxtLink>
-                <NuxtLink to="/safaris/great-migration" class="dropdown-link">Great Migration</NuxtLink>
-                <NuxtLink to="/safaris/big-five" class="dropdown-link">Big Five Safari</NuxtLink>
-                <NuxtLink to="/safaris/luxury" class="dropdown-link">Luxury Safaris</NuxtLink>
-                <NuxtLink to="/safaris/budget" class="dropdown-link">Budget Safaris</NuxtLink>
-                <NuxtLink to="/safaris/family" class="dropdown-link">Family Safaris</NuxtLink>
-                <NuxtLink to="/safaris/honeymoon" class="dropdown-link">Honeymoon Safaris</NuxtLink>
-              </div>
-            </div>
+            <NuxtLink to="/packages" class="nav-link" @click="closeMenu">
+              PACKAGES
+            </NuxtLink>
             
             <NuxtLink to="/gallery" class="nav-link" @click="closeMenu">
               GALLERY
