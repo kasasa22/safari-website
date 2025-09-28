@@ -4,9 +4,14 @@
     <section class="hero">
       <div class="hero-video-container">
         <div class="hero-slides">
-          <div class="hero-slide active" style="background-image: url('../../public/much1.jpeg')"></div>
-          <div class="hero-slide" style="background-image: url('../../public/much2.jpeg')"></div>
-          <div class="hero-slide" style="background-image: url('../../public/much3.jpeg')"></div>
+          <div class="hero-slide active" style="background-image: url('/much1.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much2.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much3.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much4.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much5.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much6.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much7.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('/much8.jpeg')"></div>
         </div>
       </div>
       <div class="hero-overlay"></div>
@@ -17,9 +22,9 @@
             <h1 class="hero-title">Adventure into the Heart of the Wilderness</h1>
             <p class="hero-subtitle">Experience Uganda's breathtaking landscapes, mountain gorillas, and vibrant culture with expert local guides</p>
             <div class="hero-description">
-              <p>🦍 Track endangered Mountain Gorillas in misty rainforests</p>
-              <p>🦁 Witness lions, elephants, leopards, rhinos & buffalo in their kingdom</p>
-              <p>🦓 Experience 2 million wildebeest crossing the Serengeti</p>
+              <p>🦍 Track endangered Mountain Gorillas in Bwindi Impenetrable Forest</p>
+              <p>🦁 Witness Big Five animals in Queen Elizabeth & Murchison Falls Parks</p>
+              <p>🌊 Experience the source of the Nile in Jinja and thrilling boat safaris</p>
             </div>
             <div class="hero-cta">
               <NuxtLink to="/safaris" class="btn-primary">
@@ -31,57 +36,56 @@
                 Watch Safari Video
               </button>
             </div>
-            <div class="hero-scroll-indicator">
-              <span>Scroll to explore</span>
-              <div class="scroll-arrow">↓</div>
-            </div>
           </div>
           
-          <div class="hero-contact-strip">
-            <div class="contact-item">
-              <span class="contact-icon">📍</span>
-              <span>Kampala, Kansanga, Opp UK Mall</span>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">📞</span>
-              <span>+256 768 461 164</span>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">⏰</span>
-              <span>Mon-Sun: 8:00 AM - 10:00 PM</span>
-            </div>
+          <div class="hero-video-player">
+            <video autoplay muted loop class="hero-video">
+              <source src="/much10.mp4" type="video/mp4">
+              <source src="/much11.mp4" type="video/mp4">
+              <source src="/much12.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Adventure Quick Links -->
+    <!-- Safari Packages -->
     <section class="adventure-links">
       <div class="container">
+        <div class="section-header">
+          <span class="section-badge">SAFARI PACKAGES</span>
+          <h2>Choose Your Safari Package</h2>
+          <p>Tailored safari experiences designed for every traveler</p>
+        </div>
         <div class="adventure-grid">
           <div class="adventure-card">
             <div class="adventure-icon">🦍</div>
-            <h3>Gorilla Trekking</h3>
-            <p>Trek through misty forests to meet mountain gorillas</p>
-            <NuxtLink to="/safaris" class="adventure-link">Explore →</NuxtLink>
+            <h3>Gorilla Trekking Package</h3>
+            <p>1-3 days gorilla trekking in Bwindi Impenetrable Forest with expert guides</p>
+            <div class="package-price">From $400/day</div>
+            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🦁</div>
-            <h3>Big Five Safari</h3>
-            <p>Witness lions, elephants, leopards, rhinos & buffalo</p>
-            <NuxtLink to="/safaris" class="adventure-link">Explore →</NuxtLink>
+            <h3>Wildlife Safari Package</h3>
+            <p>Multi-day safaris in Queen Elizabeth & Murchison Falls National Parks</p>
+            <div class="package-price">From $240/day</div>
+            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
-            <div class="adventure-icon">🦓</div>
-            <h3>Great Migration</h3>
-            <p>2 million wildebeest crossing the Serengeti plains</p>
-            <NuxtLink to="/safaris" class="adventure-link">Explore →</NuxtLink>
+            <div class="adventure-icon">🏙️</div>
+            <h3>City Tour Package</h3>
+            <p>Explore Kampala and Jinja with cultural sites and Nile source visits</p>
+            <div class="package-price">From $180/day</div>
+            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
-            <div class="adventure-icon">🏔️</div>
-            <h3>Mountain Climbing</h3>
-            <p>Conquer Kilimanjaro & other African peaks</p>
-            <NuxtLink to="/safaris" class="adventure-link">Explore →</NuxtLink>
+            <div class="adventure-icon">🌊</div>
+            <h3>Adventure Package</h3>
+            <p>Boat cruises, white water rafting, and adventure activities</p>
+            <div class="package-price">From $200/day</div>
+            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
           </div>
         </div>
       </div>
@@ -93,30 +97,31 @@
         <div class="about-header">
           <span class="section-badge">DISCOVER THE PEARL OF AFRICA</span>
           <h2>Welcome to Uganda with Kilagala Escape Safaris</h2>
+          <p>Your gateway to authentic East African adventures. We are a premier safari company specializing in gorilla trekking, wildlife safaris, cultural tours, and adventure experiences across Uganda and East Africa.</p>
         </div>
         
         <div class="content-row reverse">
           <div class="content-text">
-            <h3>The Pearl of Africa Awaits</h3>
-            <p>Uganda, located in the heart of East Africa, is a spectacular landlocked country bordered by Kenya, Tanzania, Rwanda, South Sudan, and the Democratic Republic of Congo. Famously named "The Pearl of Africa" by Sir Winston Churchill in the early 1900s after witnessing its breathtaking landscapes and rich wildlife.</p>
-            <p>Covering 93,263 square kilometers with a population of nearly 50 million, Uganda offers visitors an unforgettable blend of natural beauty, vibrant culture, and thrilling adventures. Our capital, Kampala, is a city built on seven hills, each steeped in historical, religious, and cultural heritage.</p>
+            <h3>Wildlife & Gorilla Trekking</h3>
+            <p>Home to rare mountain gorillas, chimpanzees, and the Big Five, Uganda offers unforgettable wildlife experiences in pristine national parks. Bwindi Impenetrable National Park houses nearly half of the world's remaining mountain gorillas, making it the ultimate destination for gorilla trekking enthusiasts.</p>
+            <p>Our expert guides will lead you through misty rainforests for once-in-a-lifetime encounters with these gentle giants. Beyond gorillas, experience tree-climbing lions in Queen Elizabeth National Park, elephants at Murchison Falls, and diverse wildlife across Uganda's 10 national parks.</p>
             <div class="highlight-features">
               <div class="feature-item">
-                <span class="feature-icon">🌍</span>
-                <span>10 National Parks</span>
-              </div>
-              <div class="feature-item">
                 <span class="feature-icon">🦍</span>
-                <span>Half World's Gorillas</span>
+                <span>Mountain Gorillas</span>
               </div>
               <div class="feature-item">
-                <span class="feature-icon">🌊</span>
-                <span>Source of the Nile</span>
+                <span class="feature-icon">🦁</span>
+                <span>Big Five Animals</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">🌳</span>
+                <span>10 National Parks</span>
               </div>
             </div>
           </div>
           <div class="content-image">
-            <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=1200" alt="Uganda Landscape">
+            <img src="/images/gorilla.jpg" alt="Mountain Gorilla Trekking">
           </div>
         </div>
         
@@ -125,19 +130,19 @@
             <img src="https://images.unsplash.com/photo-1551009175-15bdf9dcb580?q=80&w=1200" alt="Mountain Gorilla">
           </div>
           <div class="content-text">
-            <h3>Mountain Gorillas & Wildlife</h3>
-            <p>Uganda is home to almost half of the world's remaining mountain gorillas. At Bwindi Impenetrable National Park and Mgahinga Gorilla National Park, you can trek deep into the forests for a once-in-a-lifetime encounter.</p>
-            <p>From tree-climbing lions in Queen Elizabeth National Park to elephants, leopards, giraffes, and zebras in Murchison Falls and Kidepo Valley, Uganda offers classic safari magic in pristine wilderness. With over 1,000 bird species, including rare endemics, Uganda ranks among the world's top birding destinations.</p>
-            <NuxtLink to="/safaris" class="btn-explore">Explore Our Gorilla Trekking Tours →</NuxtLink>
+            <h3>Breathtaking Landscapes</h3>
+            <p>From the snow-capped Rwenzori Mountains to the mighty Nile and lush rainforests, Uganda's diverse scenery captivates every traveler. Discover the source of the world's longest river in Jinja, cruise along the Kazinga Channel, and witness the thundering power of Murchison Falls.</p>
+            <p>Experience dramatic crater lakes, rolling savannahs, and impenetrable forests that create the perfect backdrop for your African adventure. Our landscapes range from the mystical Bwindi forests to the vast plains of Queen Elizabeth National Park, each offering unique photographic opportunities and unforgettable memories.</p>
+            <NuxtLink to="/safaris" class="btn-explore">Explore Our Safari Tours →</NuxtLink>
           </div>
         </div>
         
         <div class="content-row reverse">
           <div class="content-text">
-            <h3>Cultural Richness & Heritage</h3>
-            <p>Uganda's cultural tapestry is woven from 56 diverse tribes, each contributing unique traditions, music, arts, and festivals. The country's official languages are English and Kiswahili, with over 56 indigenous languages enriching our cultural exchange.</p>
-            <p>Visit the Kasubi Tombs, a UNESCO World Heritage Site, experience traditional dances, explore craft markets, and immerse yourself in storytelling sessions that bring our heritage to life. Uganda is world-renowned for its hospitality - locals warmly welcome visitors, making every traveler feel at home.</p>
-            <p>By choosing Kilagala Escape Safaris, you directly support local communities, wildlife conservation, and eco-friendly tourism initiatives.</p>
+            <h3>Rich Culture & Warm Hospitality</h3>
+            <p>With vibrant traditions, local music, dance, and welcoming communities, visitors experience authentic African culture firsthand. Uganda's 56 diverse tribes each contribute unique customs, creating a rich cultural tapestry that enhances every safari experience.</p>
+            <p>Visit UNESCO World Heritage sites like the Kasubi Tombs, experience traditional Baganda dances, explore local craft markets in Kampala, and engage with friendly communities during cultural village visits. Our guests consistently praise the warmth and genuine hospitality of Ugandan people.</p>
+            <p>Through responsible tourism, we ensure your visit directly benefits local communities while preserving Uganda's precious cultural heritage for future generations.</p>
           </div>
           <div class="content-image">
             <img src="https://images.unsplash.com/photo-1523554888454-84137e72c3ce?q=80&w=1200" alt="Uganda Culture">
@@ -156,76 +161,181 @@
         </div>
         <div class="tours-grid">
           <div class="tour-card">
-            <div class="tour-badge">MOST POPULAR</div>
-            <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1555583743-491c2f1fde10?q=80&w=1200'); background-size: cover; background-position: center;">
+            <div class="tour-badge">5 ⭐</div>
+            <div class="tour-image" style="background-image: url('/images/gorilla.jpg'); background-size: cover; background-position: center;">
               <div class="tour-overlay">
-                <span class="tour-location">🌍 Uganda - Bwindi Forest</span>
+                <span class="tour-location">🌍 Uganda - Queen Elizabeth National Park</span>
               </div>
             </div>
             <div class="tour-content">
-              <h3>3-Day Bwindi Gorilla Express</h3>
+              <h3>3-Day Queen Elizabeth National Park Safari</h3>
               <ul class="tour-features">
-                <li>1 Gorilla trekking permit included</li>
-                <li>Professional guides & trackers</li>
-                <li>Luxury lodge accommodation</li>
+                <li>Tree-climbing lions viewing</li>
+                <li>Kazinga Channel boat cruise</li>
+                <li>Game drives with Big Five</li>
                 <li>All meals & transport included</li>
               </ul>
               <div class="tour-footer">
-                <div class="tour-duration">
-                  <span class="duration-icon">🕰️</span>
-                  <span>3 Days Adventure</span>
+                <div class="tour-meta">
+                  <div class="tour-duration">
+                    <span class="duration-icon">🕰️</span>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">From USD $372.00</span>
+                  </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Journey →</NuxtLink>
+                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
               </div>
             </div>
           </div>
           
           <div class="tour-card">
-            <div class="tour-badge">BEST VALUE</div>
-            <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200'); background-size: cover; background-position: center;">
+            <div class="tour-badge">4 ⭐</div>
+            <div class="tour-image" style="background-image: url('/images/Queen.jpeg'); background-size: cover; background-position: center;">
               <div class="tour-overlay">
-                <span class="tour-location">🌍 Uganda - Queen Elizabeth Park</span>
+                <span class="tour-location">🌍 Northwestern Uganda</span>
               </div>
             </div>
             <div class="tour-content">
-              <h3>5-Day Uganda Wildlife & Gorillas</h3>
+              <h3>3-Day Murchison Falls National Park Safari</h3>
               <ul class="tour-features">
-                <li>Gorilla & chimpanzee trekking</li>
-                <li>Queen Elizabeth National Park</li>
-                <li>Big 5 game drives</li>
-                <li>Boat safari on Kazinga Channel</li>
+                <li>World's most powerful waterfall</li>
+                <li>Nile boat cruise adventure</li>
+                <li>Big Five game viewing</li>
+                <li>Professional guides included</li>
               </ul>
               <div class="tour-footer">
-                <div class="tour-duration">
-                  <span class="duration-icon">🕰️</span>
-                  <span>5 Days Adventure</span>
+                <div class="tour-meta">
+                  <div class="tour-duration">
+                    <span class="duration-icon">🕰️</span>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">From USD $410.00</span>
+                  </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Journey →</NuxtLink>
+                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
               </div>
             </div>
           </div>
           
           <div class="tour-card">
-            <div class="tour-badge">LUXURY</div>
-            <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1521651201144-634f700b36ef?q=80&w=1200'); background-size: cover; background-position: center;">
+            <div class="tour-badge">5 ⭐</div>
+            <div class="tour-image" style="background-image: url('/images/uganda.jpeg'); background-size: cover; background-position: center;">
               <div class="tour-overlay">
-                <span class="tour-location">🌍 Rwanda - Volcanoes National Park</span>
+                <span class="tour-location">🌍 Lake Mburo National Park</span>
               </div>
             </div>
             <div class="tour-content">
-              <h3>7-Day Rwanda Ultimate Experience</h3>
+              <h3>3-Day Lake Mburo National Park Safari</h3>
               <ul class="tour-features">
-                <li>Volcanoes National Park</li>
-                <li>Golden monkey trekking</li>
-                <li>Cultural village experiences</li>
-                <li>5-star accommodation throughout</li>
+                <li>Antelopes & zebras viewing</li>
+                <li>Boat safari on Lake Mburo</li>
+                <li>Walking safaris available</li>
+                <li>Closest park to Kampala</li>
               </ul>
               <div class="tour-footer">
-                <div class="tour-duration">
-                  <span class="duration-icon">🕰️</span>
-                  <span>7 Days Adventure</span>
+                <div class="tour-meta">
+                  <div class="tour-duration">
+                    <span class="duration-icon">🕰️</span>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">From USD $240.00</span>
+                  </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Journey →</NuxtLink>
+                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <div class="tour-card">
+            <div class="tour-badge">5 ⭐</div>
+            <div class="tour-image" style="background-image: url('/images/mburo.jpeg'); background-size: cover; background-position: center;">
+              <div class="tour-overlay">
+                <span class="tour-location">🌍 Central Region, Uganda</span>
+              </div>
+            </div>
+            <div class="tour-content">
+              <h3>1-Day Kampala City Tour</h3>
+              <ul class="tour-features">
+                <li>Kasubi Tombs UNESCO site</li>
+                <li>Uganda Museum visit</li>
+                <li>Namirembe Cathedral tour</li>
+                <li>Local markets exploration</li>
+              </ul>
+              <div class="tour-footer">
+                <div class="tour-meta">
+                  <div class="tour-duration">
+                    <span class="duration-icon">🕰️</span>
+                    <span>1 Day</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">From USD $180.00</span>
+                  </div>
+                </div>
+                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <div class="tour-card">
+            <div class="tour-badge">5 ⭐</div>
+            <div class="tour-image" style="background-image: url('/images/group.jpeg'); background-size: cover; background-position: center;">
+              <div class="tour-overlay">
+                <span class="tour-location">🌍 Eastern Region of Uganda</span>
+              </div>
+            </div>
+            <div class="tour-content">
+              <h3>1-Day Jinja City Tour</h3>
+              <ul class="tour-features">
+                <li>Source of the Nile visit</li>
+                <li>Adventure activities</li>
+                <li>Cultural experiences</li>
+                <li>White water rafting available</li>
+              </ul>
+              <div class="tour-footer">
+                <div class="tour-meta">
+                  <div class="tour-duration">
+                    <span class="duration-icon">🕰️</span>
+                    <span>1 Day</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">From USD $180.00</span>
+                  </div>
+                </div>
+                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <div class="tour-card">
+            <div class="tour-badge">5 ⭐</div>
+            <div class="tour-image" style="background-image: url('/images/camping_resized.jpg'); background-size: cover; background-position: center;">
+              <div class="tour-overlay">
+                <span class="tour-location">🌍 Kisoro/Kigali</span>
+              </div>
+            </div>
+            <div class="tour-content">
+              <h3>1 Day Short Gorilla Trekking Safari</h3>
+              <ul class="tour-features">
+                <li>Mountain gorilla encounter</li>
+                <li>Professional tracking guides</li>
+                <li>Bwindi Impenetrable Forest</li>
+                <li>Perfect for limited time</li>
+              </ul>
+              <div class="tour-footer">
+                <div class="tour-meta">
+                  <div class="tour-duration">
+                    <span class="duration-icon">🕰️</span>
+                    <span>1 Day</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">From USD $400.00</span>
+                  </div>
+                </div>
+                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
               </div>
             </div>
           </div>
@@ -326,46 +436,88 @@
           <p>Every moment in the African wilderness tells a story</p>
         </div>
         <div class="gallery-grid">
-          <div class="gallery-item large">
-            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1200" alt="Mountain Gorilla">
+          <div class="gallery-item featured">
+            <img src="/images/gorilla.jpg" alt="Uganda Safari Wildlife">
             <div class="gallery-overlay">
-              <h3>Mountain Gorillas</h3>
-              <p>98% DNA match with humans • Only 1,000 left in the wild</p>
+              <h3>Uganda Safari Experience</h3>
+              <p>Authentic wildlife encounters in Uganda's pristine wilderness</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?q=80&w=800" alt="Lions">
+          <div class="gallery-item featured">
+            <img src="/images/her1.jpeg" alt="Uganda National Parks">
             <div class="gallery-overlay">
-              <h3>African Lions</h3>
-              <p>King of the Savannah</p>
+              <h3>National Park Adventures</h3>
+              <p>Explore Uganda's diverse ecosystems and wildlife</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?q=80&w=800" alt="Elephants">
+          <div class="gallery-item featured">
+            <img src="/images/her2.jpeg" alt="Uganda Wildlife Photography">
             <div class="gallery-overlay">
-              <h3>African Elephants</h3>
-              <p>Gentle Giants</p>
+              <h3>Wildlife Photography</h3>
+              <p>Capture unforgettable moments with Uganda's incredible animals</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1534759846116-5799c33ce22a?q=80&w=800" alt="Leopard">
+          <div class="gallery-item featured">
+            <img src="/images/uganda.jpeg" alt="Queen Elizabeth Park Wildlife">
             <div class="gallery-overlay">
-              <h3>Leopards</h3>
-              <p>Master of Stealth</p>
+              <h3>Queen Elizabeth Wildlife</h3>
+              <p>Big game viewing in Uganda's most popular park</p>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=800" alt="Zebras">
+          <div class="gallery-item featured">
+            <img src="/images/park.jpeg" alt="Bwindi Impenetrable National Park">
             <div class="gallery-overlay">
-              <h3>Plains Zebras</h3>
-              <p>Nature's Barcode</p>
+              <h3>Bwindi Impenetrable Forest</h3>
+              <p>Home to 50% of the world's mountain gorillas • UNESCO World Heritage Site</p>
             </div>
           </div>
-          <div class="gallery-item large">
-            <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1200" alt="Great Migration">
+          <div class="gallery-item featured">
+            <img src="/images/park1.jpeg" alt="Queen Elizabeth National Park">
             <div class="gallery-overlay">
-              <h3>The Great Migration</h3>
-              <p>2 Million Wildebeest • 8th Wonder of the World</p>
+              <h3>Queen Elizabeth Park</h3>
+              <p>Tree-climbing lions & Kazinga Channel</p>
+            </div>
+          </div>
+          <div class="gallery-item featured">
+            <img src="/images/park2.jpeg" alt="Murchison Falls National Park">
+            <div class="gallery-overlay">
+              <h3>Murchison Falls Park</h3>
+              <p>World's most powerful waterfall</p>
+            </div>
+          </div>
+          <div class="gallery-item featured">
+            <img src="/images/park3.jpeg" alt="Kibale Forest National Park">
+            <div class="gallery-overlay">
+              <h3>Kibale Forest Park</h3>
+              <p>Primate capital of the world</p>
+            </div>
+          </div>
+          <div class="gallery-item featured">
+            <img src="/images/park4.jpeg" alt="Lake Mburo National Park">
+            <div class="gallery-overlay">
+              <h3>Lake Mburo Park</h3>
+              <p>Zebras, impalas & boat safaris</p>
+            </div>
+          </div>
+          <div class="gallery-item featured">
+            <img src="/images/park5.jpeg" alt="Rwenzori Mountains National Park">
+            <div class="gallery-overlay">
+              <h3>Rwenzori Mountains</h3>
+              <p>Mountains of the Moon • Glacial peaks in equatorial Africa</p>
+            </div>
+          </div>
+          <div class="gallery-item featured">
+            <img src="/images/mburo.jpeg" alt="Lake Mburo Wildlife">
+            <div class="gallery-overlay">
+              <h3>Lake Mburo Adventures</h3>
+              <p>Zebras, antelopes and boat safaris on pristine waters</p>
+            </div>
+          </div>
+          <div class="gallery-item featured">
+            <img src="/images/group.jpeg" alt="Safari Group Experience">
+            <div class="gallery-overlay">
+              <h3>Group Safari Adventures</h3>
+              <p>Shared wildlife experiences and unforgettable memories</p>
             </div>
           </div>
         </div>
@@ -376,50 +528,50 @@
     <section class="destinations">
       <div class="container">
         <div class="section-header">
-          <h2>Your Safari Destinations</h2>
-          <p>From misty mountains to endless savannahs - explore Africa's diverse ecosystems</p>
+          <h2>Your Uganda Safari Destinations</h2>
+          <p>From misty mountains to endless savannahs - explore Uganda's incredible national parks and diverse ecosystems</p>
         </div>
         <div class="destinations-grid">
           <div class="destination-card">
             <div class="destination-image">
-              <img src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?q=80&w=1200" alt="Serengeti">
+              <img src="/images/gorilla.jpg" alt="Queen Elizabeth National Park Wildlife">
             </div>
             <div class="destination-content">
-              <h3>🇹🇿 Serengeti National Park</h3>
+              <h3>🇺🇬 Queen Elizabeth National Park</h3>
               <div class="destination-highlights">
-                <span class="highlight">🦁 Big Five</span>
-                <span class="highlight">🦓 Great Migration</span>
-                <span class="highlight">🌅 Endless Plains</span>
+                <span class="highlight">🦁 Tree-Climbing Lions</span>
+                <span class="highlight">🚤 Kazinga Channel</span>
+                <span class="highlight">🦛 Hippo Paradise</span>
               </div>
-              <p>Home to the greatest wildlife spectacle on Earth - witness millions of wildebeest and zebras on their annual journey.</p>
+              <p>Uganda's most popular savannah park, famous for unique tree-climbing lions and incredible boat safaris along the Kazinga Channel.</p>
             </div>
           </div>
           <div class="destination-card">
             <div class="destination-image">
-              <img src="https://images.unsplash.com/photo-1569109413506-cdb758790276?q=80&w=1200" alt="Bwindi">
+              <img src="/images/her1.jpeg" alt="Murchison Falls National Park">
             </div>
             <div class="destination-content">
-              <h3>🇺🇬 Bwindi Impenetrable Forest</h3>
+              <h3>🇺🇬 Murchison Falls National Park</h3>
               <div class="destination-highlights">
-                <span class="highlight">🦍 Mountain Gorillas</span>
-                <span class="highlight">🌳 Ancient Rainforest</span>
-                <span class="highlight">🦜 350 Bird Species</span>
+                <span class="highlight">💧 World's Most Powerful Waterfall</span>
+                <span class="highlight">🐘 Large Elephant Herds</span>
+                <span class="highlight">🦒 Rothschild Giraffes</span>
               </div>
-              <p>Trek through misty forests to meet endangered mountain gorillas - a life-changing wildlife encounter.</p>
+              <p>Experience the dramatic Murchison Falls where the Nile explodes through a narrow gorge, plus exceptional wildlife viewing.</p>
             </div>
           </div>
           <div class="destination-card">
             <div class="destination-image">
-              <img src="https://images.unsplash.com/photo-1503377365978-32d0dc982e86?q=80&w=1200" alt="Masai Mara">
+              <img src="/images/her2.jpeg" alt="Kibale Forest National Park">
             </div>
             <div class="destination-content">
-              <h3>🇰🇪 Masai Mara Reserve</h3>
+              <h3>🇺🇬 Kibale Forest National Park</h3>
               <div class="destination-highlights">
-                <span class="highlight">🐆 Big Cats</span>
-                <span class="highlight">🏞️ Mara River</span>
-                <span class="highlight">👥 Maasai Culture</span>
+                <span class="highlight">🐵 Chimpanzee Tracking</span>
+                <span class="highlight">🌳 Primate Capital</span>
+                <span class="highlight">🦜 375 Bird Species</span>
               </div>
-              <p>Kenya's most famous reserve, offering year-round exceptional wildlife viewing and cultural experiences.</p>
+              <p>The 'Primate Capital of the World' with 13 primate species including our closest relatives - the chimpanzees.</p>
             </div>
           </div>
         </div>
@@ -653,30 +805,31 @@ useHead({
   transform: translateY(-2px);
 }
 
-.hero-contact-strip {
-  display: flex;
-  gap: var(--spacing-3xl);
+.hero-video-player {
   margin-top: var(--spacing-3xl);
-  padding: var(--spacing-xl);
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-xl);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 
+              0 0 0 8px rgba(244, 200, 66, 0.2),
+              0 0 0 16px rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1.2s ease-out;
-  align-items: center;
-  justify-content: center;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 4px solid var(--color-golden-yellow);
+  background: linear-gradient(45deg, var(--color-golden-yellow), var(--color-forest-green));
+  padding: 8px;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  color: white;
-  font-size: var(--font-size-base);
-}
-
-.contact-icon {
-  font-size: 20px;
-  color: var(--color-golden-yellow);
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-scroll-indicator {
@@ -917,16 +1070,36 @@ useHead({
   line-height: 1.6;
 }
 
+.package-price {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-forest-green-dark);
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-light-beige);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+}
+
 .adventure-link {
   color: var(--color-golden-yellow);
   text-decoration: none;
   font-weight: 600;
   font-size: var(--font-size-base);
   transition: all var(--transition-fast);
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--color-forest-green);
+  color: white;
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  width: 100%;
+  margin-top: var(--spacing-md);
 }
 
 .adventure-link:hover {
-  color: var(--color-golden-yellow-dark);
+  background: var(--color-forest-green-dark);
+  transform: translateY(-2px);
 }
 
 /* Featured Tours Styles */
@@ -1036,10 +1209,18 @@ useHead({
 
 .tour-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-md);
   padding-top: var(--spacing-lg);
   border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+.tour-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .section-badge {
@@ -1064,6 +1245,16 @@ useHead({
 
 .duration-icon {
   font-size: 20px;
+}
+
+.tour-price {
+  text-align: right;
+}
+
+.price {
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  color: var(--color-forest-green-dark);
 }
 
 .tour-cta {
@@ -1389,8 +1580,8 @@ useHead({
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 2s ease;
-  animation: slideShow 12s infinite;
+  transition: opacity 1s ease-in-out;
+  animation: slideShow 16s infinite;
 }
 
 .hero-slide.active {
@@ -1398,12 +1589,17 @@ useHead({
 }
 
 .hero-slide:nth-child(1) { animation-delay: 0s; }
-.hero-slide:nth-child(2) { animation-delay: 4s; }
-.hero-slide:nth-child(3) { animation-delay: 8s; }
+.hero-slide:nth-child(2) { animation-delay: 2s; }
+.hero-slide:nth-child(3) { animation-delay: 4s; }
+.hero-slide:nth-child(4) { animation-delay: 6s; }
+.hero-slide:nth-child(5) { animation-delay: 8s; }
+.hero-slide:nth-child(6) { animation-delay: 10s; }
+.hero-slide:nth-child(7) { animation-delay: 12s; }
+.hero-slide:nth-child(8) { animation-delay: 14s; }
 
 @keyframes slideShow {
-  0%, 33% { opacity: 1; }
-  34%, 100% { opacity: 0; }
+  0%, 10% { opacity: 1; }
+  15%, 100% { opacity: 0; }
 }
 
 .hero-badge {
@@ -1778,4 +1974,25 @@ useHead({
   .inquiry-form {
     padding: var(--spacing-xl);
   }
-}</style>
+}
+
+/* Featured gallery items for park images */
+.gallery-item.featured {
+  border: 3px solid var(--color-golden-yellow);
+  box-shadow: 0 8px 32px rgba(255, 193, 7, 0.3);
+}
+
+.gallery-item.featured:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(255, 193, 7, 0.4);
+}
+
+.gallery-item.featured .gallery-overlay {
+  background: linear-gradient(to top, rgba(45, 80, 22, 0.95), rgba(26, 48, 9, 0.7));
+}
+
+.gallery-item.featured .gallery-overlay h3 {
+  color: var(--color-golden-yellow);
+  font-weight: 700;
+}
+</style>
