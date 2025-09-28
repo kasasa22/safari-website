@@ -1,40 +1,20 @@
 <template>
   <div class="blog-page">
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="blog-hero">
+      <div class="hero-background">
+        <img src="/much5.jpeg" alt="Uganda Safari Blog" class="hero-image">
+      </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="container">
           <div class="hero-text">
-            <div class="breadcrumb">
-              <NuxtLink to="/" class="breadcrumb-link">Home</NuxtLink>
-              <span class="breadcrumb-separator">/</span>
-              <span class="breadcrumb-current">Blog</span>
-            </div>
-            <h1 class="hero-title">Safari Stories & Insights</h1>
-            <p class="hero-subtitle">Discover Uganda's wilderness through our expert guides' experiences and travel tips</p>
-            <div class="hero-stats">
-              <div class="stat-item">
-                <span class="stat-number">150+</span>
-                <span class="stat-label">Articles</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">8</span>
-                <span class="stat-label">Categories</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">25K+</span>
-                <span class="stat-label">Readers</span>
-              </div>
-              <div class="stat-item price">
-                <span class="price-label">Updated</span>
-                <span class="price-amount">Weekly</span>
-              </div>
-            </div>
+            <span class="hero-badge">📖 SAFARI BLOG</span>
+            <h1 class="hero-title">Safari Stories & Expert Insights</h1>
+            <p class="hero-subtitle">Discover Uganda's wilderness through our expert guides' experiences, wildlife encounters, and travel tips from over 15 years in the field</p>
           </div>
         </div>
       </div>
-      <div class="hero-image" :style="{ backgroundImage: 'url(/much5.jpeg)' }"></div>
     </section>
 
     <!-- Featured Article Section -->
@@ -463,100 +443,114 @@ useSeoMeta({
 }
 
 /* Hero Section */
-.hero-section {
+.blog-hero {
   position: relative;
   height: 60vh;
   min-height: 500px;
   display: flex;
   align-items: center;
-  background: var(--color-forest-green);
   overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-background .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(45, 80, 22, 0.8) 0%, rgba(26, 48, 9, 0.6) 100%);
-  z-index: 1;
-}
-
-.hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(45, 80, 22, 0.8), rgba(26, 48, 9, 0.6));
+  z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
+  text-align: center;
   color: white;
 }
 
 .hero-text {
   color: white;
-  max-width: 600px;
 }
 
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 50px;
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-size-sm);
-}
-
-.breadcrumb-link {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.breadcrumb-link:hover {
-  color: var(--color-golden-yellow);
-}
-
-.breadcrumb-separator {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.breadcrumb-current {
-  color: var(--color-golden-yellow);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: var(--spacing-md);
   color: var(--color-golden-yellow);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--spacing-lg);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
 }
 
 .hero-subtitle {
   font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-xl);
-  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
-.hero-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-xl);
-  align-items: center;
+/* Featured Section */
+.featured-section {
+  padding: var(--spacing-4xl) 0;
+  background: white;
 }
 
-.stat-item {
-  display: flex;
-  align-items: center;
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.section-badge {
+  display: inline-block;
+  background: var(--color-light-beige);
+  color: var(--color-forest-green);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: 50px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-md);
+}
+
+.section-header h2 {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-forest-green-dark);
+  margin: 0;
   gap: var(--spacing-sm);
   font-size: var(--font-size-base);
 }
@@ -1097,8 +1091,8 @@ useSeoMeta({
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    height: 70vh;
+  .blog-hero {
+    height: 50vh;
     min-height: 400px;
   }
   
