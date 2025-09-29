@@ -72,14 +72,15 @@
             
               <div class="nav-item has-dropdown" 
                   @mouseenter="showDropdown('destinations')" 
-                  @mouseleave="hideDropdown('destinations')">
-                <NuxtLink to="/destinations" class="nav-link">
+                  @mouseleave="hideDropdown('destinations')"
+                  @click="toggleDropdownMobile('destinations')">
+                <NuxtLink to="/destinations" class="nav-link" @click.prevent>
                   DESTINATIONS
                   <svg class="arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="6 9 12 15 18 9"/>
                   </svg>
                 </NuxtLink>
-                <div class="dropdown dropdown--mega" :class="{ 'dropdown--active': activeDropdown === 'destinations' }">
+                <div class="dropdown dropdown--mega" :class="{ 'dropdown--active': activeDropdown === 'destinations' }" v-show="activeDropdown === 'destinations' || !isMobile">
                   <div class="mega-content">
                     <div class="mega-column">
                       <h4>Uganda National Parks</h4>
@@ -129,7 +130,7 @@
               </svg>
             </button>
             
-            <NuxtLink to="/booking" class="cta-button">
+            <NuxtLink to="/contact" class="cta-button">
               BOOK NOW
             </NuxtLink>
             
@@ -155,23 +156,39 @@ const isMenuOpen = ref(false)
 const isScrolled = ref(false)
 const activeDropdown = ref('')
 const isTransparent = ref(true)
+const isMobile = ref(false)
 
 const showDropdown = (name: string) => {
-  activeDropdown.value = name
+  if (!isMobile.value) {
+    activeDropdown.value = name
+  }
 }
 
 const hideDropdown = (name: string) => {
-  if (activeDropdown.value === name) {
+  if (!isMobile.value && activeDropdown.value === name) {
     activeDropdown.value = ''
+  }
+}
+
+const toggleDropdownMobile = (name: string) => {
+  if (isMobile.value) {
+    activeDropdown.value = activeDropdown.value === name ? '' : name
   }
 }
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+  if (isMenuOpen.value) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
+  activeDropdown.value = ''
+  document.body.style.overflow = ''
 }
 
 onMounted(() => {
@@ -180,11 +197,22 @@ onMounted(() => {
     isTransparent.value = window.scrollY < 50
   }
   
+  const handleResize = () => {
+    isMobile.value = window.innerWidth <= 992
+    if (!isMobile.value && isMenuOpen.value) {
+      closeMenu()
+    }
+  }
+  
   window.addEventListener('scroll', handleScroll)
+  window.addEventListener('resize', handleResize)
   handleScroll()
+  handleResize()
   
   onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
+    window.removeEventListener('resize', handleResize)
+    document.body.style.overflow = ''
   })
 })
 </script>
@@ -593,7 +621,7 @@ onMounted(() => {
   }
   
   .logo-tagline {
-    display: none;
+    font-size: 10px;
   }
 }
 
@@ -604,15 +632,21 @@ onMounted(() => {
   
   .menu-toggle {
     display: flex;
+    z-index: 10001;
+    position: relative;
   }
   
   .search-btn {
     display: none;
   }
   
+  .nav-wrapper {
+    padding: 10px 0;
+  }
+  
   .nav-menu {
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -621,43 +655,149 @@ onMounted(() => {
     align-items: stretch;
     gap: 0;
     margin: 0;
-    padding: 20px;
+    padding: 80px 20px 20px;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
+    z-index: 10000;
   }
   
   .nav-menu--open {
     transform: translateX(0);
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-menu--open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   
   .nav-link {
-    padding: 15px;
+    padding: 15px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: space-between;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+  
+  .nav-item.has-dropdown {
+    display: block;
+  }
+  
+  .nav-item.has-dropdown .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-item.has-dropdown .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item.has-dropdown .arrow {
+    transform: rotate(0);
+  }
+  
+  .dropdown--active ~ .nav-link .arrow,
+  .nav-item.has-dropdown:has(.dropdown--active) .arrow {
+    transform: rotate(180deg);
   }
   
   .dropdown {
+    display: none;
     position: static;
     opacity: 1;
     visibility: visible;
     transform: none;
     box-shadow: none;
     background: var(--color-light-beige);
-    margin-top: 10px;
+    margin: 0 -20px;
+    padding: 10px 20px;
     border-radius: 0;
-    border-top: 0;
-    border-left: 3px solid var(--color-golden-yellow);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: none;
+  }
+  
+  .dropdown--active {
+    display: block;
   }
   
   .dropdown--mega {
     min-width: auto;
-    padding: 15px;
+    padding: 15px 20px;
   }
   
   .mega-content {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
+  }
+  
+  .mega-column h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+  }
+  
+  .dropdown-link {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  
+  .dropdown-link:hover {
+    padding-left: 25px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 12px;
+    min-width: 110px;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .nav-actions {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .logo-title {
+    font-size: 15px;
+  }
+  
+  .logo-tagline {
+    display: none;
+  }
+  
+  .logo-img {
+    height: 45px;
+  }
+  
+  .header--scrolled .logo-img {
+    height: 40px;
   }
 }
 
@@ -666,10 +806,61 @@ onMounted(() => {
     height: 40px;
   }
   
+  .header--scrolled .logo-img {
+    height: 35px;
+  }
+  
+  .logo-title {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  
   .cta-button {
-    padding: 12px 25px;
+    padding: 10px 18px;
+    font-size: 11px;
+    min-width: 100px;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav-wrapper {
+    padding: 8px 0;
+  }
+  
+  .menu-toggle {
+    width: 25px;
+    height: 20px;
+  }
+  
+  .menu-toggle span {
+    height: 2px;
+  }
+  
+  .nav-menu {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-text {
+    max-width: 140px;
+  }
+  
+  .logo-img {
+    height: 38px;
+  }
+  
+  .logo-title {
     font-size: 13px;
-    min-width: 120px;
+  }
+  
+  .cta-button {
+    padding: 9px 16px;
+    font-size: 10px;
+    min-width: 90px;
+  }
+  
+  .nav-actions {
+    gap: 8px;
   }
 }
 </style>
