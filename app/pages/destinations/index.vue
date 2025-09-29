@@ -200,7 +200,7 @@
 </template>
 
 <script setup lang="ts">
-import { getAllDestinations, type Destination } from '~/data/destinations-index'
+import { getAllDestinations, type Destination } from '~/data/destinations'
 
 // Set page meta
 useHead({
