@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-image" :style="{ backgroundImage: 'url(/much3.jpeg)' }"></div>
+      <div class="hero-image" :style="{ backgroundImage: 'url(/images/landscape.jpeg)' }"></div>
     </section>
 
     <!-- Contact Methods Section -->
@@ -114,32 +114,99 @@
               <h3>Looking for any help?</h3>
             </div>
             
-            <form class="contact-form">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            <form class="contact-form" @submit="handleSubmit">
+              <!-- Success Notification -->
+              <div v-if="submitSuccess" class="notification notification-success">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>Your message has been sent successfully! We'll get back to you soon.</span>
+              </div>
+              
+              <!-- Error Notification -->
+              <div v-if="submitError" class="notification notification-error">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <span>{{ submitError }}</span>
               </div>
               
               <div class="form-group">
-                <label for="email">Your email</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="name">Your Name *</label>
+                <input 
+                  v-model="formData.name"
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Enter Name" 
+                  required
+                  :disabled="isSubmitting"
+                >
               </div>
               
               <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title" placeholder="Title" required>
+                <label for="email">Your Email *</label>
+                <input 
+                  v-model="formData.email"
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="example@gmail.com" 
+                  required
+                  :disabled="isSubmitting"
+                >
               </div>
               
               <div class="form-group">
-                <label for="comment">Comment</label>
-                <textarea id="comment" name="comment" rows="5" placeholder="Enter Comment" required></textarea>
+                <label for="phone">Phone Number</label>
+                <input 
+                  v-model="formData.phone"
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="+256 768 461 164"
+                  :disabled="isSubmitting"
+                >
               </div>
               
-              <button type="submit" class="submit-btn">
-                Send Message
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input 
+                  v-model="formData.subject"
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  placeholder="What is your inquiry about?" 
+                  required
+                  :disabled="isSubmitting"
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea 
+                  v-model="formData.message"
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  placeholder="Tell us more about your travel plans or questions..." 
+                  required
+                  :disabled="isSubmitting"
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn" :disabled="isSubmitting">
+                <span v-if="!isSubmitting">Send Message</span>
+                <span v-else>Sending...</span>
+                <svg v-if="!isSubmitting" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="22" y1="2" x2="11" y2="13"/>
                   <polygon points="22,2 15,22 11,13 2,9"/>
+                </svg>
+                <svg v-else class="spinner" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12a9 9 0 11-6.219-8.56"/>
                 </svg>
               </button>
             </form>
@@ -147,20 +214,24 @@
           
           <div class="contact-visual">
             <div class="main-contact-image">
-              <img src="/much4.jpeg" alt="Uganda Safari Planning" class="primary-img">
+              <img src="/images/uganda.jpeg" alt="Uganda Safari Planning" class="primary-img">
               <div class="image-overlay">
                 <span class="overlay-text">Expert Safari Planning</span>
               </div>
             </div>
             
             <div class="contact-gallery">
-              <div class="gallery-item">
-                <img src="/much5.jpeg" alt="Wildlife Safari">
+              <div class="gallery-item gallery-item-left">
+                <img src="/images/gorilla.jpg" alt="Wildlife Safari">
                 <span class="caption">Wildlife Adventures</span>
               </div>
-              <div class="gallery-item">
-                <img src="/much6.jpeg" alt="Cultural Experiences">
+              <div class="gallery-item gallery-item-right">
+                <img src="/images/group.jpeg" alt="Cultural Experiences">
                 <span class="caption">Cultural Tours</span>
+              </div>
+              <div class="gallery-item gallery-item-wide">
+                <img src="/images/water.jpeg" alt="Adventure Activities">
+                <span class="caption">Adventure Activities</span>
               </div>
             </div>
           </div>
@@ -171,6 +242,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
 useHead({
   title: 'Contact Us - Kilagala Escape Safaris',
   meta: [
@@ -180,6 +253,68 @@ useHead({
     }
   ]
 })
+
+// Form data
+const formData = ref({
+  name: '',
+  email: '',
+  phone: '',
+  subject: '',
+  message: ''
+})
+
+// Form state
+const isSubmitting = ref(false)
+const submitSuccess = ref(false)
+const submitError = ref('')
+
+// Handle form submission
+const handleSubmit = async (e: Event) => {
+  e.preventDefault()
+  
+  // Reset states
+  submitError.value = ''
+  submitSuccess.value = false
+  isSubmitting.value = true
+  
+  try {
+    const response = await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: formData.value.name,
+        email: formData.value.email,
+        phone: formData.value.phone,
+        subject: formData.value.subject,
+        message: formData.value.message
+      }
+    })
+    
+    if (response.success) {
+      submitSuccess.value = true
+      // Reset form
+      formData.value = {
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      }
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        submitSuccess.value = false
+      }, 5000)
+    }
+  } catch (error: any) {
+    submitError.value = error.data?.statusMessage || 'Failed to send message. Please try again.'
+    // Hide error after 5 seconds
+    setTimeout(() => {
+      submitError.value = ''
+    }, 5000)
+  } finally {
+    isSubmitting.value = false
+  }
+}
 </script>
 
 <style scoped>
@@ -488,25 +623,98 @@ useHead({
   margin-bottom: var(--spacing-2xl);
 }
 
-.submit-btn:hover {
+.submit-btn:hover:not(:disabled) {
   background: var(--color-forest-green-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
 
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Notification Styles */
+.notification {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-base);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.notification-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.notification svg {
+  flex-shrink: 0;
+}
+
+/* Spinner animation */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Disabled input styles */
+.form-group input:disabled,
+.form-group textarea:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
 /* Contact Visual */
 .contact-visual {
   display: grid;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-xl);
   padding-left: var(--spacing-xl);
   padding-top: var(--spacing-3xl);
+  height: 100%;
 }
 
 .main-contact-image {
   position: relative;
   border-radius: var(--border-radius-xl);
   overflow: hidden;
-  height: 350px;
+  height: 380px;
+  box-shadow: var(--shadow-lg);
+  transform: rotate(-2deg);
+  transition: transform var(--transition-normal);
+}
+
+.main-contact-image:hover {
+  transform: rotate(0deg) scale(1.02);
 }
 
 .primary-img {
@@ -533,15 +741,38 @@ useHead({
 
 .contact-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 180px);
   gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
 }
 
 .gallery-item {
   position: relative;
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  height: 150px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.gallery-item-left {
+  transform: rotate(2deg);
+}
+
+.gallery-item-right {
+  transform: rotate(-3deg);
+  margin-top: 20px;
+}
+
+.gallery-item-wide {
+  grid-column: span 2;
+  transform: rotate(1deg);
+}
+
+.gallery-item:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: var(--shadow-xl);
+  z-index: 10;
 }
 
 .gallery-item img {
@@ -553,6 +784,24 @@ useHead({
 
 .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+.gallery-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  color: white;
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transform: translateY(100%);
+  transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover .caption {
+  transform: translateY(0);
 }
 
 .caption {
@@ -609,10 +858,17 @@ useHead({
   
   .contact-gallery {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
   
   .gallery-item {
-    height: 180px;
+    height: 200px;
+    transform: none !important;
+    margin-top: 0 !important;
+  }
+  
+  .gallery-item-wide {
+    grid-column: span 1;
   }
 }
 
