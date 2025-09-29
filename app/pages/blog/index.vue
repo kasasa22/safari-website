@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="blog-hero">
       <div class="hero-background">
-        <img src="/much5.jpeg" alt="Uganda Safari Blog" class="hero-image">
+        <img src="/images/landscape.jpeg" alt="Uganda Safari Blog" class="hero-image">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -27,7 +27,7 @@
         
         <div class="featured-article">
           <div class="featured-image">
-            <img src="/much1.jpeg" alt="Gorilla Trekking Adventure" class="article-image">
+            <img src="/images/gorilla.jpg" alt="Gorilla Trekking Adventure" class="article-image">
             <div class="category-tag">Wildlife</div>
           </div>
           <div class="featured-content">
@@ -251,7 +251,7 @@ const articles = ref([
   {
     title: "Ultimate Guide to Gorilla Trekking in Bwindi Impenetrable Forest",
     excerpt: "Everything you need to know about encountering mountain gorillas in their natural habitat. From preparation tips to what to expect during your trek.",
-    image: "/much1.jpeg",
+    image: "/images/bwindi.jpeg",
     category: "wildlife",
     author: "David Kilagala",
     date: "December 15, 2024",
@@ -262,7 +262,7 @@ const articles = ref([
   {
     title: "5 Essential Photography Tips for Your Uganda Safari",
     excerpt: "Capture stunning wildlife photos on your safari adventure with these expert photography techniques and equipment recommendations.",
-    image: "/much2.jpeg",
+    image: "/images/park2.jpeg",
     category: "travel-tips",
     author: "Sarah Nakamura",
     date: "December 12, 2024",
@@ -273,7 +273,7 @@ const articles = ref([
   {
     title: "Queen Elizabeth National Park: A Wildlife Paradise",
     excerpt: "Discover the diverse ecosystems and incredible wildlife that make Queen Elizabeth National Park one of Uganda's premier safari destinations.",
-    image: "/much3.jpeg",
+    image: "/images/Queen.jpeg",
     category: "destinations",
     author: "Michael Ssemakula",
     date: "December 10, 2024",
@@ -284,7 +284,7 @@ const articles = ref([
   {
     title: "Cultural Encounters: Meeting Uganda's Local Communities",
     excerpt: "Experience the rich cultural heritage of Uganda through authentic community visits and traditional ceremonies during your safari.",
-    image: "/much4.jpeg",
+    image: "/images/group.jpeg",
     category: "culture",
     author: "Grace Nalubega",
     date: "December 8, 2024",
@@ -295,7 +295,7 @@ const articles = ref([
   {
     title: "Conservation Success Stories in Ugandan National Parks",
     excerpt: "Learn about the remarkable conservation efforts that have helped protect Uganda's endangered species and pristine wilderness areas.",
-    image: "/much5.jpeg",
+    image: "/images/park5.jpeg",
     category: "conservation",
     author: "Dr. James Okello",
     date: "December 5, 2024",
@@ -306,7 +306,7 @@ const articles = ref([
   {
     title: "Best Time to Visit Uganda for Wildlife Viewing",
     excerpt: "Plan your perfect safari with our comprehensive guide to Uganda's seasons, weather patterns, and optimal wildlife viewing times.",
-    image: "/much6.jpeg",
+    image: "/images/uganda.jpeg",
     category: "travel-tips",
     author: "Robert Mukasa",
     date: "December 3, 2024",
@@ -317,7 +317,7 @@ const articles = ref([
   {
     title: "Murchison Falls: The Jewel of Northern Uganda",
     excerpt: "Explore the magnificent Murchison Falls National Park, home to the world's most powerful waterfall and incredible wildlife diversity.",
-    image: "/much7.jpeg",
+    image: "/images/murchion_main.jpeg",
     category: "destinations",
     author: "David Kilagala",
     date: "November 30, 2024",
@@ -328,7 +328,7 @@ const articles = ref([
   {
     title: "Chimpanzee Tracking in Kibale Forest",
     excerpt: "Discover our closest living relatives in their natural habitat with expert tips for chimpanzee tracking in Kibale National Park.",
-    image: "/much8.jpeg",
+    image: "/images/park3.jpeg",
     category: "wildlife",
     author: "Sarah Nakamura",
     date: "November 28, 2024",
@@ -339,7 +339,7 @@ const articles = ref([
   {
     title: "Safari Packing Essentials: What to Bring to Uganda",
     excerpt: "Complete packing checklist for your Uganda safari, including essential gear, clothing, and items for different activities.",
-    image: "/much2.jpeg",
+    image: "/images/park.jpeg",
     category: "travel-tips",
     author: "Michael Ssemakula",
     date: "November 25, 2024",
@@ -386,22 +386,22 @@ const articles = ref([
 const recentPosts = ref([
   {
     title: "Ultimate Guide to Gorilla Trekking",
-    image: "/much1.jpeg",
+    image: "/images/gorilla.webp",
     date: "Dec 15, 2024"
   },
   {
     title: "Safari Photography Tips",
-    image: "/much2.jpeg",
+    image: "/images/park1.jpeg",
     date: "Dec 12, 2024"
   },
   {
     title: "Queen Elizabeth National Park",
-    image: "/much3.jpeg",
+    image: "/images/Queen_main.jpeg",
     date: "Dec 10, 2024"
   },
   {
     title: "Cultural Encounters in Uganda",
-    image: "/much4.jpeg",
+    image: "/images/her.jpeg",
     date: "Dec 8, 2024"
   }
 ])
