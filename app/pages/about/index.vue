@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-image" :style="{ backgroundImage: 'url(/much1.jpeg)' }"></div>
+      <div class="hero-image" :style="{ backgroundImage: 'url(/images/group.jpeg)' }"></div>
     </section>
 
     <!-- Quick Info Bar -->
@@ -126,7 +126,7 @@
           
           <div class="story-visual">
             <div class="main-story-image">
-              <img src="/much2.jpeg" alt="Mountain Gorilla in Bwindi Forest" class="primary-img">
+              <img src="/images/bwindi.jpeg" alt="Mountain Gorilla in Bwindi Forest" class="primary-img">
               <div class="image-overlay">
                 <span class="overlay-text">Uganda's Incredible Wildlife</span>
               </div>
@@ -134,19 +134,19 @@
             
             <div class="story-gallery">
               <div class="gallery-item">
-                <img src="/much3.jpeg" alt="Murchison Falls">
+                <img src="/images/murchion_main.jpeg" alt="Murchison Falls">
                 <span class="caption">Murchison Falls</span>
               </div>
               <div class="gallery-item">
-                <img src="/much4.jpeg" alt="Queen Elizabeth Wildlife">
+                <img src="/images/Queen_main.jpeg" alt="Queen Elizabeth Wildlife">
                 <span class="caption">Safari Adventures</span>
               </div>
               <div class="gallery-item">
-                <img src="/much5.jpeg" alt="Local Community">
+                <img src="/images/water.jpeg" alt="Local Community">
                 <span class="caption">Conservation Work</span>
               </div>
               <div class="gallery-item">
-                <img src="/much6.jpeg" alt="Uganda Landscapes">
+                <img src="/images/landscape.jpeg" alt="Uganda Landscapes">
                 <span class="caption">Uganda Beauty</span>
               </div>
             </div>
@@ -253,7 +253,7 @@
         <div class="team-grid">
           <div class="team-member">
             <div class="member-image">
-              <img src="/much1.jpeg" alt="Mubiru Ronnie">
+              <img src="/images/her2.jpeg" alt="Mubiru Ronnie">
             </div>
             <div class="member-info">
               <h3>Mubiru Ronnie</h3>
@@ -264,7 +264,7 @@
           
           <div class="team-member">
             <div class="member-image">
-              <img src="/much2.jpeg" alt="Kiwumulo Merandah Hildah">
+              <img src="/images/her1.jpeg" alt="Kiwumulo Merandah Hildah">
             </div>
             <div class="member-info">
               <h3>Kiwumulo Merandah Hildah</h3>
@@ -391,7 +391,7 @@
     <!-- Call to Action -->
     <section class="cta-section">
       <div class="cta-background">
-        <img src="/much6.jpeg" alt="Uganda Sunset Safari" class="cta-bg-image">
+        <img src="/images/uganda.jpeg" alt="Uganda Sunset Safari" class="cta-bg-image">
         <div class="cta-overlay"></div>
       </div>
       <div class="container">
