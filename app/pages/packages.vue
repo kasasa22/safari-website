@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="packages-hero">
       <div class="hero-background">
-        <img src="/much1.jpeg" alt="Uganda Safari" class="hero-image">
+        <img src="/images/landscape.jpeg" alt="Uganda Safari" class="hero-image">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -30,7 +30,7 @@
           <div class="package-card featured">
             <div class="package-badge">MOST POPULAR</div>
             <div class="package-image">
-              <img src="/much6.jpeg" alt="Gorilla Trekking">
+              <img src="/images/gorilla.jpg" alt="Gorilla Trekking">
             </div>
             <div class="package-content">
               <div class="package-icon">🦍</div>
@@ -63,7 +63,7 @@
           <!-- 3-Day Bwindi Gorilla Safari -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/much2.jpeg" alt="Bwindi Gorilla Safari">
+              <img src="/images/bwindi.jpeg" alt="Bwindi Gorilla Safari">
             </div>
             <div class="package-content">
               <div class="package-icon">🦍</div>
@@ -96,7 +96,7 @@
           <!-- 3-Day Queen Elizabeth Safari -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/much3.jpeg" alt="Queen Elizabeth Safari">
+              <img src="/images/Queen_main.jpeg" alt="Queen Elizabeth Safari">
             </div>
             <div class="package-content">
               <div class="package-icon">🦁</div>
@@ -129,7 +129,7 @@
           <!-- 3-Day Murchison Falls Safari -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/much1.jpeg" alt="Murchison Falls Safari">
+              <img src="/images/murchion_main.jpeg" alt="Murchison Falls Safari">
             </div>
             <div class="package-content">
               <div class="package-icon">💧</div>
@@ -162,7 +162,7 @@
           <!-- 3-Day Lake Mburo Safari -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/much7.jpeg" alt="Lake Mburo Safari">
+              <img src="/images/mburo_main.jpeg" alt="Lake Mburo Safari">
             </div>
             <div class="package-content">
               <div class="package-icon">🦓</div>
@@ -195,7 +195,7 @@
           <!-- 1-Day Kampala City Tour -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/much4.jpeg" alt="Kampala City Tour">
+              <img src="/images/kampala.jpg" alt="Kampala City Tour">
             </div>
             <div class="package-content">
               <div class="package-icon">🏛️</div>
@@ -228,7 +228,7 @@
           <!-- 1-Day Jinja Adventure Tour -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/much5.jpeg" alt="Jinja Adventure Tour">
+              <img src="/images/water.jpeg" alt="Jinja Adventure Tour">
             </div>
             <div class="package-content">
               <div class="package-icon">🌊</div>
