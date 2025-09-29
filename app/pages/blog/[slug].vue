@@ -272,14 +272,14 @@ const blogPosts = {
     title: "Ultimate Guide to Gorilla Trekking in Bwindi Impenetrable Forest",
     subtitle: "Everything you need to know for an unforgettable encounter with mountain gorillas",
     category: "Wildlife",
-    heroImage: "/much1.jpeg",
+    heroImage: "/images/gorilla.jpg",
     introduction: "Embarking on a gorilla trekking adventure in Bwindi Impenetrable National Park is more than just a wildlife encounter—it's a life-changing journey into the heart of Uganda's pristine wilderness. Home to nearly half of the world's remaining mountain gorillas, Bwindi offers visitors the rare opportunity to observe these magnificent creatures in their natural habitat.",
     publishDate: "December 15, 2024",
     readTime: "12 min read",
     author: {
       name: "David Kilagala",
       title: "Senior Safari Guide & Wildlife Expert",
-      avatar: "/much8.jpeg",
+      avatar: "/images/her2.jpeg",
       bio: "With over 15 years of experience leading safari expeditions across Uganda, David has guided hundreds of visitors through their first gorilla encounters. His deep knowledge of Uganda's wildlife and passion for conservation make him one of the most sought-after guides in East Africa.",
       social: [
         { platform: "Twitter", url: "#" },
@@ -304,7 +304,7 @@ const blogPosts = {
       },
       {
         type: "image",
-        src: "/much2.jpeg",
+        src: "/images/bwindi.jpeg",
         alt: "Mountain gorillas in Bwindi forest",
         caption: "A silverback gorilla observes visitors during a trekking encounter in Bwindi"
       },
@@ -350,7 +350,7 @@ const blogPosts = {
       },
       {
         type: "image",
-        src: "/much3.jpeg",
+        src: "/images/gorilla.webp",
         alt: "Conservation efforts in Bwindi",
         caption: "Local community members participate in forest conservation activities"
       },
@@ -365,14 +365,14 @@ const blogPosts = {
     title: "Chimpanzee Tracking in Kibale Forest National Park",
     subtitle: "Your complete guide to encountering our closest relatives in the wild",
     category: "Wildlife",
-    heroImage: "/much4.jpeg",
+    heroImage: "/images/park3.jpeg",
     introduction: "Kibale Forest National Park, known as the 'Primate Capital of the World,' offers one of the most exciting wildlife experiences in Uganda. Home to over 1,500 chimpanzees and 12 other primate species, this tropical rainforest provides an unparalleled opportunity to observe our closest living relatives in their natural habitat.",
     publishDate: "November 28, 2024",
     readTime: "10 min read",
     author: {
       name: "Sarah Nakamura",
       title: "Primate Research Specialist",
-      avatar: "/much7.jpeg",
+      avatar: "/images/her1.jpeg",
       bio: "Sarah has spent over 12 years studying primate behavior in East African forests. Her expertise in chimpanzee tracking and conservation has made her one of the most knowledgeable guides in Uganda's primate tourism sector.",
       social: [
         { platform: "Twitter", url: "#" },
@@ -397,7 +397,7 @@ const blogPosts = {
       },
       {
         type: "image",
-        src: "/much5.jpeg",
+        src: "/images/park3.jpeg",
         alt: "Chimpanzees in Kibale Forest",
         caption: "A family of chimpanzees socializing in the canopy of Kibale Forest"
       },
@@ -412,14 +412,14 @@ const blogPosts = {
     title: "Queen Elizabeth National Park: Uganda's Crown Jewel",
     subtitle: "Discover the incredible biodiversity of Uganda's most popular safari destination",
     category: "Destinations",
-    heroImage: "/much6.jpeg",
+    heroImage: "/images/Queen_main.jpeg",
     introduction: "Queen Elizabeth National Park stands as Uganda's most visited safari destination, offering an incredible diversity of ecosystems and wildlife. From the famous tree-climbing lions of Ishasha to the spectacular Kazinga Channel boat safaris, this park provides some of the most memorable wildlife experiences in East Africa.",
     publishDate: "December 10, 2024",
     readTime: "15 min read",
     author: {
       name: "Michael Ssemakula",
       title: "Wildlife Conservation Expert",
-      avatar: "/much2.jpeg",
+      avatar: "/images/her2.jpeg",
       bio: "Michael has worked in Queen Elizabeth National Park for over 18 years, initially as a ranger and now as a senior conservation specialist. His intimate knowledge of the park's wildlife and ecosystems makes him an exceptional guide.",
       social: [
         { platform: "Twitter", url: "#" },
@@ -441,6 +441,421 @@ const blogPosts = {
         type: "text",
         heading: "Park Overview",
         content: "<p>Established in 1952, Queen Elizabeth National Park spans 1,978 square kilometers of diverse landscapes including savanna, wetlands, forests, and crater lakes. The park is famous for its tree-climbing lions, large herds of elephants, and one of the highest hippo concentrations in Africa.</p><p>The park is divided into several sectors, each offering unique wildlife experiences: Mweya Peninsula, Ishasha, Kyambura Gorge, and the Kazinga Channel.</p>"
+      }
+    ]
+  },
+  'safari-photography-tips': {
+    title: "5 Essential Photography Tips for Your Uganda Safari",
+    subtitle: "Capture stunning wildlife photos with these expert techniques",
+    category: "Travel Tips",
+    heroImage: "/images/park2.jpeg",
+    introduction: "Wildlife photography on safari presents unique challenges and incredible opportunities. Whether you're a seasoned photographer or a beginner, these essential tips will help you capture the magic of Uganda's wildlife and create memories that will last a lifetime.",
+    publishDate: "December 12, 2024",
+    readTime: "6 min read",
+    author: {
+      name: "Sarah Nakamura",
+      title: "Wildlife Photography Expert",
+      avatar: "/images/her.jpeg",
+      bio: "Sarah is an award-winning wildlife photographer with over 15 years of experience documenting Africa's wildlife. She leads specialized photography safaris and workshops across Uganda.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Photography", "Safari Tips", "Wildlife", "Equipment", "Techniques"],
+    quickFacts: [
+      { icon: "📸", label: "Best Camera", value: "DSLR/Mirrorless" },
+      { icon: "🔭", label: "Ideal Lens", value: "100-400mm" },
+      { icon: "🌅", label: "Golden Hour", value: "6-9am, 4-6pm" },
+      { icon: "💾", label: "Memory", value: "64GB+ cards" },
+      { icon: "🔋", label: "Batteries", value: "3+ spares" },
+      { icon: "📱", label: "Backup", value: "Cloud/HDD" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "1. Equipment Essentials",
+        content: "<p>The right equipment can make or break your safari photography experience. A DSLR or mirrorless camera with good low-light performance is ideal. Pack at least two camera bodies if possible - dust and moisture are constant challenges.</p><p>For lenses, a versatile zoom lens (100-400mm or 150-600mm) is essential for wildlife. Don't forget a wide-angle lens for landscapes and a standard zoom for general shots.</p>"
+      },
+      {
+        type: "list",
+        heading: "Must-Have Gear Checklist",
+        items: [
+          "Camera body with good autofocus system",
+          "Telephoto zoom lens (minimum 300mm)",
+          "Wide-angle lens for landscapes",
+          "Polarizing filter to reduce glare",
+          "Lens cleaning kit",
+          "Extra batteries and memory cards",
+          "Camera bag or protective case",
+          "Bean bag or tripod for stability"
+        ]
+      },
+      {
+        type: "image",
+        src: "/images/park1.jpeg",
+        alt: "Wildlife photography in action",
+        caption: "Patience and the right equipment are key to capturing perfect wildlife moments"
+      },
+      {
+        type: "text",
+        heading: "2. Understanding Light",
+        content: "<p>The golden hours - early morning and late afternoon - provide the most dramatic and flattering light for wildlife photography. The warm, soft light enhances colors and creates beautiful shadows that add depth to your images.</p><p>Avoid harsh midday sun when possible, as it creates strong shadows and washed-out colors. If you must shoot midday, look for subjects in shade or use fill flash carefully.</p>"
+      },
+      {
+        type: "highlight",
+        icon: "💡",
+        title: "Pro Tip",
+        text: "Always have your camera ready with settings pre-adjusted. Wildlife moments happen quickly and rarely repeat themselves."
+      },
+      {
+        type: "text",
+        heading: "3. Composition Techniques",
+        content: "<p>Apply the rule of thirds to create dynamic compositions. Place your subject's eyes on the intersection points for maximum impact. Leave space in the direction the animal is looking or moving to create a sense of story and movement.</p><p>Don't always center your subject - environmental shots that show the animal in its habitat tell a more complete story.</p>"
+      },
+      {
+        type: "text",
+        heading: "4. Camera Settings for Safari",
+        content: "<p>Use Aperture Priority mode (A/Av) for quick adjustments, setting your aperture wide open (f/4-f/5.6) for better subject isolation. Keep ISO on auto with a maximum of 3200-6400 depending on your camera's capabilities.</p><p>Set minimum shutter speed to 1/500s for stationary animals and 1/1000s or faster for action shots. Use continuous autofocus (AF-C/AI Servo) and burst mode for action sequences.</p>"
+      },
+      {
+        type: "text",
+        heading: "5. Respect and Patience",
+        content: "<p>The best wildlife photographs come from understanding and respecting animal behavior. Never pressure your guide to get closer than appropriate. Patient observation often leads to the most rewarding photographic opportunities.</p><p>Learn to anticipate behavior - animals often give subtle cues before major actions like hunting, playing, or interacting with their young.</p>"
+      }
+    ]
+  },
+  'uganda-cultural-encounters': {
+    title: "Cultural Encounters: Meeting Uganda's Local Communities",
+    subtitle: "Experience the rich cultural heritage of Uganda through authentic community visits",
+    category: "Culture",
+    heroImage: "/images/group.jpeg",
+    introduction: "Beyond its incredible wildlife, Uganda offers visitors the opportunity to connect with vibrant local cultures. From the ancient traditions of the Batwa pygmies to the pastoral Karamojong, cultural encounters add depth and meaning to your safari experience.",
+    publishDate: "December 8, 2024",
+    readTime: "7 min read",
+    author: {
+      name: "Grace Nalubega",
+      title: "Cultural Tourism Coordinator",
+      avatar: "/images/her1.jpeg",
+      bio: "Grace has worked for over a decade promoting sustainable cultural tourism in Uganda, helping communities share their traditions while preserving their heritage.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Culture", "Community", "Traditional", "Uganda", "Tourism"],
+    quickFacts: [
+      { icon: "👥", label: "Ethnic Groups", value: "65+" },
+      { icon: "🗣️", label: "Languages", value: "40+" },
+      { icon: "🎭", label: "Cultural Sites", value: "100+" },
+      { icon: "🏘️", label: "Communities", value: "Active" },
+      { icon: "💰", label: "Impact", value: "Direct Support" },
+      { icon: "📅", label: "Available", value: "Year-round" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "The Batwa Experience",
+        content: "<p>The Batwa pygmies, original inhabitants of the forests now protected as national parks, offer visitors a glimpse into their traditional forest life. Through cultural demonstrations, traditional dances, and storytelling, the Batwa share their deep connection with the forest.</p>"
+      },
+      {
+        type: "image",
+        src: "/images/her.jpeg",
+        alt: "Batwa cultural performance",
+        caption: "Traditional Batwa dance performance showcasing ancient forest traditions"
+      },
+      {
+        type: "text",
+        heading: "Community Tourism Benefits",
+        content: "<p>Cultural tourism provides vital income for local communities while helping preserve traditional practices. Your visit directly supports education, healthcare, and conservation initiatives in these communities.</p>"
+      }
+    ]
+  },
+  'conservation-success-stories': {
+    title: "Conservation Success Stories in Ugandan National Parks",
+    subtitle: "How dedicated efforts are saving Uganda's endangered species",
+    category: "Conservation",
+    heroImage: "/images/park5.jpeg",
+    introduction: "Uganda's conservation efforts have achieved remarkable success in protecting endangered species and their habitats. From mountain gorilla population recovery to rhino reintroduction programs, these stories inspire hope for wildlife conservation.",
+    publishDate: "December 5, 2024",
+    readTime: "12 min read",
+    author: {
+      name: "Dr. James Okello",
+      title: "Conservation Biologist",
+      avatar: "/images/her2.jpeg",
+      bio: "Dr. Okello has spent 20 years researching and implementing conservation strategies in Uganda's national parks, with a focus on endangered species recovery.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Conservation", "Wildlife Protection", "National Parks", "Endangered Species"],
+    quickFacts: [
+      { icon: "🦍", label: "Gorilla Growth", value: "+3% yearly" },
+      { icon: "🦏", label: "Rhinos", value: "32 reintroduced" },
+      { icon: "🌳", label: "Forest Cover", value: "15% increase" },
+      { icon: "👮", label: "Rangers", value: "1,500+" },
+      { icon: "📈", label: "Success Rate", value: "85%" },
+      { icon: "🤝", label: "Communities", value: "200+ involved" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "Mountain Gorilla Recovery",
+        content: "<p>The mountain gorilla population in Uganda has grown from fewer than 300 individuals in the 1990s to over 450 today. This success story demonstrates the power of dedicated conservation efforts, anti-poaching patrols, and community involvement.</p>"
+      },
+      {
+        type: "image",
+        src: "/images/gorilla.webp",
+        alt: "Mountain gorilla conservation",
+        caption: "Successful conservation has led to steady gorilla population growth"
+      }
+    ]
+  },
+  'best-time-to-visit-uganda': {
+    title: "Best Time to Visit Uganda for Wildlife Viewing",
+    subtitle: "Your complete guide to Uganda's seasons and optimal safari timing",
+    category: "Travel Tips",
+    heroImage: "/images/uganda.jpeg",
+    introduction: "Planning your Uganda safari at the right time can significantly enhance your wildlife viewing experience. Understanding the country's seasons, weather patterns, and animal behaviors will help you choose the perfect time for your adventure.",
+    publishDate: "December 3, 2024",
+    readTime: "9 min read",
+    author: {
+      name: "Robert Mukasa",
+      title: "Senior Safari Planner",
+      avatar: "/images/her2.jpeg",
+      bio: "Robert has been planning safaris for over 15 years and has extensive knowledge of Uganda's seasonal patterns and their impact on wildlife viewing.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Travel Planning", "Seasons", "Wildlife Viewing", "Weather", "Safari Tips"],
+    quickFacts: [
+      { icon: "☀️", label: "Dry Season", value: "Jun-Sep, Dec-Feb" },
+      { icon: "🌧️", label: "Wet Season", value: "Mar-May, Oct-Nov" },
+      { icon: "🌡️", label: "Temperature", value: "20-30°C" },
+      { icon: "🦍", label: "Gorilla Trekking", value: "Year-round" },
+      { icon: "🐦", label: "Bird Migration", value: "Nov-Apr" },
+      { icon: "📸", label: "Photography", value: "Dry seasons" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "Understanding Uganda's Seasons",
+        content: "<p>Uganda has two dry seasons (December-February and June-September) and two wet seasons (March-May and October-November). Each season offers unique advantages for different types of wildlife experiences.</p>"
+      },
+      {
+        type: "image",
+        src: "/images/landscape.jpeg",
+        alt: "Uganda landscape in different seasons",
+        caption: "Uganda's landscapes transform dramatically between wet and dry seasons"
+      }
+    ]
+  },
+  'murchison-falls-guide': {
+    title: "Murchison Falls: The Jewel of Northern Uganda",
+    subtitle: "Explore Uganda's largest park and the world's most powerful waterfall",
+    category: "Destinations",
+    heroImage: "/images/murchion_main.jpeg",
+    introduction: "Murchison Falls National Park, where the mighty Nile explodes through a narrow gorge, offers some of Uganda's most spectacular wildlife viewing. This comprehensive guide covers everything you need to know about visiting this magnificent park.",
+    publishDate: "November 30, 2024",
+    readTime: "11 min read",
+    author: {
+      name: "David Kilagala",
+      title: "Senior Safari Guide",
+      avatar: "/images/her2.jpeg",
+      bio: "David has been guiding safaris in Murchison Falls for over 15 years and knows every corner of this spectacular park.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Murchison Falls", "Waterfall", "Wildlife", "Northern Uganda", "Safari"],
+    quickFacts: [
+      { icon: "💧", label: "Falls Drop", value: "43 meters" },
+      { icon: "📏", label: "Park Size", value: "3,893 km²" },
+      { icon: "🦁", label: "Wildlife", value: "76 mammals" },
+      { icon: "🐦", label: "Bird Species", value: "450+" },
+      { icon: "🚢", label: "Boat Safari", value: "Daily" },
+      { icon: "🎫", label: "Entry Fee", value: "$45 USD" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "The Mighty Murchison Falls",
+        content: "<p>At Murchison Falls, the world's longest river is compressed through a 7-meter gorge, creating a thunderous spectacle of nature's power. The sight and sound of the falls is truly unforgettable.</p>"
+      },
+      {
+        type: "image",
+        src: "/images/water.jpeg",
+        alt: "Murchison Falls",
+        caption: "The Nile forces its way through a narrow gorge at Murchison Falls"
+      }
+    ]
+  },
+  'safari-packing-essentials': {
+    title: "Safari Packing Essentials: What to Bring to Uganda",
+    subtitle: "Complete packing checklist for your Uganda safari adventure",
+    category: "Travel Tips",
+    heroImage: "/images/park.jpeg",
+    introduction: "Proper packing can make the difference between a comfortable safari and a challenging one. This comprehensive guide covers everything you need to bring for your Uganda safari, from clothing to equipment and health essentials.",
+    publishDate: "November 25, 2024",
+    readTime: "7 min read",
+    author: {
+      name: "Michael Ssemakula",
+      title: "Safari Operations Manager",
+      avatar: "/images/her2.jpeg",
+      bio: "Michael has been organizing safaris for over 12 years and knows exactly what travelers need for a successful Uganda adventure.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Packing", "Safari Gear", "Travel Tips", "Equipment", "Preparation"],
+    quickFacts: [
+      { icon: "🎒", label: "Luggage", value: "Soft bag best" },
+      { icon: "👕", label: "Clothing", value: "Neutral colors" },
+      { icon: "👟", label: "Footwear", value: "Hiking boots" },
+      { icon: "📷", label: "Camera", value: "Extra batteries" },
+      { icon: "💊", label: "Health", value: "First aid kit" },
+      { icon: "🧴", label: "Protection", value: "Sunscreen SPF 30+" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "Essential Clothing",
+        content: "<p>Pack lightweight, breathable clothing in neutral colors (khaki, brown, green). Avoid bright colors and white, which shows dirt easily. Layers are key for varying temperatures.</p>"
+      },
+      {
+        type: "list",
+        heading: "Packing Checklist",
+        items: [
+          "Long-sleeved shirts (3-4)",
+          "T-shirts (3-4)",
+          "Long pants (2-3)",
+          "Shorts (2)",
+          "Waterproof jacket",
+          "Warm fleece or sweater",
+          "Hat with brim",
+          "Sunglasses",
+          "Comfortable walking shoes",
+          "Sandals for lodge"
+        ]
+      }
+    ]
+  },
+  'rwenzori-mountains-trekking': {
+    title: "Trekking the Rwenzori Mountains: Africa's Alpine Secret",
+    subtitle: "Guide to climbing the legendary Mountains of the Moon",
+    category: "Adventure",
+    heroImage: "/images/landscape.jpeg",
+    introduction: "The Rwenzori Mountains, known as the 'Mountains of the Moon,' offer some of Africa's most challenging and rewarding trekking experiences. With glacial peaks, unique vegetation, and stunning alpine scenery, this UNESCO World Heritage Site is a trekker's paradise.",
+    publishDate: "November 20, 2024",
+    readTime: "10 min read",
+    author: {
+      name: "Sarah Nakamura",
+      title: "Mountain Guide",
+      avatar: "/images/her1.jpeg",
+      bio: "Sarah is a certified mountain guide with over 100 successful Rwenzori expeditions, including multiple Margherita Peak summits.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Rwenzori", "Mountain Trekking", "Adventure", "Hiking", "Alpine"],
+    quickFacts: [
+      { icon: "🏔️", label: "Highest Peak", value: "5,109m" },
+      { icon: "⏱️", label: "Trek Duration", value: "7-10 days" },
+      { icon: "💪", label: "Difficulty", value: "Challenging" },
+      { icon: "🌡️", label: "Temperature", value: "-5 to 20°C" },
+      { icon: "👥", label: "Group Size", value: "Max 8" },
+      { icon: "📅", label: "Best Time", value: "Jun-Aug, Dec-Feb" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "The Mystical Rwenzori",
+        content: "<p>The Rwenzori Mountains are unique in Africa, featuring permanent snow and glaciers on the equator. The range stretches 120km along the Uganda-DRC border, creating diverse ecological zones from tropical rainforest to alpine meadows.</p>"
+      }
+    ]
+  },
+  'uganda-birdwatching-guide': {
+    title: "Ultimate Birdwatching Guide to Uganda",
+    subtitle: "Discover why Uganda is a birder's paradise with over 1,000 species",
+    category: "Wildlife",
+    heroImage: "/images/park4.jpeg",
+    introduction: "With over 1,060 bird species, including 24 Albertine Rift endemics, Uganda offers some of the best birdwatching in Africa. From the prehistoric Shoebill to colorful turacos, Uganda's diverse habitats support an incredible variety of avian life.",
+    publishDate: "November 15, 2024",
+    readTime: "8 min read",
+    author: {
+      name: "Grace Nalubega",
+      title: "Ornithologist",
+      avatar: "/images/her.jpeg",
+      bio: "Grace is a professional ornithologist who has documented over 800 bird species in Uganda and leads specialized birding safaris.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Birdwatching", "Wildlife", "Birds", "Nature", "Photography"],
+    quickFacts: [
+      { icon: "🦜", label: "Species", value: "1,060+" },
+      { icon: "🏆", label: "Endemics", value: "24 species" },
+      { icon: "📍", label: "Hotspots", value: "34 IBAs" },
+      { icon: "🦆", label: "Shoebill Sites", value: "5 locations" },
+      { icon: "📸", label: "Photo Ops", value: "Excellent" },
+      { icon: "👁️", label: "Success Rate", value: "400+ per trip" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "Why Uganda for Birdwatching",
+        content: "<p>Uganda's position at the convergence of East African savanna and West African rainforest creates unique habitat diversity. Combined with the Albertine Rift's endemic species, this makes Uganda one of the world's top birding destinations.</p>"
+      }
+    ]
+  },
+  'sustainable-tourism-uganda': {
+    title: "Sustainable Tourism in Uganda: Travel with Purpose",
+    subtitle: "How responsible tourism is protecting Uganda's natural heritage",
+    category: "Conservation",
+    heroImage: "/images/uganda.jpeg",
+    introduction: "Sustainable tourism in Uganda goes beyond wildlife viewing—it's about creating positive impacts for local communities, protecting ecosystems, and ensuring future generations can enjoy these natural wonders. Learn how your visit contributes to conservation.",
+    publishDate: "November 10, 2024",
+    readTime: "9 min read",
+    author: {
+      name: "Dr. James Okello",
+      title: "Sustainable Tourism Expert",
+      avatar: "/images/her2.jpeg",
+      bio: "Dr. Okello advises on sustainable tourism practices and community-based conservation initiatives across Uganda's protected areas.",
+      social: [
+        { platform: "Twitter", url: "#" },
+        { platform: "Instagram", url: "#" },
+        { platform: "LinkedIn", url: "#" }
+      ]
+    },
+    tags: ["Sustainable Tourism", "Conservation", "Community", "Responsible Travel"],
+    quickFacts: [
+      { icon: "🌍", label: "Impact", value: "20% to communities" },
+      { icon: "💼", label: "Jobs Created", value: "50,000+" },
+      { icon: "🌳", label: "Forest Protected", value: "1.2M hectares" },
+      { icon: "🦍", label: "Species Saved", value: "15+" },
+      { icon: "🏘️", label: "Communities", value: "300+ benefiting" },
+      { icon: "♻️", label: "Eco-Lodges", value: "80+ certified" }
+    ],
+    content: [
+      {
+        type: "text",
+        heading: "Tourism That Makes a Difference",
+        content: "<p>Every safari in Uganda contributes directly to conservation. Park fees fund anti-poaching units, habitat restoration, and community development projects. Your visit creates employment and provides alternatives to activities that harm wildlife.</p>"
       }
     ]
   }
@@ -478,9 +893,9 @@ const relatedPosts = computed(() => {
   }))
 })
 
-// More articles (all other posts)
+// More articles (only 3 other posts)
 const moreArticles = computed(() => {
-  return otherPosts.value.map(post => ({
+  return otherPosts.value.slice(3, 6).map(post => ({
     title: post.title,
     excerpt: post.introduction.substring(0, 150) + '...',
     image: post.heroImage,
