@@ -14,6 +14,7 @@ export const murchisonDestination: Destination = {
   difficulty: 'Easy',
   season: 'Year Round (Best: Jun-Sep, Jan-Mar)',
   images: [
+    '/images/murchion_main.jpeg',
     '/much1.jpeg',
     '/much2.jpeg',
     '/much3.jpeg',
