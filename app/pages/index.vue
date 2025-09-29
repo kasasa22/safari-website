@@ -127,7 +127,7 @@
         
         <div class="content-row">
           <div class="content-image">
-            <img src="https://images.unsplash.com/photo-1551009175-15bdf9dcb580?q=80&w=1200" alt="Mountain Gorilla">
+            <img src="/images/landscape.jpeg" alt="Uganda's Breathtaking Landscapes">
           </div>
           <div class="content-text">
             <h3>Breathtaking Landscapes</h3>
@@ -162,7 +162,7 @@
         <div class="tours-grid">
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/gorilla.jpg'); background-size: cover; background-position: center;">
+            <div class="tour-image" style="background-image: url('/images/Queen_main.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Uganda - Queen Elizabeth National Park</span>
               </div>
@@ -185,14 +185,14 @@
                     <span class="price">From USD $372.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
           
           <div class="tour-card">
             <div class="tour-badge">4 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/Queen.jpeg'); background-size: cover; background-position: center;">
+            <div class="tour-image" style="background-image: url('/images/murchion_main.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Northwestern Uganda</span>
               </div>
@@ -215,14 +215,14 @@
                     <span class="price">From USD $410.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
           
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/uganda.jpeg'); background-size: cover; background-position: center;">
+            <div class="tour-image" style="background-image: url('/images/mburo_main.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Lake Mburo National Park</span>
               </div>
@@ -245,14 +245,14 @@
                     <span class="price">From USD $240.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
 
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/mburo.jpeg'); background-size: cover; background-position: center;">
+            <div class="tour-image" style="background-image: url('/images/kampala.jpg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Central Region, Uganda</span>
               </div>
@@ -275,14 +275,14 @@
                     <span class="price">From USD $180.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
 
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/group.jpeg'); background-size: cover; background-position: center;">
+            <div class="tour-image" style="background-image: url('/images/water.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Eastern Region of Uganda</span>
               </div>
@@ -305,14 +305,14 @@
                     <span class="price">From USD $180.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
 
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/camping_resized.jpg'); background-size: cover; background-position: center;">
+            <div class="tour-image" style="background-image: url('/images/bwindi.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Kisoro/Kigali</span>
               </div>
@@ -335,7 +335,7 @@
                     <span class="price">From USD $400.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/safaris" class="tour-cta">View Tours →</NuxtLink>
+                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
@@ -458,28 +458,28 @@
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/uganda.jpeg" alt="Queen Elizabeth Park Wildlife">
+            <img src="/images/Queen_main.jpeg" alt="Queen Elizabeth Park Wildlife">
             <div class="gallery-overlay">
               <h3>Queen Elizabeth Wildlife</h3>
               <p>Big game viewing in Uganda's most popular park</p>
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/park.jpeg" alt="Bwindi Impenetrable National Park">
+            <img src="/images/bwindi.jpeg" alt="Bwindi Impenetrable National Park">
             <div class="gallery-overlay">
               <h3>Bwindi Impenetrable Forest</h3>
               <p>Home to 50% of the world's mountain gorillas • UNESCO World Heritage Site</p>
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/park1.jpeg" alt="Queen Elizabeth National Park">
+            <img src="/images/Queen_main.jpeg" alt="Queen Elizabeth National Park">
             <div class="gallery-overlay">
               <h3>Queen Elizabeth Park</h3>
               <p>Tree-climbing lions & Kazinga Channel</p>
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/park2.jpeg" alt="Murchison Falls National Park">
+            <img src="/images/murchion_main.jpeg" alt="Murchison Falls National Park">
             <div class="gallery-overlay">
               <h3>Murchison Falls Park</h3>
               <p>World's most powerful waterfall</p>
@@ -493,7 +493,7 @@
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/park4.jpeg" alt="Lake Mburo National Park">
+            <img src="/images/mburo_main.jpeg" alt="Lake Mburo National Park">
             <div class="gallery-overlay">
               <h3>Lake Mburo Park</h3>
               <p>Zebras, impalas & boat safaris</p>
@@ -507,7 +507,7 @@
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/mburo.jpeg" alt="Lake Mburo Wildlife">
+            <img src="/images/mburo_main.jpeg" alt="Lake Mburo Wildlife">
             <div class="gallery-overlay">
               <h3>Lake Mburo Adventures</h3>
               <p>Zebras, antelopes and boat safaris on pristine waters</p>
@@ -534,7 +534,7 @@
         <div class="destinations-grid">
           <div class="destination-card">
             <div class="destination-image">
-              <img src="/images/gorilla.jpg" alt="Queen Elizabeth National Park Wildlife">
+              <img src="/images/Queen_main.jpeg" alt="Queen Elizabeth National Park Wildlife">
             </div>
             <div class="destination-content">
               <h3>🇺🇬 Queen Elizabeth National Park</h3>
@@ -548,7 +548,7 @@
           </div>
           <div class="destination-card">
             <div class="destination-image">
-              <img src="/images/her1.jpeg" alt="Murchison Falls National Park">
+              <img src="/images/murchion_main.jpeg" alt="Murchison Falls National Park">
             </div>
             <div class="destination-content">
               <h3>🇺🇬 Murchison Falls National Park</h3>
@@ -642,32 +642,100 @@
             </div>
           </div>
           <div class="inquiry-form">
-            <form>
+            <form @submit="handleBookingSubmit">
+              <!-- Success Notification -->
+              <div v-if="bookingSuccess" class="form-notification form-notification-success">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>Booking submitted! Check your email for confirmation.</span>
+              </div>
+              
+              <!-- Error Notification -->
+              <div v-if="bookingError" class="form-notification form-notification-error">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <span>{{ bookingError }}</span>
+              </div>
+              
               <div class="form-row">
-                <input type="text" placeholder="Your Name" class="form-input">
-                <input type="email" placeholder="Email Address" class="form-input">
+                <input 
+                  v-model="bookingForm.name"
+                  type="text" 
+                  placeholder="Your Name *" 
+                  class="form-input"
+                  required
+                  :disabled="isBookingSubmitting"
+                >
+                <input 
+                  v-model="bookingForm.email"
+                  type="email" 
+                  placeholder="Email Address *" 
+                  class="form-input"
+                  required
+                  :disabled="isBookingSubmitting"
+                >
               </div>
               <div class="form-row">
-                <select class="form-input">
-                  <option>Preferred Destination</option>
-                  <option>Kenya - Masai Mara</option>
-                  <option>Tanzania - Serengeti</option>
-                  <option>Uganda - Bwindi Forest</option>
-                  <option>Rwanda - Volcanoes Park</option>
-                  <option>Multiple Countries</option>
+                <select 
+                  v-model="bookingForm.destination"
+                  class="form-input"
+                  required
+                  :disabled="isBookingSubmitting"
+                >
+                  <option value="">Preferred Destination *</option>
+                  <option value="Uganda - Bwindi Forest">Uganda - Bwindi Forest</option>
+                  <option value="Uganda - Queen Elizabeth">Uganda - Queen Elizabeth</option>
+                  <option value="Uganda - Murchison Falls">Uganda - Murchison Falls</option>
+                  <option value="Uganda - Lake Mburo">Uganda - Lake Mburo</option>
+                  <option value="Kenya - Masai Mara">Kenya - Masai Mara</option>
+                  <option value="Tanzania - Serengeti">Tanzania - Serengeti</option>
+                  <option value="Rwanda - Volcanoes Park">Rwanda - Volcanoes Park</option>
+                  <option value="Multiple Countries">Multiple Countries</option>
                 </select>
-                <select class="form-input">
-                  <option>Travel Month</option>
-                  <option>January - March</option>
-                  <option>April - June</option>
-                  <option>July - September</option>
-                  <option>October - December</option>
-                </select>
+                <input 
+                  v-model="bookingForm.tourDate"
+                  type="date" 
+                  class="form-input"
+                  placeholder="Tour Date"
+                  :min="new Date().toISOString().split('T')[0]"
+                  :disabled="isBookingSubmitting"
+                >
               </div>
-              <textarea placeholder="Tell us about your dream safari... What animals do you want to see? Any special interests?" class="form-textarea"></textarea>
-              <button type="submit" class="btn-inquiry">
-                <span>Get Custom Itinerary</span>
-                <span class="btn-arrow">→</span>
+              <div class="form-row">
+                <input 
+                  v-model="bookingForm.phone"
+                  type="tel" 
+                  placeholder="Phone Number" 
+                  class="form-input"
+                  :disabled="isBookingSubmitting"
+                >
+                <input 
+                  v-model.number="bookingForm.numberOfGuests"
+                  type="number" 
+                  placeholder="Number of Guests" 
+                  class="form-input"
+                  min="1"
+                  :disabled="isBookingSubmitting"
+                >
+              </div>
+              <textarea 
+                v-model="bookingForm.specialRequests"
+                placeholder="Tell us about your dream safari... What animals do you want to see? Any special interests?" 
+                class="form-textarea"
+                :disabled="isBookingSubmitting"
+              ></textarea>
+              <button type="submit" class="btn-inquiry" :disabled="isBookingSubmitting">
+                <span v-if="!isBookingSubmitting">Get Custom Itinerary</span>
+                <span v-else>Submitting...</span>
+                <span v-if="!isBookingSubmitting" class="btn-arrow">→</span>
+                <svg v-else class="form-spinner" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12a9 9 0 11-6.219-8.56"/>
+                </svg>
               </button>
             </form>
           </div>
@@ -678,6 +746,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
 useHead({
   title: 'Safari Adventures - Experience the Wild Beauty of Africa',
   meta: [
@@ -687,6 +757,81 @@ useHead({
     }
   ]
 })
+
+// Booking form data
+const bookingForm = ref({
+  name: '',
+  email: '',
+  phone: '',
+  destination: '',
+  tourDate: '',
+  numberOfGuests: 1,
+  package: '',
+  specialRequests: ''
+})
+
+// Form state
+const isBookingSubmitting = ref(false)
+const bookingSuccess = ref(false)
+const bookingError = ref('')
+
+// Handle booking form submission
+const handleBookingSubmit = async (e: Event) => {
+  e.preventDefault()
+  
+  // Reset states
+  bookingError.value = ''
+  bookingSuccess.value = false
+  isBookingSubmitting.value = true
+  
+  // Get current date for tour date if not specified
+  const today = new Date()
+  const defaultDate = new Date(today.setMonth(today.getMonth() + 1))
+  
+  try {
+    const response = await $fetch('/api/booking', {
+      method: 'POST',
+      body: {
+        name: bookingForm.value.name,
+        email: bookingForm.value.email,
+        phone: bookingForm.value.phone || '+256 768 461 164',
+        destination: bookingForm.value.destination || 'Uganda - Bwindi Forest',
+        tourDate: bookingForm.value.tourDate || defaultDate.toISOString().split('T')[0],
+        numberOfGuests: bookingForm.value.numberOfGuests || 1,
+        package: bookingForm.value.package,
+        specialRequests: bookingForm.value.specialRequests
+      }
+    })
+    
+    if (response.success) {
+      bookingSuccess.value = true
+      // Reset form
+      bookingForm.value = {
+        name: '',
+        email: '',
+        phone: '',
+        destination: '',
+        tourDate: '',
+        numberOfGuests: 1,
+        package: '',
+        specialRequests: ''
+      }
+      
+      // Hide success message after 7 seconds
+      setTimeout(() => {
+        bookingSuccess.value = false
+      }, 7000)
+    }
+  } catch (error: any) {
+    bookingError.value = error.data?.statusMessage || 'Failed to submit booking. Please try again.'
+    // Hide error after 5 seconds
+    setTimeout(() => {
+      bookingError.value = ''
+    }, 5000)
+  } finally {
+    isBookingSubmitting.value = false
+  }
+}
 </script>
 
 <style scoped>
@@ -984,6 +1129,7 @@ useHead({
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform var(--transition-slow);
 }
 
@@ -1165,6 +1311,7 @@ useHead({
   height: 280px;
   background: linear-gradient(45deg, var(--color-forest-green), var(--color-forest-green-light));
   position: relative;
+  background-position: top center !important;
 }
 
 .tour-image-2 {
@@ -1540,10 +1687,15 @@ useHead({
   gap: var(--spacing-sm);
 }
 
-.btn-inquiry:hover {
+.btn-inquiry:hover:not(:disabled) {
   background: var(--color-forest-green-dark);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(45, 80, 22, 0.3);
+}
+
+.btn-inquiry:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .btn-arrow {
@@ -1551,8 +1703,50 @@ useHead({
   transition: transform var(--transition-fast);
 }
 
-.btn-inquiry:hover .btn-arrow {
+.btn-inquiry:hover:not(:disabled) .btn-arrow {
   transform: translateX(5px);
+}
+
+/* Form Notification Styles */
+.form-notification {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.form-notification-success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-notification-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.form-notification svg {
+  flex-shrink: 0;
+}
+
+/* Form Spinner animation */
+.form-spinner {
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+}
+
+/* Disabled form input styles */
+.form-input:disabled,
+.form-textarea:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 /* Hero Slideshow Styles */
@@ -1672,6 +1866,7 @@ useHead({
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform var(--transition-slow);
 }
 
@@ -1740,6 +1935,7 @@ useHead({
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform var(--transition-slow);
 }
 
@@ -1856,6 +2052,28 @@ useHead({
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1883,6 +2101,130 @@ useHead({
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    min-height: auto;
+  }
+  
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-description p {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+  
+  .hero-cta {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .btn-icon {
+    font-size: 1rem;
+  }
+  
+  .hero-video-player {
+    height: 250px;
+    margin-top: 2rem;
+  }
+  
+  .hero-booking {
+    padding: var(--spacing-xl);
+    margin-top: 2rem;
+  }
+  
+  .section-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .adventure-grid {
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .adventure-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .adventure-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .adventure-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .adventure-card p {
+    font-size: 0.9rem;
+  }
+  
+  .package-price {
+    font-size: 1.1rem;
+  }
+  
+  .content-text h3 {
+    font-size: 1.5rem;
+  }
+  
+  .content-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .feature-item {
+    font-size: 0.9rem;
+  }
+  
+  .tour-card {
+    border-radius: 12px;
+  }
+  
+  .tour-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tour-features li {
+    font-size: 0.85rem;
+  }
+  
+  .tour-price .price {
+    font-size: 1.1rem;
+  }
+  
   .trust-container {
     flex-direction: column;
     gap: var(--spacing-lg);
@@ -1892,10 +2234,6 @@ useHead({
   .why-us-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .section-header h2 {
-    font-size: var(--font-size-3xl);
   }
   
   .cta-features {
@@ -1958,10 +2296,6 @@ useHead({
     gap: var(--spacing-md);
   }
   
-  .adventure-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .inquiry-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-2xl);
@@ -1973,6 +2307,89 @@ useHead({
   
   .inquiry-form {
     padding: var(--spacing-xl);
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-description {
+    display: none;
+  }
+  
+  .hero-video-player {
+    height: 200px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .adventure-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .tour-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px;
+  }
+  
+  .gallery-item.large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .content-image {
+    height: 250px;
+  }
+  
+  .why-us-item {
+    padding: 1.5rem;
+  }
+  
+  .cta-section {
+    padding: 3rem 0;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .trust-stat h3 {
+    font-size: 2rem;
+  }
+  
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+  
+  .inquiry-form {
+    padding: 1.5rem;
+  }
+  
+  .inquiry-info h2 {
+    font-size: 1.5rem;
   }
 }
 
