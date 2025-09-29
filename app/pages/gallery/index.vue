@@ -51,7 +51,14 @@
             :class="{ active: activeFilter === 'all' }"
             @click="setFilter('all')"
           >
-            All Photos
+            All Media
+          </button>
+          <button 
+            class="filter-btn" 
+            :class="{ active: activeFilter === 'videos' }"
+            @click="setFilter('videos')"
+          >
+            Videos
           </button>
           <button 
             class="filter-btn" 
@@ -100,10 +107,13 @@
             v-for="(image, index) in filteredImages" 
             :key="index"
             class="gallery-item"
-            :class="[image.size, { 'featured': image.featured }]"
+            :class="[image.size, { 'featured': image.featured, 'video-item': image.type === 'video' }]"
             @click="openLightbox(index)"
           >
-            <img :src="image.src" :alt="image.title" class="gallery-image">
+            <img v-if="image.type === 'image'" :src="image.src" :alt="image.title" class="gallery-image">
+            <video v-else :src="image.src" class="gallery-image" muted loop>
+              <source :src="image.src" type="video/mp4">
+            </video>
             <div class="image-overlay">
               <div class="overlay-content">
                 <h3 class="image-title">{{ image.title }}</h3>
@@ -111,11 +121,14 @@
                 <span class="image-category">{{ image.category }}</span>
               </div>
               <div class="zoom-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg v-if="image.type === 'image'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="11" cy="11" r="8"/>
                   <path d="m21 21-4.35-4.35"/>
                   <path d="M11 8v6"/>
                   <path d="M8 11h6"/>
+                </svg>
+                <svg v-else width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
                 </svg>
               </div>
             </div>
@@ -145,7 +158,10 @@
         </button>
         
         <div class="lightbox-image-container">
-          <img :src="currentImage.src" :alt="currentImage.title" class="lightbox-image">
+          <img v-if="currentImage.type === 'image'" :src="currentImage.src" :alt="currentImage.title" class="lightbox-image">
+          <video v-else :src="currentImage.src" class="lightbox-image" controls autoplay>
+            <source :src="currentImage.src" type="video/mp4">
+          </video>
         </div>
         
         <div class="lightbox-info">
@@ -187,149 +203,336 @@ const lightboxOpen = ref(false)
 const currentImageIndex = ref(0)
 const visibleImages = ref(12)
 
-// Gallery images data
+// Gallery images and videos data
 const galleryImages = [
-  // Featured Park Images (shown first)
+  // Featured Main Park Images
   {
-    src: '/images/park.jpeg',
-    title: 'Bwindi Impenetrable Forest',
-    location: 'Bwindi Impenetrable National Park',
-    category: 'parks',
-    size: 'large',
-    featured: true
-  },
-  {
-    src: '/images/park1.jpeg',
-    title: 'Queen Elizabeth Park',
-    location: 'Queen Elizabeth National Park',
-    category: 'wildlife',
-    size: 'medium',
-    featured: true
-  },
-  {
-    src: '/images/park2.jpeg',
-    title: 'Murchison Falls Park',
-    location: 'Murchison Falls National Park',
-    category: 'parks',
-    size: 'large',
-    featured: true
-  },
-  {
-    src: '/images/park3.jpeg',
-    title: 'Kibale Forest Park',
-    location: 'Kibale Forest National Park',
-    category: 'wildlife',
-    size: 'medium',
-    featured: true
-  },
-  {
-    src: '/images/park4.jpeg',
-    title: 'Lake Mburo Park',
-    location: 'Lake Mburo National Park',
-    category: 'wildlife',
-    size: 'medium',
-    featured: true
-  },
-  {
-    src: '/images/park5.jpeg',
-    title: 'Rwenzori Mountains',
-    location: 'Rwenzori Mountains National Park',
-    category: 'parks',
-    size: 'large',
-    featured: true
-  },
-  // Existing images
-  {
-    src: '/much1.jpeg',
-    title: 'Mountain Gorillas',
-    location: 'Bwindi Impenetrable National Park',
-    category: 'gorillas',
-    size: 'large'
-  },
-  {
-    src: '/much2.jpeg',
-    title: 'Wildlife Safari',
-    location: 'Queen Elizabeth National Park',
-    category: 'wildlife',
-    size: 'medium'
-  },
-  {
-    src: '/much3.jpeg',
+    src: '/images/murchion_main.jpeg',
     title: 'Murchison Falls',
     location: 'Murchison Falls National Park',
     category: 'parks',
-    size: 'medium'
+    size: 'large',
+    featured: true,
+    type: 'image'
   },
   {
-    src: '/much4.jpeg',
-    title: 'Cultural Experience',
-    location: 'Local Community',
-    category: 'cultural',
-    size: 'small'
+    src: '/images/bwindi.jpeg',
+    title: 'Bwindi Impenetrable Forest',
+    location: 'Bwindi Impenetrable National Park',
+    category: 'gorillas',
+    size: 'large',
+    featured: true,
+    type: 'image'
   },
   {
-    src: '/much5.jpeg',
-    title: 'White Water Rafting',
-    location: 'Jinja',
-    category: 'adventure',
-    size: 'small'
-  },
-  {
-    src: '/much6.jpeg',
-    title: 'African Elephants',
+    src: '/images/Queen_main.jpeg',
+    title: 'Queen Elizabeth National Park',
     location: 'Queen Elizabeth National Park',
     category: 'wildlife',
-    size: 'large'
+    size: 'medium',
+    featured: true,
+    type: 'image'
   },
   {
-    src: '/much1.jpeg',
-    title: 'Silverback Gorilla',
+    src: '/images/mburo_main.jpeg',
+    title: 'Lake Mburo National Park',
+    location: 'Lake Mburo National Park',
+    category: 'wildlife',
+    size: 'medium',
+    featured: true,
+    type: 'image'
+  },
+  
+  // Gorilla and Primate Images
+  {
+    src: '/images/gorilla.jpg',
+    title: 'Mountain Gorilla Close-up',
+    location: 'Bwindi Impenetrable National Park',
+    category: 'gorillas',
+    size: 'large',
+    type: 'image'
+  },
+  {
+    src: '/images/gorilla.webp',
+    title: 'Gorilla Family',
     location: 'Mgahinga Gorilla National Park',
     category: 'gorillas',
-    size: 'medium'
+    size: 'medium',
+    type: 'image'
+  },
+  
+  // Adventure Videos
+  {
+    src: '/much9.mp4',
+    title: 'River Rapids Adventure',
+    location: 'Jinja - Source of the Nile',
+    category: 'adventure',
+    size: 'large',
+    type: 'video'
+  },
+  {
+    src: '/much10.mp4',
+    title: 'Safari Game Drive',
+    location: 'Queen Elizabeth National Park',
+    category: 'wildlife',
+    size: 'large',
+    type: 'video'
+  },
+  {
+    src: '/much11.mp4',
+    title: 'Boat Safari Experience',
+    location: 'Kazinga Channel',
+    category: 'adventure',
+    size: 'medium',
+    type: 'video'
+  },
+  {
+    src: '/much12.mp4',
+    title: 'Wildlife Encounter',
+    location: 'Murchison Falls National Park',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'video'
+  },
+  
+  // Landscape and Nature
+  {
+    src: '/images/landscape.jpeg',
+    title: 'Uganda Landscape',
+    location: 'Western Uganda',
+    category: 'parks',
+    size: 'large',
+    type: 'image'
+  },
+  {
+    src: '/images/water.jpeg',
+    title: 'Source of the Nile',
+    location: 'Jinja',
+    category: 'adventure',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/images/uganda.jpeg',
+    title: 'Pearl of Africa',
+    location: 'Uganda Countryside',
+    category: 'parks',
+    size: 'medium',
+    type: 'image'
+  },
+  
+  // Park Images
+  {
+    src: '/images/park.jpeg',
+    title: 'Savanna Wildlife',
+    location: 'Kidepo Valley National Park',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/images/park1.jpeg',
+    title: 'Safari Sunset',
+    location: 'Queen Elizabeth National Park',
+    category: 'parks',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/images/park2.jpeg',
+    title: 'Morning Mist',
+    location: 'Kibale Forest National Park',
+    category: 'parks',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/images/park3.jpeg',
+    title: 'Forest Trail',
+    location: 'Kibale National Park',
+    category: 'parks',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/images/park4.jpeg',
+    title: 'Mountain Views',
+    location: 'Rwenzori Mountains National Park',
+    category: 'parks',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/images/park5.jpeg',
+    title: 'Crater Lake',
+    location: 'Fort Portal',
+    category: 'parks',
+    size: 'small',
+    type: 'image'
+  },
+  
+  // Cultural Images
+  {
+    src: '/images/museum.jpeg',
+    title: 'Uganda Museum',
+    location: 'Kampala',
+    category: 'cultural',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/images/group.jpeg',
+    title: 'Community Visit',
+    location: 'Batwa Community',
+    category: 'cultural',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/images/her.jpeg',
+    title: 'Local Traditions',
+    location: 'Cultural Village',
+    category: 'cultural',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/images/her1.jpeg',
+    title: 'Cultural Dance',
+    location: 'Traditional Performance',
+    category: 'cultural',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/images/her2.jpeg',
+    title: 'Local Crafts',
+    location: 'Craft Market',
+    category: 'cultural',
+    size: 'small',
+    type: 'image'
+  },
+  
+  // Additional Lake Mburo Images
+  {
+    src: '/images/mburo.jpeg',
+    title: 'Zebra Herd',
+    location: 'Lake Mburo National Park',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/images/mburo1.jpeg',
+    title: 'Lake View',
+    location: 'Lake Mburo',
+    category: 'parks',
+    size: 'small',
+    type: 'image'
+  },
+  
+  // Queen Elizabeth Images
+  {
+    src: '/images/Queen.jpeg',
+    title: 'Tree Climbing Lions',
+    location: 'Ishasha Sector - QENP',
+    category: 'wildlife',
+    size: 'large',
+    type: 'image'
+  },
+  {
+    src: '/images/queen.jpeg',
+    title: 'Kazinga Channel',
+    location: 'Queen Elizabeth National Park',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  
+  // Murchison Adventure Images
+  {
+    src: '/much1.jpeg',
+    title: 'Falls View Point',
+    location: 'Top of Murchison Falls',
+    category: 'adventure',
+    size: 'large',
+    type: 'image'
   },
   {
     src: '/much2.jpeg',
-    title: 'Savanna Landscape',
-    location: 'Kidepo Valley National Park',
-    category: 'parks',
-    size: 'small'
+    title: 'Nile Crocodiles',
+    location: 'Murchison Falls National Park',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
   },
   {
     src: '/much3.jpeg',
-    title: 'Traditional Dance',
-    location: 'Cultural Center',
-    category: 'cultural',
-    size: 'small'
+    title: 'Boat Safari',
+    location: 'Victoria Nile',
+    category: 'adventure',
+    size: 'medium',
+    type: 'image'
   },
   {
     src: '/much4.jpeg',
-    title: 'Tree Climbing Lions',
-    location: 'Queen Elizabeth National Park',
+    title: 'Elephant Crossing',
+    location: 'Murchison Falls National Park',
     category: 'wildlife',
-    size: 'medium'
+    size: 'small',
+    type: 'image'
   },
   {
     src: '/much5.jpeg',
-    title: 'Rwenzori Mountains',
-    location: 'Rwenzori Mountains National Park',
-    category: 'parks',
-    size: 'large'
+    title: 'Hippo Pool',
+    location: 'Victoria Nile',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
   },
   {
     src: '/much6.jpeg',
-    title: 'Bungee Jumping',
-    location: 'Jinja',
+    title: 'Sunset Safari',
+    location: 'Murchison Falls National Park',
+    category: 'parks',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/much7.jpeg',
+    title: 'Buffalo Herd',
+    location: 'Northern Circuit',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/much8.jpeg',
+    title: 'Game Drive Adventure',
+    location: 'Savanna Plains',
     category: 'adventure',
-    size: 'medium'
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/much.jpeg',
+    title: 'Wilderness Camp',
+    location: 'Safari Camp',
+    category: 'adventure',
+    size: 'small',
+    type: 'image'
   }
 ]
 
 // Computed properties
 const filteredImages = computed(() => {
-  const filtered = activeFilter.value === 'all' 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === activeFilter.value)
+  let filtered = galleryImages
+  
+  if (activeFilter.value === 'videos') {
+    filtered = galleryImages.filter(img => img.type === 'video')
+  } else if (activeFilter.value !== 'all') {
+    filtered = galleryImages.filter(img => img.category === activeFilter.value)
+  }
   
   return filtered.slice(0, visibleImages.value)
 })
@@ -969,5 +1172,48 @@ onMounted(() => {
   background: var(--color-golden-yellow);
   color: var(--color-forest-green-dark);
   box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+}
+
+/* Video items */
+.gallery-item.video-item {
+  position: relative;
+}
+
+.gallery-item.video-item::before {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+  transition: all var(--transition-normal);
+}
+
+.gallery-item.video-item:hover::before {
+  background: var(--color-golden-yellow);
+  color: var(--color-forest-green-dark);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.gallery-item.video-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox-image-container video {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
 }
 </style>
