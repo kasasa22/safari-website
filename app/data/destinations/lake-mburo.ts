@@ -14,6 +14,7 @@ export const lakeMburoDestination: Destination = {
   difficulty: 'Easy',
   season: 'Year Round',
   images: [
+    '/images/mburo_main.jpeg',
     '/destinations/mburo1.jpg',
     '/destinations/mburo2.jpg',
     '/destinations/mburo3.jpg',
