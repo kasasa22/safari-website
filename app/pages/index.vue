@@ -1049,31 +1049,92 @@ const handleBookingSubmit = async (e: Event) => {
 }
 
 @media (max-width: 768px) {
+  .home-page {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home-page .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 var(--spacing-lg) !important;
+  }
+  
   .hero {
     min-height: auto;
     padding: var(--spacing-2xl) 0;
   }
   
+  .hero-content .container {
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 var(--spacing-lg) !important;
+  }
+  
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .hero-video-player {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 320px !important;
+    margin: var(--spacing-xl) auto 0;
+  }
+  
   .hero-title {
     font-size: 2.5rem;
+    word-wrap: break-word;
+    hyphens: auto;
   }
   
   .hero-subtitle {
     font-size: var(--font-size-xl);
+    word-wrap: break-word;
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-base);
+    word-wrap: break-word;
+  }
+  
+  .hero-description p {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .hero-badge {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem !important;
+    word-break: break-word;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .hero-cta {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
   }
   
   .btn-primary,
   .btn-secondary {
     text-align: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .hero-booking {
     padding: var(--spacing-xl);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -2309,26 +2370,39 @@ const handleBookingSubmit = async (e: Event) => {
     padding: var(--spacing-xl);
   }
   
-  .container {
-    padding: 0 1rem;
-  }
 }
 
 @media (max-width: 480px) {
   .hero-title {
     font-size: 1.75rem;
+    line-height: 1.1;
+    word-break: break-word;
   }
   
   .hero-subtitle {
     font-size: 1rem;
+    line-height: 1.3;
+    word-break: break-word;
   }
   
   .hero-description {
-    display: none;
+    font-size: 0.85rem;
+  }
+  
+  .hero-description p {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
   
   .hero-video-player {
-    height: 200px;
+    width: 100% !important;
+    max-width: 280px !important;
+    height: 280px !important;
+    margin: var(--spacing-lg) auto 0;
+  }
+  
+  .hero-cta {
+    gap: var(--spacing-sm);
   }
   
   .btn-primary,
@@ -2336,6 +2410,11 @@ const handleBookingSubmit = async (e: Event) => {
     width: 100%;
     padding: 0.75rem 1.2rem;
     font-size: 0.85rem;
+    word-break: keep-all;
+  }
+  
+  .btn-icon {
+    font-size: 0.9rem;
   }
   
   .section-header h2 {

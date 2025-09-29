@@ -1361,4 +1361,24 @@ useHead({
     font-size: var(--font-size-lg);
   }
 }
+
+/* Ensure header works on About page */
+@media (max-width: 992px) {
+  .about-page {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Make sure header is visible */
+  .header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .menu-toggle {
+    display: flex !important;
+    visibility: visible !important;
+  }
+}
 </style>

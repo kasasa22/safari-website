@@ -316,6 +316,7 @@ watch(activeFilter, () => {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  padding-top: 120px;
 }
 
 .hero-overlay {
@@ -764,13 +765,58 @@ watch(activeFilter, () => {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .destinations-page .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 var(--spacing-lg) !important;
+  }
+  
+  .hero-section {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-content {
+    width: 100%;
+    padding: 0;
+  }
+  
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    word-wrap: break-word;
+    padding: 0 var(--spacing-md);
+    line-height: 1.1;
+    text-align: center;
+    hyphens: auto;
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+    padding: 0 var(--spacing-md);
   }
   
   .hero-stats {
-    flex-direction: column;
-    gap: var(--spacing-lg);
+    flex-direction: row;
+    justify-content: space-around;
+    gap: var(--spacing-sm);
+    padding: 0 var(--spacing-md);
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-2xl) !important;
+    line-height: 1;
+  }
+  
+  .stat-label {
+    font-size: var(--font-size-sm) !important;
+    margin-top: var(--spacing-xs);
   }
   
   .filters {
@@ -801,6 +847,38 @@ watch(activeFilter, () => {
 }
 
 @media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+    padding: 0 var(--spacing-sm);
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-word;
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .hero-stats {
+    padding: 0 var(--spacing-sm);
+    gap: var(--spacing-xs);
+  }
+  
+  .stat-item {
+    min-width: 70px;
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-xl) !important;
+    line-height: 1;
+  }
+  
+  .stat-label {
+    font-size: var(--font-size-xs) !important;
+    margin-top: 2px;
+  }
+  
   .card-content {
     padding: var(--spacing-lg);
   }
