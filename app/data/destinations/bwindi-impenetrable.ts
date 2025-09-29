@@ -14,6 +14,7 @@ export const bwindiDestination: Destination = {
   difficulty: 'Moderate-Hard',
   season: 'Year Round (Best: Jun-Aug, Dec-Feb)',
   images: [
+    '/images/bwindi.jpeg',
     '/destinations/bwindi1.jpg',
     '/destinations/bwindi2.jpg',
     '/destinations/bwindi3.jpg',
