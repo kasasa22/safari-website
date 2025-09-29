@@ -27,24 +27,19 @@
               <p>🌊 Experience the source of the Nile in Jinja and thrilling boat safaris</p>
             </div>
             <div class="hero-cta">
-              <NuxtLink to="/safaris" class="btn-primary">
+              <NuxtLink to="/destinations" class="btn-primary">
                 <span class="btn-icon">🧭</span>
                 Start Your Journey
               </NuxtLink>
-              <button class="btn-secondary">
+              <NuxtLink to="/gallery" class="btn-secondary">
                 <span class="btn-icon">▶️</span>
                 Watch Safari Video
-              </button>
+              </NuxtLink>
             </div>
           </div>
           
-          <div class="hero-video-player">
-            <video autoplay muted loop class="hero-video">
-              <source src="/much10.mp4" type="video/mp4">
-              <source src="/much11.mp4" type="video/mp4">
-              <source src="/much12.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+          <div class="hero-image-showcase">
+            <img src="/much1.jpeg" alt="Uganda Safari Adventure" class="hero-showcase-image">
           </div>
         </div>
       </div>
@@ -64,28 +59,28 @@
             <h3>Gorilla Trekking Package</h3>
             <p>1-3 days gorilla trekking in Bwindi Impenetrable Forest with expert guides</p>
             <div class="package-price">From $400/day</div>
-            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
+            <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🦁</div>
             <h3>Wildlife Safari Package</h3>
             <p>Multi-day safaris in Queen Elizabeth & Murchison Falls National Parks</p>
             <div class="package-price">From $240/day</div>
-            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
+            <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🏙️</div>
             <h3>City Tour Package</h3>
             <p>Explore Kampala and Jinja with cultural sites and Nile source visits</p>
             <div class="package-price">From $180/day</div>
-            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
+            <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🌊</div>
             <h3>Adventure Package</h3>
             <p>Boat cruises, white water rafting, and adventure activities</p>
             <div class="package-price">From $200/day</div>
-            <NuxtLink to="/safaris" class="adventure-link">Book Package →</NuxtLink>
+            <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
         </div>
       </div>
@@ -185,7 +180,7 @@
                     <span class="price">From USD $372.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
+                <NuxtLink to="/destinations/queen-elizabeth" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
@@ -215,7 +210,7 @@
                     <span class="price">From USD $410.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
+                <NuxtLink to="/destinations/murchisons" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
@@ -245,7 +240,7 @@
                     <span class="price">From USD $240.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
+                <NuxtLink to="/destinations/lake-mburo" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
@@ -305,7 +300,7 @@
                     <span class="price">From USD $180.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
+                <NuxtLink to="/destinations/jinja" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
@@ -335,7 +330,7 @@
                     <span class="price">From USD $400.00</span>
                   </div>
                 </div>
-                <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
+                <NuxtLink to="/destinations/bwindi-impenetrable" class="tour-cta">View Destination →</NuxtLink>
               </div>
             </div>
           </div>
@@ -950,7 +945,7 @@ const handleBookingSubmit = async (e: Event) => {
   transform: translateY(-2px);
 }
 
-.hero-video-player {
+.hero-image-showcase {
   margin-top: var(--spacing-3xl);
   border-radius: 25px;
   overflow: hidden;
@@ -968,13 +963,18 @@ const handleBookingSubmit = async (e: Event) => {
   padding: 8px;
 }
 
-.hero-video {
+.hero-showcase-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
   position: relative;
   z-index: 1;
+  transition: transform var(--transition-slow);
+}
+
+.hero-image-showcase:hover .hero-showcase-image {
+  transform: scale(1.05);
 }
 
 .hero-scroll-indicator {
@@ -1078,7 +1078,7 @@ const handleBookingSubmit = async (e: Event) => {
     margin-bottom: var(--spacing-xl);
   }
   
-  .hero-video-player {
+  .hero-image-showcase {
     width: 100% !important;
     max-width: 320px !important;
     height: 320px !important;
@@ -2207,7 +2207,7 @@ const handleBookingSubmit = async (e: Event) => {
     font-size: 1rem;
   }
   
-  .hero-video-player {
+  .hero-image-showcase {
     height: 250px;
     margin-top: 2rem;
   }
@@ -2394,7 +2394,7 @@ const handleBookingSubmit = async (e: Event) => {
     line-height: 1.4;
   }
   
-  .hero-video-player {
+  .hero-image-showcase {
     width: 100% !important;
     max-width: 280px !important;
     height: 280px !important;

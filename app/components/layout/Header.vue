@@ -54,11 +54,7 @@
       <div class="container">
         <div class="nav-wrapper">
           <NuxtLink to="/" class="logo">
-            <img src="/logo.jpeg" alt="Kilagala Escape Safaris" class="logo-img">
-            <div class="logo-text">
-              <span class="logo-title">Kilagala Escape Safaris</span>
-              <span class="logo-tagline">Journey into the Heart of the Wilderness</span>
-            </div>
+            <img src="/KILAGALA-LOGO-FINAL--2.jpg" alt="Kilagala Escape Safaris" class="logo-img">
           </NuxtLink>
           
           <div class="nav-menu" :class="{ 'nav-menu--open': isMenuOpen }">

@@ -5,11 +5,7 @@
         <div class="footer-content">
           <div class="footer-section footer-brand">
             <div class="footer-logo">
-              <img src="/logo.jpeg" alt="Kilagala Escape Safaris" class="footer-logo-img">
-              <div>
-                <h3 class="footer-title">Kilagala Escape Safaris</h3>
-                <p class="footer-tagline">Journey into the Heart of the Wilderness</p>
-              </div>
+              <img src="/KILAGALA-LOGO-FINAL--2.jpg" alt="Kilagala Escape Safaris" class="footer-logo-img">
             </div>
             <p class="footer-description">
               Experience the wild beauty of Uganda and East Africa with our eco-friendly safari tours. 
@@ -173,10 +169,10 @@ const currentYear = new Date().getFullYear()
 }
 
 .footer-logo-img {
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: auto;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .footer-title {

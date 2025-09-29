@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-image" :style="{ backgroundImage: 'url(/images/group.jpeg)' }"></div>
+      <div class="hero-image" :style="{ backgroundImage: 'url(/KILAGALA-LOGO-FINAL--2.jpg)' }"></div>
     </section>
 
     <!-- Quick Info Bar -->

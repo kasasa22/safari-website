@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
     
     // Send email to the business owner
     const result = await sendEmail({
-      to: 'kasasatrevor25@gmail.com',
+      to: 'Kilagalaescapesafaris@gmail.com',
       subject: `New Contact Form Submission from ${body.name}`,
       html: emailHtml
     })
