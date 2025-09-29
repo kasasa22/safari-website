@@ -547,7 +547,7 @@
 </template>
 
 <script setup lang="ts">
-import { getDestination, getAllDestinations, type Destination } from '~/data/destinations-index'
+import { getDestination, getAllDestinations, type Destination } from '~/data/destinations'
 
 const route = useRoute()
 const slug = route.params.slug as string
