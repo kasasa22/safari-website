@@ -54,7 +54,7 @@ export const destinations: Record<string, Destination> = {
       '/images/bwindi.jpeg',
       '/images/gorilla.jpg',
       '/images/gorilla.webp',
-      '/images/park.jpeg'
+      '/images/bwindi2.jpg',
     ],
     highlights: [
       'Mountain gorilla trekking permits included',
@@ -139,7 +139,7 @@ export const destinations: Record<string, Destination> = {
       '/images/mburo_main.jpeg',
       '/images/mburo.jpeg',
       '/images/mburo1.jpeg',
-      '/images/water.jpeg'
+      '/images/mburo.jpg'
     ],
     highlights: [
       'Only park in Uganda with zebras',
@@ -222,10 +222,10 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Moderate',
     season: 'Year Round',
     images: [
-      '/images/park3.jpeg',
-      '/images/park5.jpeg',
-      '/images/landscape.jpeg',
-      '/images/uganda.jpeg'
+      '/images/kibale2.jpg',
+      '/images/kibale.jpg',
+      '/images/kibale3.jpg',
+      '/images/kibale4.jpeg'
     ],
     highlights: [
       '13 primate species including chimpanzees',
@@ -307,10 +307,10 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Moderate-Hard',
     season: 'Year Round',
     images: [
-      '/images/park4.jpeg',
-      '/images/landscape.jpeg',
-      '/images/park2.jpeg',
-      '/images/uganda.jpeg'
+      '/images/gorilla.jpg',
+      '/images/gorilla.webp',
+      '/images/gorilla-bwindi-rb01n75rk5dshksl7mdwamyktdf4na7qf9dp7k884g.webp',
+      '/images/mgahinga.jpeg'
     ],
     highlights: [
       'Mountain gorilla trekking',
@@ -397,10 +397,10 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Easy-Moderate',
     season: 'Year Round',
     images: [
-      '/images/park2.jpeg',
-      '/images/uganda.jpeg',
-      '/images/park1.jpeg',
-      '/images/landscape.jpeg'
+      '/images/kidepo.jpg',
+      '/images/kidepo.jpeg',
+      '/images/kidepo1.jpg',
+      '/images/kidepo.webp'
     ],
     highlights: [
       'Most remote and pristine park',
@@ -489,10 +489,10 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Hard',
     season: 'Dec-Feb, Jun-Aug',
     images: [
-      '/images/landscape.jpeg',
-      '/images/park5.jpeg',
-      '/images/park3.jpeg',
-      '/images/water.jpeg'
+      '/images/mtn.jpeg',
+      '/images/mtn1.jpeg',
+      '/images/mtn2.jpeg',
+      '/images/mtn3.jpeg'
     ],
     highlights: [
       'Africa\'s third-highest peak (Margherita - 5,109m)',
@@ -738,9 +738,9 @@ export const destinations: Record<string, Destination> = {
     season: 'Year Round',
     images: [
       '/images/Queen_main.jpeg',
-      '/images/Queen.jpeg',
-      '/images/queen.jpeg',
-      '/images/park1.jpeg'
+      '/images/queen1.jpeg',
+      '/images/queen2.jpeg',
+      '/images/queen.jpg'
     ],
     highlights: [
       'Famous tree-climbing lions in Ishasha',
@@ -829,10 +829,10 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Easy-Moderate',
     season: 'Year Round',
     images: [
-      '/images/water.jpeg',
-      '/images/park5.jpeg',
-      '/images/landscape.jpeg',
-      '/images/uganda.jpeg'
+      '/images/jinja.jpeg',
+      '/images/jinja1.jpeg',
+      '/images/jinja3.jpeg',
+      '/images/water.jpeg'
     ],
     highlights: [
       'Source of the Nile River',
