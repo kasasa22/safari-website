@@ -214,7 +214,7 @@
           
           <div class="contact-visual">
             <div class="main-contact-image">
-              <img src="/images/uganda.jpeg" alt="Uganda Safari Planning" class="primary-img">
+              <img src="/images/jinja1.jpeg" alt="Uganda Safari Planning" class="primary-img">
               <div class="image-overlay">
                 <span class="overlay-text">Expert Safari Planning</span>
               </div>
@@ -226,11 +226,11 @@
                 <span class="caption">Wildlife Adventures</span>
               </div>
               <div class="gallery-item gallery-item-right">
-                <img src="/images/group.jpeg" alt="Cultural Experiences">
+                <img src="/images/bwindi.jpeg" alt="Cultural Experiences">
                 <span class="caption">Cultural Tours</span>
               </div>
               <div class="gallery-item gallery-item-wide">
-                <img src="/images/water.jpeg" alt="Adventure Activities">
+                <img src="/images/mtn1.jpeg" alt="Adventure Activities">
                 <span class="caption">Adventure Activities</span>
               </div>
             </div>
