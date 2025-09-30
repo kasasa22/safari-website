@@ -16,13 +16,13 @@ export const bwindiDestination: Destination = {
   images: [
     '/images/bwindi.jpeg',
     '/destinations/bwindi1.jpg',
-    '/destinations/bwindi2.jpg',
-    '/destinations/bwindi3.jpg',
-    '/destinations/bwindi4.jpg',
-    '/destinations/bwindi5.jpg',
-    '/destinations/bwindi6.jpg',
-    '/destinations/bwindi7.jpg',
-    '/destinations/bwindi8.jpg'
+    '/images/bwindi2.jpeg',
+    '/images/bwindi3.jpeg',
+    '/images/bwindi4.jpeg',
+    '/images/bwindi5.jpeg',
+    '/images/bwindi6.jpeg',
+    '/images/bwindi7.jpeg',
+    '/images/bwindi1.jpeg'
   ],
   highlights: [
     'Mountain gorilla trekking - 50% of world\'s population',
