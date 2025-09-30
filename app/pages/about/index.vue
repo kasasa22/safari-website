@@ -391,7 +391,7 @@
     <!-- Call to Action -->
     <section class="cta-section">
       <div class="cta-background">
-        <img src="/images/uganda.jpeg" alt="Uganda Sunset Safari" class="cta-bg-image">
+        <img src="/images/landscape.jpeg" alt="Uganda Sunset Safari" class="cta-bg-image">
         <div class="cta-overlay"></div>
       </div>
       <div class="container">
