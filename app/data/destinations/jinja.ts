@@ -14,10 +14,13 @@ export const jinjaDestination: Destination = {
   difficulty: 'Easy-Moderate',
   season: 'Year Round',
   images: [
-    '/destinations/jinja1.jpg',
-    '/destinations/jinja2.jpg',
-    '/destinations/jinja3.jpg',
-    '/destinations/jinja4.jpg'
+    '/images/jinja1.jpeg',
+    '/images/jina2.jpeg',
+    '/images/jinja3.jpeg',
+    '/images/jinja4.jpeg',
+    '/images/jinja5.jpeg',
+    '/images/jinja6.jpeg',
+    '/images/jinja7.jpeg'
   ],
   highlights: [
     'Source of the world\'s longest river - River Nile',
