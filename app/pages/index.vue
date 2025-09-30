@@ -128,7 +128,7 @@
             <h3>Breathtaking Landscapes</h3>
             <p>From the snow-capped Rwenzori Mountains to the mighty Nile and lush rainforests, Uganda's diverse scenery captivates every traveler. Discover the source of the world's longest river in Jinja, cruise along the Kazinga Channel, and witness the thundering power of Murchison Falls.</p>
             <p>Experience dramatic crater lakes, rolling savannahs, and impenetrable forests that create the perfect backdrop for your African adventure. Our landscapes range from the mystical Bwindi forests to the vast plains of Queen Elizabeth National Park, each offering unique photographic opportunities and unforgettable memories.</p>
-            <NuxtLink to="/safaris" class="btn-explore">Explore Our Safari Tours →</NuxtLink>
+            <NuxtLink to="//destinations" class="btn-explore">Explore Our Safari Tours →</NuxtLink>
           </div>
         </div>
         
