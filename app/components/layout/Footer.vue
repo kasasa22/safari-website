@@ -45,7 +45,7 @@
             <ul class="footer-links">
               <li><NuxtLink to="/">Home</NuxtLink></li>
               <li><NuxtLink to="/about">About Us</NuxtLink></li>
-              <li><NuxtLink to="/safaris">Safari Packages</NuxtLink></li>
+              <li><NuxtLink to="/destinations">Safari Packages</NuxtLink></li>
               <li><NuxtLink to="/destinations">Destinations</NuxtLink></li>
               <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
               <li><NuxtLink to="/blog">Travel Blog</NuxtLink></li>
@@ -55,12 +55,12 @@
           <div class="footer-section">
             <h4 class="footer-heading">Safari Types</h4>
             <ul class="footer-links">
-              <li><NuxtLink to="/safaris/gorilla">Mountain Gorilla Trekking</NuxtLink></li>
-              <li><NuxtLink to="/safaris/wildlife">Wildlife Safari Tours</NuxtLink></li>
-              <li><NuxtLink to="/safaris/birdwatching">Bird Watching Tours</NuxtLink></li>
-              <li><NuxtLink to="/safaris/cultural">Cultural Experiences</NuxtLink></li>
-              <li><NuxtLink to="/safaris/hiking">Hiking & Trekking</NuxtLink></li>
-              <li><NuxtLink to="/safaris/eco">Eco-Tourism Packages</NuxtLink></li>
+              <li><NuxtLink to="//destinations/gorilla">Mountain Gorilla Trekking</NuxtLink></li>
+              <li><NuxtLink to="//destinations/wildlife">Wildlife Safari Tours</NuxtLink></li>
+              <li><NuxtLink to="//destinations/birdwatching">Bird Watching Tours</NuxtLink></li>
+              <li><NuxtLink to="//destinations/cultural">Cultural Experiences</NuxtLink></li>
+              <li><NuxtLink to="//destinations/hiking">Hiking & Trekking</NuxtLink></li>
+              <li><NuxtLink to="//destinations/eco">Eco-Tourism Packages</NuxtLink></li>
             </ul>
           </div>
           
