@@ -268,7 +268,7 @@ const articles = ref([
     date: "December 12, 2024",
     readTime: "6 min read",
     tags: ["Photography", "Safari Tips", "Wildlife"],
-    slug: "/blog/safari-photography-tips"
+    slug: "/blog/destinatiions-photography-tips"
   },
   {
     title: "Queen Elizabeth National Park: A Wildlife Paradise",
@@ -306,7 +306,7 @@ const articles = ref([
   {
     title: "Best Time to Visit Uganda for Wildlife Viewing",
     excerpt: "Plan your perfect safari with our comprehensive guide to Uganda's seasons, weather patterns, and optimal wildlife viewing times.",
-    image: "/images/uganda.jpeg",
+    image: "/images/mburo_main.jpeg",
     category: "travel-tips",
     author: "Robert Mukasa",
     date: "December 3, 2024",
@@ -345,7 +345,7 @@ const articles = ref([
     date: "November 25, 2024",
     readTime: "7 min read",
     tags: ["Packing", "Safari Gear", "Travel Tips"],
-    slug: "/blog/safari-packing-essentials"
+    slug: "/blog/destinatiions-packing-essentials"
   },
   {
     title: "Rwenzori Mountains: Trekking the Mountains of the Moon",
