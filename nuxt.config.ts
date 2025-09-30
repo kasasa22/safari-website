@@ -16,11 +16,11 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Safari Adventures - Experience the Wild Beauty of Africa' },
         { property: 'og:description', content: 'Embark on unforgettable safari adventures in Africa. Discover wildlife, stunning landscapes, and authentic experiences.' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/safari-og-image.jpg' },
+        { property: 'og:image', content: '/destinatiions-og-image.jpg' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Safari Adventures - Experience the Wild Beauty of Africa' },
         { name: 'twitter:description', content: 'Embark on unforgettable safari adventures in Africa. Discover wildlife, stunning landscapes, and authentic experiences.' },
-        { name: 'twitter:image', content: '/safari-og-image.jpg' }
+        { name: 'twitter:image', content: '/destinatiions-og-image.jpg' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
