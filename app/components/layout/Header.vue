@@ -119,12 +119,6 @@
           </div>
           
           <div class="nav-actions">
-            <button class="search-btn" aria-label="Search">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="8"/>
-                <path d="m21 21-4.35-4.35"/>
-              </svg>
-            </button>
             
             <NuxtLink to="/contact" class="cta-button">
               BOOK NOW
@@ -528,24 +522,6 @@ onMounted(() => {
   min-width: 200px;
 }
 
-.search-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: 2px solid var(--color-forest-green);
-  border-radius: 50%;
-  color: var(--color-forest-green);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.search-btn:hover {
-  background: var(--color-forest-green);
-  color: var(--color-white);
-}
 
 .cta-button {
   padding: 14px 40px;
@@ -689,10 +665,6 @@ onMounted(() => {
     background: rgba(255, 255, 255, 0.9) !important;
     border-radius: 6px !important;
     backdrop-filter: blur(10px) !important;
-  }
-  
-  .search-btn {
-    display: none;
   }
   
   .nav-wrapper {
