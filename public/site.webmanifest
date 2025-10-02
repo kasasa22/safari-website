@@ -1,0 +1,28 @@
+{
+  "name": "Kilagala Escape Safaris",
+  "short_name": "Kilagala Safaris",
+  "description": "Uganda Safari Adventures & Gorilla Trekking",
+  "icons": [
+    {
+      "src": "/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/KILAGALA-LOGO-FINAL--2.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#2D5016",
+  "background_color": "#F4C842",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
