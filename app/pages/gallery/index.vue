@@ -1083,21 +1083,34 @@ onMounted(() => {
   
   .hero-stats {
     gap: var(--spacing-md);
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
-  
+
+  .stat-item {
+    flex: 1;
+    min-width: 0;
+  }
+
   .stat-item.price {
     margin-left: 0;
-    margin-top: var(--spacing-lg);
   }
   
   .filter-tabs {
     gap: var(--spacing-sm);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 var(--spacing-sm);
   }
-  
+
   .filter-btn {
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
     font-size: var(--font-size-sm);
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: auto;
   }
   
   .gallery-grid {
@@ -1121,9 +1134,25 @@ onMounted(() => {
   }
   
   .hero-stats {
-    flex-direction: column;
-    gap: var(--spacing-md);
-    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: var(--font-size-lg) !important;
+  }
+
+  .stat-label {
+    font-size: 0.7rem !important;
   }
   
   .gallery-grid {
@@ -1132,6 +1161,22 @@ onMounted(() => {
   
   .filter-header h2 {
     font-size: var(--font-size-2xl);
+  }
+
+  .filter-tabs {
+    gap: 6px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 var(--spacing-xs);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-width: 1px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   
   .lightbox-image-container {
