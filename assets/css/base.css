@@ -80,17 +80,130 @@ input:focus, textarea:focus, select:focus {
   padding: 0 var(--spacing-xl);
 }
 
+/* Global Mobile Text Reduction */
 @media (max-width: 768px) {
   html, body {
     max-width: 100% !important;
     width: 100% !important;
     overflow-x: hidden;
+    font-size: 14px; /* Reduce base font size for mobile */
   }
-  
+
   .container {
     max-width: 100% !important;
     width: 100% !important;
     padding: 0 var(--spacing-lg) !important;
+  }
+
+  /* Mobile Font Size Overrides */
+  h1 { font-size: 2rem !important; } /* was 3rem */
+  h2 { font-size: 1.75rem !important; } /* was 2.25rem */
+  h3 { font-size: 1.5rem !important; } /* was 1.875rem */
+  h4 { font-size: 1.25rem !important; } /* was 1.5rem */
+  h5 { font-size: 1.125rem !important; } /* was 1.25rem */
+  h6 { font-size: 1rem !important; } /* was 1.125rem */
+
+  /* Reduce paragraph and body text */
+  p, span, div, li, td, th {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Reduce button text */
+  button, .btn, .cta-button {
+    font-size: 0.85rem !important;
+  }
+
+  /* Reduce link text */
+  a {
+    font-size: 0.9rem !important;
+  }
+
+  /* Utility classes for mobile text control */
+  .text-mobile-xs { font-size: 0.7rem !important; }
+  .text-mobile-sm { font-size: 0.8rem !important; }
+  .text-mobile-base { font-size: 0.9rem !important; }
+  .text-mobile-lg { font-size: 1rem !important; }
+  .text-mobile-xl { font-size: 1.1rem !important; }
+
+  /* Mobile Spacing Reduction */
+  section {
+    padding-top: var(--spacing-2xl) !important; /* Reduce from 4xl/6rem to 2xl/3rem */
+    padding-bottom: var(--spacing-2xl) !important;
+  }
+
+  /* Reduce margin between elements */
+  .section-header {
+    margin-bottom: var(--spacing-xl) !important; /* Reduce from 3xl to xl */
+  }
+
+  /* Reduce common spacing classes */
+  .mb-4xl, .mt-4xl, .py-4xl {
+    margin-bottom: var(--spacing-2xl) !important;
+    margin-top: var(--spacing-2xl) !important;
+    padding-top: var(--spacing-2xl) !important;
+    padding-bottom: var(--spacing-2xl) !important;
+  }
+
+  .mb-3xl, .mt-3xl, .py-3xl {
+    margin-bottom: var(--spacing-xl) !important;
+    margin-top: var(--spacing-xl) !important;
+    padding-top: var(--spacing-xl) !important;
+    padding-bottom: var(--spacing-xl) !important;
+  }
+
+  .mb-2xl, .mt-2xl, .py-2xl {
+    margin-bottom: var(--spacing-lg) !important;
+    margin-top: var(--spacing-lg) !important;
+    padding-top: var(--spacing-lg) !important;
+    padding-bottom: var(--spacing-lg) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    font-size: 13px; /* Even smaller for very small screens */
+  }
+
+  /* Further reduce text for small mobile */
+  h1 { font-size: 1.75rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.25rem !important; }
+  h4 { font-size: 1.125rem !important; }
+  h5 { font-size: 1rem !important; }
+  h6 { font-size: 0.95rem !important; }
+
+  p, span, div, li, td, th {
+    font-size: 0.85rem !important;
+  }
+
+  button, .btn, .cta-button {
+    font-size: 0.8rem !important;
+  }
+
+  /* Extra small mobile spacing reduction */
+  section {
+    padding-top: var(--spacing-xl) !important; /* Further reduce to xl/2rem */
+    padding-bottom: var(--spacing-xl) !important;
+  }
+
+  .section-header {
+    margin-bottom: var(--spacing-lg) !important; /* Reduce to lg */
+  }
+
+  /* More aggressive spacing reduction */
+  .mb-4xl, .mt-4xl, .py-4xl {
+    margin-bottom: var(--spacing-xl) !important;
+    margin-top: var(--spacing-xl) !important;
+    padding-top: var(--spacing-xl) !important;
+    padding-bottom: var(--spacing-xl) !important;
+  }
+
+  .mb-3xl, .mt-3xl, .py-3xl {
+    margin-bottom: var(--spacing-lg) !important;
+    margin-top: var(--spacing-lg) !important;
+    padding-top: var(--spacing-lg) !important;
+    padding-bottom: var(--spacing-lg) !important;
   }
 }
 
