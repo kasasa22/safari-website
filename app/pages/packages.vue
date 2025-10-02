@@ -484,14 +484,16 @@ useHead({
 }
 
 .package-image {
-  height: 250px;
+  height: 280px;
   overflow: hidden;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
 }
 
 .package-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform var(--transition-slow);
 }
 
