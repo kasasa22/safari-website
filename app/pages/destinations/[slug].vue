@@ -91,20 +91,14 @@
           <div class="content-left">
             <!-- Image Gallery -->
             <section class="gallery-section">
-              <h2 class="section-title">Photo & Video Gallery</h2>
+              <h2 class="section-title">Photo Gallery</h2>
               
               <!-- Full Width Hero Image -->
               <div class="gallery-hero" @click="openLightbox(0)">
                 <img :src="destination.images[0]" :alt="destination.title + ' main view'" />
                 <div class="gallery-hero-overlay">
-                  <div class="gallery-play-btn">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <polygon points="10,8 16,12 10,16"/>
-                    </svg>
-                  </div>
                   <div class="gallery-info">
-                    <span class="gallery-count">{{ destination.images.length }} Photos & Videos</span>
+                    <span class="gallery-count">{{ destination.images.length }} Photos</span>
                     <span class="gallery-action">View Gallery</span>
                   </div>
                 </div>
@@ -912,7 +906,7 @@ const submitBooking = () => {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-md);
-  height: 200px;
+  height: 280px;
 }
 
 .gallery-item {
