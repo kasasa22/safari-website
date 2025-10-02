@@ -74,9 +74,9 @@ export default defineEventHandler(async (event) => {
       specialRequests: body.specialRequests
     })
     
-    // Send email to the business owner (all booking details go to kasasatrevor25@gmail.com)
+    // Send email to the business owner (all booking details go to kilagalaescapesafaris@gmail.com)
     const result = await sendEmail({
-      to: 'kasasatrevor25@gmail.com',
+      to: 'kilagalaescapesafaris@gmail.com',
       subject: `🎯 New Booking Request - ${body.name} - ${body.destination}`,
       html: adminEmailHtml
     })

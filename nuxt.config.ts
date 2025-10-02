@@ -13,6 +13,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Experience Uganda\'s wildlife with Kilagala Escape Safaris. Expert gorilla trekking, Big Five safaris, and authentic East African adventures in Uganda\'s national parks.' },
         { name: 'keywords', content: 'Uganda safari, gorilla trekking, mountain gorillas, Bwindi Forest, Queen Elizabeth National Park, Murchison Falls, Uganda wildlife, East Africa tours, safari adventures' },
         { name: 'author', content: 'Kilagala Escape Safaris' },
+        { name: 'google-site-verification', content: 'EvWepgCLEwo5xh7JWMCRQiBfwYGQJAPjvf3r9fi807w' },
         { name: 'application-name', content: 'Kilagala Escape Safaris' },
         { name: 'theme-color', content: '#2D5016' },
         { property: 'og:title', content: 'Kilagala Escape Safaris - Uganda Safari Adventures & Gorilla Trekking' },
