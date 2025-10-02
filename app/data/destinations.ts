@@ -137,9 +137,13 @@ export const destinations: Record<string, Destination> = {
     season: 'Year Round',
     images: [
       '/images/mburo_main.jpeg',
-      '/images/mburo.jpeg',
-      '/images/mburo1.jpeg',
-      '/images/mburo.jpg'
+      '/images/mburo_card.jpeg',
+      '/images/mburo2.jpeg',
+      '/images/mburo3.jpeg',
+      '/images/mburo4.jpeg',
+      '/images/mburo5.jpeg',
+      '/images/mburo6.jpeg',
+      '/images/mburo.jpeg'
     ],
     highlights: [
       'Only park in Uganda with zebras',
@@ -737,10 +741,14 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Easy',
     season: 'Year Round',
     images: [
-      '/images/Queen_main.jpeg',
-      '/images/queen1.jpeg',
-      '/images/queen2.jpeg',
-      '/images/queen.jpg'
+      '/images/queen_main.jpeg',
+      '/images/queen3.jpeg',
+      '/images/queen4.jpeg',
+      '/images/queen5.jpeg',
+      '/images/queen6.jpeg',
+      '/images/queen7.jpeg',
+      '/images/queen8.jpeg',
+      '/images/Queen_main.jpeg'
     ],
     highlights: [
       'Famous tree-climbing lions in Ishasha',
@@ -829,10 +837,14 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Easy-Moderate',
     season: 'Year Round',
     images: [
-      '/images/jinja.jpeg',
-      '/images/jinja1.jpeg',
-      '/images/jinja3.jpeg',
-      '/images/water.jpeg'
+      '/images/jinja_main.jpeg',
+      '/images/jinja8.jpeg',
+      '/images/jinja9.jpeg',
+      '/images/jinja10.jpeg',
+      '/images/jinja11.jpeg',
+      '/images/jinja12.jpeg',
+      '/images/water.jpeg',
+      '/images/jinja.jpeg'
     ],
     highlights: [
       'Source of the Nile River',
