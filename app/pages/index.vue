@@ -39,7 +39,7 @@
           </div>
           
           <div class="hero-image-showcase">
-            <img src="/much1.jpeg" alt="Uganda Safari Adventure" class="hero-showcase-image">
+            <img src="/images/tour1.jpg" alt="Uganda Safari Adventure" class="hero-showcase-image">
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@
             <p>Through responsible tourism, we ensure your visit directly benefits local communities while preserving Uganda's precious cultural heritage for future generations.</p>
           </div>
           <div class="content-image">
-            <img src="https://images.unsplash.com/photo-1523554888454-84137e72c3ce?q=80&w=1200" alt="Uganda Culture">
+            <img src="/images/culture.jpeg" alt="Uganda Culture">
           </div>
         </div>
       </div>
@@ -217,7 +217,7 @@
           
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/mburo_main.jpeg'); background-size: cover; background-position: top;">
+            <div class="tour-image" style="background-image: url('/images/mburo_card.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Lake Mburo National Park</span>
               </div>
@@ -277,7 +277,7 @@
 
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/water.jpeg'); background-size: cover; background-position: top;">
+            <div class="tour-image" style="background-image: url('/images/jinja_main.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Eastern Region of Uganda</span>
               </div>
@@ -307,7 +307,7 @@
 
           <div class="tour-card">
             <div class="tour-badge">5 ⭐</div>
-            <div class="tour-image" style="background-image: url('/images/bwindi.jpeg'); background-size: cover; background-position: top;">
+            <div class="tour-image" style="background-image: url('/images/gorila_card.jpeg'); background-size: cover; background-position: top;">
               <div class="tour-overlay">
                 <span class="tour-location">🌍 Kisoro/Kigali</span>
               </div>
@@ -744,11 +744,11 @@
 import { ref } from 'vue'
 
 useHead({
-  title: 'Safari Adventures - Experience the Wild Beauty of Africa',
+  title: 'Kilagala Escape Safaris - Uganda Safari Adventures & Gorilla Trekking',
   meta: [
     {
       name: 'description',
-      content: 'Embark on unforgettable safari adventures in Africa. Discover wildlife, stunning landscapes, and authentic experiences with our expert guides.'
+      content: 'Experience Uganda\'s incredible wildlife with Kilagala Escape Safaris. Expert-led gorilla trekking in Bwindi Forest, Big Five safaris in Queen Elizabeth & Murchison Falls National Parks, cultural tours, and authentic East African adventures.'
     }
   ]
 })
