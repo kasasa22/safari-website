@@ -55,6 +55,10 @@
         <div class="nav-wrapper">
           <NuxtLink to="/" class="logo">
             <img src="/KILAGALA-LOGO-FINAL--2.jpg" alt="Kilagala Escape Safaris" class="logo-img">
+            <div class="logo-text">
+              <div class="logo-title">Kilagala Escape Safaris</div>
+              <div class="logo-tagline">Uganda Safari Adventures</div>
+            </div>
           </NuxtLink>
           
           <div class="nav-menu" :class="{ 'nav-menu--open': isMenuOpen }">
@@ -70,7 +74,7 @@
                   @mouseenter="showDropdown('destinations')" 
                   @mouseleave="hideDropdown('destinations')"
                   @click="toggleDropdownMobile('destinations')">
-                <NuxtLink to="/destinations" class="nav-link" @click.prevent>
+                <NuxtLink to="/destinations" class="nav-link" @click="isMobile ? undefined : $event.preventDefault()">
                   DESTINATIONS
                   <svg class="arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="6 9 12 15 18 9"/>
@@ -80,21 +84,21 @@
                   <div class="mega-content">
                     <div class="mega-column">
                       <h4>Uganda National Parks</h4>
-                      <NuxtLink to="/destinations/bwindi-impenetrable" class="dropdown-link">Bwindi Impenetrable National Park</NuxtLink>
-                      <NuxtLink to="/destinations/lake-mburo" class="dropdown-link">Lake Mburo National Park</NuxtLink>
-                      <NuxtLink to="/destinations/kibale" class="dropdown-link">Kibale National Park</NuxtLink>
-                      <NuxtLink to="/destinations/mgahinga" class="dropdown-link">Mgahinga Gorilla National Park</NuxtLink>
+                      <NuxtLink to="/destinations/bwindi-impenetrable" class="dropdown-link" @click="handleDestinationClick">Bwindi Impenetrable National Park</NuxtLink>
+                      <NuxtLink to="/destinations/lake-mburo" class="dropdown-link" @click="handleDestinationClick">Lake Mburo National Park</NuxtLink>
+                      <NuxtLink to="/destinations/kibale" class="dropdown-link" @click="handleDestinationClick">Kibale National Park</NuxtLink>
+                      <NuxtLink to="/destinations/mgahinga" class="dropdown-link" @click="handleDestinationClick">Mgahinga Gorilla National Park</NuxtLink>
                     </div>
                     <div class="mega-column">
                       <h4>More Uganda Parks</h4>
-                      <NuxtLink to="/destinations/kidepo" class="dropdown-link">Kidepo Valley National Park</NuxtLink>
-                      <NuxtLink to="/destinations/rwenzori" class="dropdown-link">Mountain Rwenzori National Park</NuxtLink>
-                      <NuxtLink to="/destinations/murchisons" class="dropdown-link">Murchison Falls National Park</NuxtLink>
-                      <NuxtLink to="/destinations/queen-elizabeth" class="dropdown-link">Queen Elizabeth National Park</NuxtLink>
+                      <NuxtLink to="/destinations/kidepo" class="dropdown-link" @click="handleDestinationClick">Kidepo Valley National Park</NuxtLink>
+                      <NuxtLink to="/destinations/rwenzori" class="dropdown-link" @click="handleDestinationClick">Mountain Rwenzori National Park</NuxtLink>
+                      <NuxtLink to="/destinations/murchisons" class="dropdown-link" @click="handleDestinationClick">Murchison Falls National Park</NuxtLink>
+                      <NuxtLink to="/destinations/queen-elizabeth" class="dropdown-link" @click="handleDestinationClick">Queen Elizabeth National Park</NuxtLink>
                     </div>
                     <div class="mega-column">
                       <h4>Uganda Experiences</h4>
-                      <NuxtLink to="/destinations/jinja" class="dropdown-link">Things to do in Jinja</NuxtLink>
+                      <NuxtLink to="/destinations/jinja" class="dropdown-link" @click="handleDestinationClick">Things to do in Jinja</NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -166,9 +170,19 @@ const toggleDropdownMobile = (name: string) => {
   }
 }
 
+const handleDestinationClick = () => {
+  if (isMobile.value) {
+    // Close both dropdown and entire menu immediately
+    activeDropdown.value = ''
+    closeMenu()
+  }
+}
+
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
   if (isMenuOpen.value) {
+    // Reset dropdown state when opening menu
+    activeDropdown.value = ''
     document.body.style.overflow = 'hidden'
     document.body.classList.add('menu-open')
   } else {
@@ -182,6 +196,14 @@ const closeMenu = () => {
   activeDropdown.value = ''
   document.body.style.overflow = ''
   document.body.classList.remove('menu-open')
+
+  // Force cleanup of any stuck states
+  if (typeof document !== 'undefined') {
+    const menuElement = document.querySelector('.nav-menu')
+    if (menuElement) {
+      menuElement.style.transform = ''
+    }
+  }
 }
 
 onMounted(() => {
@@ -709,9 +731,9 @@ onMounted(() => {
     right: 0;
     bottom: 0;
     background: linear-gradient(45deg, rgba(45, 80, 22, 0.6), rgba(0, 0, 0, 0.4));
-    z-index: 99999;
+    z-index: -1;
     animation: fadeIn 0.4s ease;
-    backdrop-filter: blur(2px);
+    pointer-events: none;
   }
   
   @keyframes fadeIn {
@@ -820,34 +842,70 @@ onMounted(() => {
   
   .dropdown--mega {
     min-width: auto;
-    padding: 15px 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    border: 1px solid rgba(45, 80, 22, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
-  
+
   .mega-content {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
-  
+
+  .mega-column {
+    margin-bottom: 0;
+  }
+
   .mega-column h4 {
-    font-size: 13px;
-    margin-bottom: 10px;
-    padding-bottom: 8px;
+    display: none;
   }
-  
+
   .dropdown-link {
-    padding: 12px 18px;
-    font-size: 14px;
-    border-radius: 6px;
+    padding: 14px 18px;
+    font-size: 15px;
+    border-radius: 8px;
     margin-bottom: 4px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease;
-  }
-  
-  .dropdown-link:hover {
-    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: var(--color-forest-green-dark);
-    padding-left: 28px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(45, 80, 22, 0.1);
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dropdown-link::before {
+    content: '';
+    margin-right: 0;
+  }
+
+  .dropdown-link::after {
+    content: '→';
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    color: var(--color-golden-yellow);
+    font-weight: bold;
+  }
+
+  .dropdown-link:hover {
+    background: var(--color-forest-green);
+    color: white;
+    border-color: var(--color-golden-yellow);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(45, 80, 22, 0.2);
+  }
+
+  .dropdown-link:hover::after {
+    opacity: 1;
+    transform: translateX(0);
   }
   
   .cta-button {
@@ -947,13 +1005,16 @@ onMounted(() => {
   }
   
   .dropdown-link {
-    font-size: 13px;
-    padding: 10px 16px;
+    font-size: 14px;
+    padding: 12px 16px;
   }
-  
+
+  .dropdown-link::before {
+    display: none;
+  }
+
   .mega-column h4 {
-    font-size: 12px;
-    margin-bottom: 8px;
+    display: none;
   }
 }
 
