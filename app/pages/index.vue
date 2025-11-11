@@ -39,7 +39,7 @@
           </div>
           
           <div class="hero-image-showcase">
-            <img src="/images/tour1.jpg" alt="Uganda Safari Adventure" class="hero-showcase-image">
+            <img src="/logoo.jpg" alt="Uganda Safari Adventure" class="hero-showcase-image">
           </div>
         </div>
       </div>
