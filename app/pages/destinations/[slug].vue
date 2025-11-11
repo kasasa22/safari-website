@@ -462,7 +462,7 @@
                     </svg>
                     +256 768 461 164
                   </a>
-                  <a href="mailto:Kilagalaescapesafaris@gmail.com" class="contact-link">
+                  <a href="mailto:merangorillaluxurysafaris@gmail.com" class="contact-link">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <rect x="2" y="4" width="20" height="16" rx="2"/>
                       <path d="m22 7-10 5L2 7"/>
@@ -557,7 +557,7 @@ if (!destination) {
 
 // Set page meta
 useHead({
-  title: `${destination.title} - Kilagala Escape Safaris`,
+  title: `${destination.title} - Merangorilla Tours And Luxury Safaris`,
   meta: [
     {
       name: 'description',
@@ -565,7 +565,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: `${destination.title} - Kilagala Escape Safaris`
+      content: `${destination.title} - Merangorilla Tours And Luxury Safaris`
     },
     {
       property: 'og:description',

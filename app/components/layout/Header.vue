@@ -19,12 +19,12 @@
               </svg>
               +256 768 461 164
             </a>
-            <a href="mailto:Kilagalaescapesafaris@gmail.com" class="info-item">
+            <a href="mailto:merangorillaluxurysafaris@gmail.com" class="info-item">
               <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22 7-10 5L2 7"/>
               </svg>
-              Kilagalaescapesafaris@gmail.com
+              merangorillaluxurysafaris@gmail.com
             </a>
             <div class="social-icons">
               <a href="#" aria-label="Facebook">
@@ -54,9 +54,9 @@
       <div class="container">
         <div class="nav-wrapper">
           <NuxtLink to="/" class="logo">
-            <img src="/KILAGALA-LOGO-FINAL--2.jpg" alt="Kilagala Escape Safaris" class="logo-img">
+            <img src="/logoo.png" alt="Merangorilla Tours And Luxury Safaris" class="logo-img">
             <div class="logo-text">
-              <div class="logo-title">Kilagala Escape Safaris</div>
+              <div class="logo-title">Merangorilla Tours And Luxury Safaris</div>
               <div class="logo-tagline">Uganda Safari Adventures</div>
             </div>
           </NuxtLink>

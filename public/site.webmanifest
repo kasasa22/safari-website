@@ -1,22 +1,17 @@
 {
-  "name": "Kilagala Escape Safaris",
-  "short_name": "Kilagala Safaris",
+  "name": "Merangorilla Luxury Safaris",
+  "short_name": "Merangorilla",
   "description": "Uganda Safari Adventures & Gorilla Trekking",
   "icons": [
     {
-      "src": "/favicon-16.png",
-      "sizes": "16x16",
+      "src": "/logoo.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon-32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/KILAGALA-LOGO-FINAL--2.jpg",
+      "src": "/logoo.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],

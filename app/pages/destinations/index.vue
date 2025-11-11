@@ -204,7 +204,7 @@ import { getAllDestinations, type Destination } from '~/data/destinations'
 
 // Set page meta
 useHead({
-  title: 'Uganda National Parks & Safari Destinations - Kilagala Escape Safaris',
+  title: 'Uganda National Parks & Safari Destinations - Merangorilla Tours And Luxury Safaris',
   meta: [
     {
       name: 'description',

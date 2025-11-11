@@ -1,3 +1,3 @@
 User-Agent: *
 Disallow:
-Sitemap: https://www.kilagalaescapesafari.com/sitemap.xml
+Sitemap: https://www.merangorillaluxurysafaris.com/sitemap.xml

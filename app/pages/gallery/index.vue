@@ -188,7 +188,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Gallery - Kilagala Escape Safaris',
+  title: 'Gallery - Merangorilla Tours And Luxury Safaris',
   meta: [
     {
       name: 'description',
@@ -216,29 +216,11 @@ const galleryImages = [
     type: 'image'
   },
   {
-    src: '/images/bwindi.jpeg',
+    src: '/images/bwindi.png',
     title: 'Bwindi Impenetrable Forest',
     location: 'Bwindi Impenetrable National Park',
     category: 'gorillas',
     size: 'large',
-    featured: true,
-    type: 'image'
-  },
-  {
-    src: '/images/Queen_main.jpeg',
-    title: 'Queen Elizabeth National Park',
-    location: 'Queen Elizabeth National Park',
-    category: 'wildlife',
-    size: 'medium',
-    featured: true,
-    type: 'image'
-  },
-  {
-    src: '/images/mburo_main.jpeg',
-    title: 'Lake Mburo National Park',
-    location: 'Lake Mburo National Park',
-    category: 'wildlife',
-    size: 'medium',
     featured: true,
     type: 'image'
   },
@@ -322,14 +304,6 @@ const galleryImages = [
   },
   
   // Park Images
-  {
-    src: '/images/park.jpeg',
-    title: 'Savanna Wildlife',
-    location: 'Kidepo Valley National Park',
-    category: 'wildlife',
-    size: 'medium',
-    type: 'image'
-  },
   {
     src: '/images/park1.jpeg',
     title: 'Safari Sunset',
@@ -415,14 +389,6 @@ const galleryImages = [
   
   // Additional Lake Mburo Images
   {
-    src: '/images/mburo.jpeg',
-    title: 'Zebra Herd',
-    location: 'Lake Mburo National Park',
-    category: 'wildlife',
-    size: 'medium',
-    type: 'image'
-  },
-  {
     src: '/images/mburo1.jpeg',
     title: 'Lake View',
     location: 'Lake Mburo',
@@ -432,22 +398,6 @@ const galleryImages = [
   },
   
   // Queen Elizabeth Images
-  {
-    src: '/images/Queen.jpeg',
-    title: 'Tree Climbing Lions',
-    location: 'Ishasha Sector - QENP',
-    category: 'wildlife',
-    size: 'large',
-    type: 'image'
-  },
-  {
-    src: '/images/queen.jpeg',
-    title: 'Kazinga Channel',
-    location: 'Queen Elizabeth National Park',
-    category: 'wildlife',
-    size: 'medium',
-    type: 'image'
-  },
   
   // Murchison Adventure Images
   {
@@ -459,34 +409,10 @@ const galleryImages = [
     type: 'image'
   },
   {
-    src: '/much2.jpeg',
-    title: 'Nile Crocodiles',
-    location: 'Murchison Falls National Park',
-    category: 'wildlife',
-    size: 'medium',
-    type: 'image'
-  },
-  {
     src: '/much3.jpeg',
     title: 'Boat Safari',
     location: 'Victoria Nile',
     category: 'adventure',
-    size: 'medium',
-    type: 'image'
-  },
-  {
-    src: '/much4.jpeg',
-    title: 'Elephant Crossing',
-    location: 'Murchison Falls National Park',
-    category: 'wildlife',
-    size: 'small',
-    type: 'image'
-  },
-  {
-    src: '/much5.jpeg',
-    title: 'Hippo Pool',
-    location: 'Victoria Nile',
-    category: 'wildlife',
     size: 'medium',
     type: 'image'
   },
@@ -496,14 +422,6 @@ const galleryImages = [
     location: 'Murchison Falls National Park',
     category: 'parks',
     size: 'small',
-    type: 'image'
-  },
-  {
-    src: '/much7.jpeg',
-    title: 'Buffalo Herd',
-    location: 'Northern Circuit',
-    category: 'wildlife',
-    size: 'medium',
     type: 'image'
   },
   {
@@ -519,6 +437,96 @@ const galleryImages = [
     title: 'Wilderness Camp',
     location: 'Safari Camp',
     category: 'adventure',
+    size: 'small',
+    type: 'image'
+  },
+
+  // Wildlife B-Series Images
+  {
+    src: '/b1.png',
+    title: 'Wildlife Moment B1',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/b2.png',
+    title: 'Wildlife Moment B2',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/b3.png',
+    title: 'Wildlife Moment B3',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/b5.png',
+    title: 'Wildlife Moment B5',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'large',
+    type: 'image'
+  },
+  {
+    src: '/b6.png',
+    title: 'Wildlife Moment B6',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/b7.png',
+    title: 'Wildlife Moment B7',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/b8.png',
+    title: 'Wildlife Moment B8',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/b9.png',
+    title: 'Wildlife Moment B9',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/b10.png',
+    title: 'Wildlife Moment B10',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'large',
+    type: 'image'
+  },
+  {
+    src: '/b11.png',
+    title: 'Wildlife Moment B11',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/b12.png',
+    title: 'Wildlife Moment B12',
+    location: 'Uganda Wilderness',
+    category: 'wildlife',
     size: 'small',
     type: 'image'
   }

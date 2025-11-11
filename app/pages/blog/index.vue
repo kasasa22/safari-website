@@ -251,7 +251,7 @@ const articles = ref([
   {
     title: "Ultimate Guide to Gorilla Trekking in Bwindi Impenetrable Forest",
     excerpt: "Everything you need to know about encountering mountain gorillas in their natural habitat. From preparation tips to what to expect during your trek.",
-    image: "/images/bwindi.jpeg",
+    image: "/images/bwindi.png",
     category: "wildlife",
     author: "David Kilagala",
     date: "December 15, 2024",

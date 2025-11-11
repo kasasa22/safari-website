@@ -74,9 +74,9 @@ export default defineEventHandler(async (event) => {
       specialRequests: body.specialRequests
     })
     
-    // Send email to the business owner (all booking details go to kilagalaescapesafaris@gmail.com)
+    // Send email to the business owner (all booking details go to merangorillaluxurysafaris@gmail.com)
     const result = await sendEmail({
-      to: 'kilagalaescapesafaris@gmail.com',
+      to: 'merangorillaluxurysafaris@gmail.com',
       subject: `🎯 New Booking Request - ${body.name} - ${body.destination}`,
       html: adminEmailHtml
     })
@@ -109,7 +109,7 @@ export default defineEventHandler(async (event) => {
           </div>
           <div class="content">
             <p>Dear ${body.name},</p>
-            <p>Thank you for choosing <strong>Kilagala Escape Safaris</strong> for your African adventure!</p>
+            <p>Thank you for choosing <strong>Merangorilla Tours And Luxury Safaris</strong> for your African adventure!</p>
             <p>We have received your booking request and our team is reviewing the details. You can expect a response from us within <strong>24 hours</strong> with:</p>
             <ul>
               <li>Confirmation of availability</li>
@@ -157,18 +157,18 @@ export default defineEventHandler(async (event) => {
             <p style="background: #FFF9E6; padding: 15px; border-left: 4px solid #F4C842; margin: 20px 0;">
               <strong>Need immediate assistance?</strong><br>
               Call us at: <a href="tel:+256768461164">+256 768 461 164</a><br>
-              Email: <a href="mailto:Kilagalaescapesafaris@gmail.com">Kilagalaescapesafaris@gmail.com</a>
+              Email: <a href="mailto:merangorillaluxurysafaris@gmail.com">merangorillaluxurysafaris@gmail.com</a>
             </p>
             
             <p>We're excited to help you create unforgettable memories in the Pearl of Africa!</p>
             
             <p>Warm regards,<br>
-            <strong>The Kilagala Escape Safaris Team</strong></p>
+            <strong>The Merangorilla Tours And Luxury SafarisLuxury SafarisTeam</strong></p>
           </div>
           <div class="footer">
             <p style="font-size: 20px; margin-bottom: 10px;">🌍 Journey into the Heart of the Wilderness</p>
             <p>📍 Kansanga, Opp UK Mall | Kampala, Uganda</p>
-            <p>📧 Kilagalaescapesafaris@gmail.com | 📞 +256 768 461 164</p>
+            <p>📧 merangorillaluxurysafaris| 📞 +256 768 461 164</p>
             <div class="social-links">
               <a href="#">Facebook</a> |
               <a href="#">Instagram</a> |

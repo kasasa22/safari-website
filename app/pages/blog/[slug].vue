@@ -304,7 +304,7 @@ const blogPosts = {
       },
       {
         type: "image",
-        src: "/images/bwindi.jpeg",
+        src: "/images/bwindi.png",
         alt: "Mountain gorillas in Bwindi forest",
         caption: "A silverback gorilla observes visitors during a trekking encounter in Bwindi"
       },
@@ -908,9 +908,9 @@ const moreArticles = computed(() => {
 
 // SEO Meta
 useSeoMeta({
-  title: `${post.value.title} - Kilagala Escape Safaris`,
+  title: `${post.value.title} - Merangorilla Tours And Luxury Safaris`,
   description: post.value.introduction.substring(0, 155),
-  ogTitle: `${post.value.title} - Kilagala Escape Safaris`,
+  ogTitle: `${post.value.title} - Merangorilla Tours And Luxury Safaris`,
   ogDescription: post.value.introduction.substring(0, 155),
   ogImage: post.value.heroImage,
   twitterCard: 'summary_large_image',

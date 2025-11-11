@@ -5,7 +5,7 @@
         <div class="footer-content">
           <div class="footer-section footer-brand">
             <div class="footer-logo">
-              <img src="/KILAGALA-LOGO-FINAL--2.jpg" alt="Kilagala Escape Safaris" class="footer-logo-img">
+              <img src="/logoo.png" alt="Merangorilla Tours And Luxury Safaris" class="footer-logo-img">
             </div>
             <p class="footer-description">
               Experience the wild beauty of Uganda and East Africa with our eco-friendly safari tours. 
@@ -45,22 +45,23 @@
             <ul class="footer-links">
               <li><NuxtLink to="/">Home</NuxtLink></li>
               <li><NuxtLink to="/about">About Us</NuxtLink></li>
-              <li><NuxtLink to="/destinations">Safari Packages</NuxtLink></li>
-              <li><NuxtLink to="/destinations">Destinations</NuxtLink></li>
+              <li><NuxtLink to="/packages">Safari Packages</NuxtLink></li>
+              <li><NuxtLink to="/safaris">Destinations</NuxtLink></li>
               <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
               <li><NuxtLink to="/blog">Travel Blog</NuxtLink></li>
+              <li><NuxtLink to="/contact">Contact</NuxtLink></li>
             </ul>
           </div>
           
           <div class="footer-section">
             <h4 class="footer-heading">Safari Types</h4>
             <ul class="footer-links">
-              <li><NuxtLink to="//destinations/gorilla">Mountain Gorilla Trekking</NuxtLink></li>
-              <li><NuxtLink to="//destinations/wildlife">Wildlife Safari Tours</NuxtLink></li>
-              <li><NuxtLink to="//destinations/birdwatching">Bird Watching Tours</NuxtLink></li>
-              <li><NuxtLink to="//destinations/cultural">Cultural Experiences</NuxtLink></li>
-              <li><NuxtLink to="//destinations/hiking">Hiking & Trekking</NuxtLink></li>
-              <li><NuxtLink to="//destinations/eco">Eco-Tourism Packages</NuxtLink></li>
+              <li><NuxtLink to="/destinations/bwindi-impenetrable">Mountain Gorilla Trekking</NuxtLink></li>
+              <li><NuxtLink to="/destinations/queen-elizabeth">Wildlife Safari Tours</NuxtLink></li>
+              <li><NuxtLink to="/destinations/kibale">Chimpanzee & Primate Tours</NuxtLink></li>
+              <li><NuxtLink to="/destinations/jinja">Adventure Experiences</NuxtLink></li>
+              <li><NuxtLink to="/packages">Family & Group Safaris</NuxtLink></li>
+              <li><NuxtLink to="/destinations/murchisons">River & Boat Safaris</NuxtLink></li>
             </ul>
           </div>
           
@@ -94,7 +95,7 @@
                 </svg>
                 <div>
                   <p>Email Us</p>
-                  <span>Kilagalaescapesafaris@gmail.com</span>
+                  <span>merangorillaluxurysafaris@gmail.com</span>
                 </div>
               </div>
             </div>
@@ -110,11 +111,11 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="footer-bottom-content">
-          <p>&copy; {{ currentYear }} Kilagala Escape Safaris. All rights reserved.</p>
+          <p>&copy; {{ currentYear }} Merangorilla Tours And Luxury Safaris. All rights reserved.</p>
           <div class="footer-bottom-links">
-            <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
-            <NuxtLink to="/terms">Terms & Conditions</NuxtLink>
-            <NuxtLink to="/sitemap">Sitemap</NuxtLink>
+            <NuxtLink to="/about">Our Story</NuxtLink>
+            <NuxtLink to="/contact">Plan Your Safari</NuxtLink>
+            <NuxtLink to="/blog">Travel Insights</NuxtLink>
           </div>
         </div>
       </div>
@@ -369,6 +370,17 @@ const currentYear = new Date().getFullYear()
   
   .footer-logo {
     justify-content: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .footer-logo-text {
+    align-items: center;
+  }
+  
+  .footer-logo-img {
+    max-width: 150px;
+    padding: 6px;
   }
   
   .footer-heading::after {

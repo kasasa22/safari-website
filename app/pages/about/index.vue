@@ -11,7 +11,7 @@
               <span class="breadcrumb-separator">/</span>
               <span class="breadcrumb-current">About Us</span>
             </div>
-            <h1 class="hero-title">Kilagala Escape Safaris</h1>
+            <h1 class="hero-title">Merangorilla Tours And Luxury Safaris</h1>
             <p class="hero-subtitle">Uganda's Premier Wildlife Safari Experience</p>
             <div class="hero-stats">
               <div class="stat-item">
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-image" :style="{ backgroundImage: 'url(/KILAGALA-LOGO-FINAL--2.jpg)' }"></div>
+      <div class="hero-image" :style="{ backgroundImage: 'url(/logoo.png)' }"></div>
     </section>
 
     <!-- Quick Info Bar -->
@@ -93,7 +93,7 @@
             
             <div class="story-text">
               <p>
-                Kilagala Escape Safaris is a Ugandan-based and owned tour and travel company that takes pride in 
+                Merangorilla Tours And Luxury Safarisis a Ugandan-based and owned tour and travel company that takes pride in 
                 offering tailor-made all-inclusive luxury, mid-range and budget safaris around your desired 
                 destination all over Uganda. We cater to small groups, solo travelers, families, big groups, 
                 and business travelers among others.
@@ -116,7 +116,7 @@
               <div class="founder-quote">
                 <blockquote>
                   "We won't show you Uganda, we will show you the Pearl of Africa like you have never seen it before. 
-                  Journey into the heart of the wilderness with Kilagala Escape Safaris - where we create memories 
+                  Journey into the heart of the wilderness with Merangorilla Tours And Luxury Safaris- where we create memories 
                   that will leave a lifetime mark in your life."
                 </blockquote>
                 <cite>- Mubiru Ronnie, Chief Technology Officer & Founder</cite>
@@ -126,7 +126,7 @@
           
           <div class="story-visual">
             <div class="main-story-image">
-              <img src="/images/bwindi.jpeg" alt="Mountain Gorilla in Bwindi Forest" class="primary-img">
+              <img src="/images/bwindi.png" alt="Mountain Gorilla in Bwindi Forest" class="primary-img">
               <div class="image-overlay">
                 <span class="overlay-text">Uganda's Incredible Wildlife</span>
               </div>
@@ -161,7 +161,7 @@
         <div class="section-header centered">
           <span class="section-badge">OUR MISSION</span>
           <h2>Responsible Tourism & Conservation</h2>
-          <p>Kilagala Escape Safaris is committed to responsible tourism for conservation and sustainable development. We support conservation projects and empower local communities through tourism.</p>
+          <p>Merangorilla Tours And Luxury Safarisis committed to responsible tourism for conservation and sustainable development. We support conservation projects and empower local communities through tourism.</p>
         </div>
         
         <div class="mission-grid">
@@ -217,7 +217,7 @@
         <div class="conservation-showcase">
           <div class="showcase-content">
             <h3>Our Conservation Impact</h3>
-            <p>Since 2015, Kilagala Escape Safaris has contributed to gorilla habitat protection, 
+            <p>Since 2015, Merangorilla Tours And Luxury Safarishas contributed to gorilla habitat protection, 
             anti-poaching initiatives, and community development programs that benefit both wildlife and people.</p>
           </div>
           <div class="showcase-stats">
@@ -258,7 +258,7 @@
             <div class="member-info">
               <h3>Mubiru Ronnie</h3>
               <p class="role">Chief Technology Officer & Founder</p>
-              <p class="description">Leading the technological advancement and digital presence of Kilagala Escape Safaris while ensuring seamless safari experiences.</p>
+              <p class="description">Leading the technological advancement and digital presence of Merangorilla Tours And Luxury Safariswhile ensuring seamless safari experiences.</p>
             </div>
           </div>
           
@@ -269,7 +269,7 @@
             <div class="member-info">
               <h3>Kiwumulo Merandah Hildah</h3>
               <p class="role">Travel Writer & Founder</p>
-              <p class="description">The visionary behind Kilagala Escape Safaris, passionate about showcasing Uganda's beauty through authentic travel experiences.</p>
+              <p class="description">The visionary behind Merangorilla Tours And Luxury Safaris, passionate about showcasing Uganda's beauty through authentic travel experiences.</p>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@
       <div class="container">
         <div class="section-header centered">
           <span class="section-badge">WHY BOOK WITH US</span>
-          <h2>Why Book with Kilagala Escape Safaris</h2>
+          <h2>Why Book with Merangorilla Tours And Luxury Safaris</h2>
           <p>We combine years of experience with a commitment to excellence, ensuring your journey is both exciting and seamless</p>
         </div>
         
@@ -430,11 +430,11 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'About Us - Kilagala Escape Safaris',
+  title: 'About Us - Merangorilla Tours And Luxury Safaris',
   meta: [
     {
       name: 'description',
-      content: 'Learn about Kilagala Escape Safaris and our commitment to providing exceptional wildlife experiences while supporting conservation in East Africa.'
+      content: 'Learn about Merangorilla Tours And Luxury Safarisand our commitment to providing exceptional wildlife experiences while supporting conservation in East Africa.'
     }
   ]
 })

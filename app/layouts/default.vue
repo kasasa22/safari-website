@@ -8,7 +8,7 @@
     
     <!-- WhatsApp Floating Button -->
     <a 
-      href="https://api.whatsapp.com/send?phone=256768461164&text=Hello%20Kilagala%20Escape%20Safaris!%20I%20would%20like%20to%20inquire%20about%20your%20safari%20packages."
+      href="https://api.whatsapp.com/send?phone=256768461164&text=Hello%20Merangorilla%20Luxury%20Safaris!%20I%20would%20like%20to%20inquire%20about%20your%20safari%20packages."
       target="_self"
       rel="noopener"
       class="whatsapp-float"
@@ -37,7 +37,7 @@ import Footer from '~/components/layout/Footer.vue'
 const openWhatsApp = (event: MouseEvent) => {
   event.preventDefault()
   
-  const whatsappUrl = 'https://api.whatsapp.com/send?phone=256768461164&text=Hello%20Kilagala%20Escape%20Safaris!%20I%20would%20like%20to%20inquire%20about%20your%20safari%20packages.'
+  const whatsappUrl = 'https://api.whatsapp.com/send?phone=256768461164&text=Hello%20Merangorilla%20Luxury%20Safaris!%20I%20would%20like%20to%20inquire%20about%20your%20safari%20packages.'
   
   // Try to focus existing WhatsApp Web tab or open new one
   const whatsappWindow = window.open(whatsappUrl, 'whatsapp-chat')

@@ -13,7 +13,7 @@ const createTransporter = () => {
   return nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.GMAIL_USER || 'kilagalaescapesafaris@gmail.com',
+      user: process.env.GMAIL_USER || 'merangorillaluxurysafaris@gmail.com',
       pass: process.env.GMAIL_APP_PASSWORD || '' // You need to set this
     }
   })
@@ -23,7 +23,7 @@ export async function sendEmail(options: EmailOptions) {
   const transporter = createTransporter()
   
   const mailOptions = {
-    from: options.from || '"Kilagala Escape Safaris" <kilagalaescapesafaris@gmail.com>',
+    from: options.from || '"Merangorilla Tours And Luxury Safaris" <merangorillaluxurysafaris@gmail.com>',
     to: options.to,
     subject: options.subject,
     html: options.html
@@ -95,7 +95,7 @@ export function contactEmailTemplate(data: {
           </div>
         </div>
         <div class="footer">
-          <p>This email was sent from the Kilagala Escape Safaris website contact form.</p>
+          <p>This email was sent from the Merangorilla Tours And Luxury SafarisLuxury Safariswebsite contact form.</p>
         </div>
       </div>
     </body>
@@ -183,7 +183,7 @@ export function bookingEmailTemplate(data: {
           ` : ''}
         </div>
         <div class="footer">
-          <p>This booking request was submitted via Kilagala Escape Safaris website.</p>
+          <p>This booking request was submitted via Merangorilla Tours And Luxury SafarisLuxury Safariswebsite.</p>
           <p>Please respond to the customer as soon as possible.</p>
         </div>
       </div>

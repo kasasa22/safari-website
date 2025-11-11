@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
     
     // Send email to the business owner
     const result = await sendEmail({
-      to: 'kilagalaescapesafaris@gmail.com',
+      to: 'merangorillaluxurysafaris@gmail.com',
       subject: `New Contact Form Submission from ${body.name}`,
       html: emailHtml
     })
@@ -58,17 +58,17 @@ export default defineEventHandler(async (event) => {
           </div>
           <div class="content">
             <p>Dear ${body.name},</p>
-            <p>We have received your message and appreciate you reaching out to Kilagala Escape Safaris.</p>
+            <p>We have received your message and appreciate you reaching out to Merangorilla Tours And Luxury Safaris.</p>
             <p>Our team will review your inquiry and get back to you within 24-48 hours.</p>
             <p><strong>Your Message:</strong></p>
             <div style="padding: 15px; background: white; border-left: 3px solid #F4C842; margin: 20px 0;">
               ${body.message}
             </div>
             <p>In the meantime, feel free to explore our website for more information about our safari packages.</p>
-            <p>Best regards,<br>Kilagala Escape Safaris Team</p>
+            <p>Best regards,<br>Merangorilla Tours And Luxury SafarisLuxury SafarisTeam</p>
           </div>
           <div class="footer">
-            <p>📧 Kilagalaescapesafaris@gmail.com | 📞 +256 768 461 164</p>
+            <p>📧 merangorillaluxurysafaris| 📞 +256 768 461 164</p>
           </div>
         </div>
       </body>
@@ -78,7 +78,7 @@ export default defineEventHandler(async (event) => {
     // Send confirmation to the customer (the person who filled the form)
     await sendEmail({
       to: body.email,
-      subject: 'Thank you for contacting Kilagala Escape Safaris',
+      subject: 'Thank you for contacting Merangorilla Tours And Luxury Safaris',
       html: confirmationHtml
     })
     

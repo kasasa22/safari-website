@@ -63,7 +63,7 @@
           <!-- 3-Day Bwindi Gorilla Safari -->
           <div class="package-card">
             <div class="package-image">
-              <img src="/images/bwindi.jpeg" alt="Bwindi Gorilla Safari">
+              <img src="/images/bwindi.png" alt="Bwindi Gorilla Safari">
             </div>
             <div class="package-content">
               <div class="package-icon">🦍</div>
@@ -266,7 +266,7 @@
       <div class="container">
         <div class="section-header">
           <h2>What's Included in Our Packages</h2>
-          <p>Every Kilagala Escape Safari package comes with these premium inclusions</p>
+          <p>Every Merangorilla Tours And Luxury Safaris package comes with these premium inclusions</p>
         </div>
         
         <div class="inclusions-grid">
@@ -330,7 +330,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Safari Packages - Kilagala Escape Safaris',
+  title: 'Safari Packages - Merangorilla Tours And Luxury Safaris',
   meta: [
     {
       name: 'description',

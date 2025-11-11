@@ -69,7 +69,7 @@
               </svg>
             </div>
             <h3>Email Us</h3>
-            <p>Kilagalaescapesafaris@gmail.com</p>
+            <p>merangorillaluxurysafaris@gmail.com</p>
             <span class="method-note">Response within 1 hour</span>
           </div>
           
@@ -107,7 +107,7 @@
             <div class="section-header">
               <span class="section-badge">GET TO KNOW US</span>
               <h2>Send a Message</h2>
-              <p>Do you have a question or need help planning your Safari? Be it a first-time trip, next Uganda adventure or want to get started on tailoring your safari? Kilagala Escape Safari team is here to your rescue, we do all the heavy and hard work just for you to come and have an adventure that will last a lifetime. Tailor your Safari. Own it to suit your tests and preferences. We would love to hear from you.</p>
+              <p>Do you have a question or need help planning your Safari? Be it a first-time trip, next Uganda adventure or want to get started on tailoring your safari? Merangorilla Tours And Luxury Safaris team is here to your rescue, we do all the heavy and hard work just for you to come and have an adventure that will last a lifetime. Tailor your Safari. Own it to suit your tests and preferences. We would love to hear from you.</p>
             </div>
             
             <div class="form-header">
@@ -226,7 +226,7 @@
                 <span class="caption">Wildlife Adventures</span>
               </div>
               <div class="gallery-item gallery-item-right">
-                <img src="/images/bwindi.jpeg" alt="Cultural Experiences">
+                <img src="/images/bwindi.png" alt="Cultural Experiences">
                 <span class="caption">Cultural Tours</span>
               </div>
               <div class="gallery-item gallery-item-wide">
@@ -245,11 +245,11 @@
 import { ref } from 'vue'
 
 useHead({
-  title: 'Contact Us - Kilagala Escape Safaris',
+  title: 'Contact Us - Merangorilla Tours And Luxury Safaris',
   meta: [
     {
       name: 'description',
-      content: 'Contact Kilagala Escape Safaris to plan your Uganda safari adventure. Get in touch with our expert team for personalized wildlife experiences.'
+      content: 'Contact Merangorilla Tours And Luxury Safaristo plan your Uganda safari adventure. Get in touch with our expert team for personalized wildlife experiences.'
     }
   ]
 })

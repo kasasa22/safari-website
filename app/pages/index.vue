@@ -18,7 +18,7 @@
       <div class="hero-content">
         <div class="container">
           <div class="hero-text">
-            <span class="hero-badge">🌍 KILAGALA ESCAPE SAFARIS - THE PEARL OF AFRICA</span>
+            <span class="hero-badge">🌍 MERANGORILLA TOURS AND LUXURY SAFARIS - THE PEARL OF AFRICA</span>
             <h1 class="hero-title">Adventure into the Heart of the Wilderness</h1>
             <p class="hero-subtitle">Experience Uganda's breathtaking landscapes, mountain gorillas, and vibrant culture with expert local guides</p>
             <div class="hero-description">
@@ -91,7 +91,7 @@
       <div class="container">
         <div class="about-header">
           <span class="section-badge">DISCOVER THE PEARL OF AFRICA</span>
-          <h2>Welcome to Uganda with Kilagala Escape Safaris</h2>
+          <h2>Welcome to Uganda with Merangorilla Tours And Luxury Safaris</h2>
           <p>Your gateway to authentic East African adventures. We are a premier safari company specializing in gorilla trekking, wildlife safaris, cultural tours, and adventure experiences across Uganda and East Africa.</p>
         </div>
         
@@ -460,7 +460,7 @@
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/bwindi.jpeg" alt="Bwindi Impenetrable National Park">
+            <img src="/images/bwindi.png" alt="Bwindi Impenetrable National Park">
             <div class="gallery-overlay">
               <h3>Bwindi Impenetrable Forest</h3>
               <p>Home to 50% of the world's mountain gorillas • UNESCO World Heritage Site</p>
@@ -744,11 +744,11 @@
 import { ref } from 'vue'
 
 useHead({
-  title: 'Kilagala Escape Safaris - Uganda Safari Adventures & Gorilla Trekking',
+  title: 'Merangorilla Tours And Luxury Safaris- Uganda Safari Adventures & Gorilla Trekking',
   meta: [
     {
       name: 'description',
-      content: 'Experience Uganda\'s incredible wildlife with Kilagala Escape Safaris. Expert-led gorilla trekking in Bwindi Forest, Big Five safaris in Queen Elizabeth & Murchison Falls National Parks, cultural tours, and authentic East African adventures.'
+      content: 'Experience Uganda\'s incredible wildlife with Merangorilla Tours And Luxury Safaris. Expert-led gorilla trekking in Bwindi Forest, Big Five safaris in Queen Elizabeth & Murchison Falls National Parks, cultural tours, and authentic East African adventures.'
     }
   ]
 })

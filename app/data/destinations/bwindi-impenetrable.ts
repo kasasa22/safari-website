@@ -14,15 +14,15 @@ export const bwindiDestination: Destination = {
   difficulty: 'Moderate-Hard',
   season: 'Year Round (Best: Jun-Aug, Dec-Feb)',
   images: [
-    '/images/bwindi.jpeg',
-    '/destinations/bwindi1.jpg',
-    '/images/bwindi2.jpeg',
-    '/images/bwindi3.jpeg',
-    '/images/bwindi4.jpeg',
-    '/images/bwindi5.jpeg',
-    '/images/bwindi6.jpeg',
-    '/images/bwindi7.jpeg',
-    '/images/bwindi1.jpeg'
+    '/images/bwindi.png',
+    '/destinations/w.png',
+    '/images/w1.jpg',
+    '/images/w2.jpg',
+    '/images/w8.jpg',
+    '/images/w4.jpg',
+    '/images/w5.jpg',
+    '/images/w6.jpg',
+    '/images/w7.jpg'
   ],
   highlights: [
     'Mountain gorilla trekking - 50% of world\'s population',

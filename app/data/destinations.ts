@@ -51,7 +51,7 @@ export const destinations: Record<string, Destination> = {
     difficulty: 'Moderate-Hard',
     season: 'Year Round',
     images: [
-      '/images/bwindi.jpeg',
+      '/images/bwindi.png',
       '/images/gorilla.jpg',
       '/images/gorilla.webp',
       '/images/bwindi2.jpg',
