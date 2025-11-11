@@ -187,6 +187,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useHead } from 'nuxt/app'
+
 useHead({
   title: 'Gallery - Merangorilla Tours And Luxury Safaris',
   meta: [
@@ -305,27 +308,11 @@ const galleryImages = [
   
   // Park Images
   {
-    src: '/images/park1.jpeg',
-    title: 'Safari Sunset',
-    location: 'Queen Elizabeth National Park',
-    category: 'parks',
-    size: 'small',
-    type: 'image'
-  },
-  {
     src: '/images/park2.jpeg',
     title: 'Morning Mist',
     location: 'Kibale Forest National Park',
     category: 'parks',
     size: 'medium',
-    type: 'image'
-  },
-  {
-    src: '/images/park3.jpeg',
-    title: 'Forest Trail',
-    location: 'Kibale National Park',
-    category: 'parks',
-    size: 'small',
     type: 'image'
   },
   {
@@ -337,9 +324,33 @@ const galleryImages = [
     type: 'image'
   },
   {
-    src: '/images/park5.jpeg',
-    title: 'Crater Lake',
-    location: 'Fort Portal',
+    src: '/park.jpeg',
+    title: '',
+    location: '',
+    category: 'parks',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/park1.jpeg',
+    title: '',
+    location: '',
+    category: 'parks',
+    size: 'small',
+    type: 'image'
+  },
+  {
+    src: '/park2.jpeg',
+    title: '',
+    location: '',
+    category: 'parks',
+    size: 'medium',
+    type: 'image'
+  },
+  {
+    src: '/park4.jpeg',
+    title: '',
+    location: '',
     category: 'parks',
     size: 'small',
     type: 'image'

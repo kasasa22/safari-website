@@ -467,13 +467,6 @@
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/Queen_main.jpeg" alt="Queen Elizabeth National Park">
-            <div class="gallery-overlay">
-              <h3>Queen Elizabeth Park</h3>
-              <p>Tree-climbing lions & Kazinga Channel</p>
-            </div>
-          </div>
-          <div class="gallery-item featured">
             <img src="/images/murchion_main.jpeg" alt="Murchison Falls National Park">
             <div class="gallery-overlay">
               <h3>Murchison Falls Park</h3>
