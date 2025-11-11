@@ -502,12 +502,13 @@
             </div>
           </div>
           <div class="gallery-item featured">
-            <img src="/images/mburo_main.jpeg" alt="Lake Mburo Wildlife">
-            <div class="gallery-overlay">
-              <h3>Lake Mburo Adventures</h3>
-              <p>Zebras, antelopes and boat safaris on pristine waters</p>
+              <img src="/b.png" alt="African Wildlife Adventure">
+              <div class="gallery-overlay">
+                <h3>Wildlife Adventure</h3>
+                <p>Experience thrilling encounters with lions, elephants, and zebras in their natural habitat.</p>
+              </div>
             </div>
-          </div>
+
           <div class="gallery-item featured">
             <img src="/images/group.jpeg" alt="Safari Group Experience">
             <div class="gallery-overlay">
