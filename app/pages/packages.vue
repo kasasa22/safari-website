@@ -47,7 +47,6 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
-                <div class="price">From $400</div>
               </div>
               
               <div class="package-highlights">
@@ -80,7 +79,6 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
-                <div class="price">Contact for Pricing</div>
               </div>
               
               <div class="package-highlights">
@@ -113,7 +111,6 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
-                <div class="price">Contact for Pricing</div>
               </div>
               
               <div class="package-highlights">
@@ -146,7 +143,6 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
-                <div class="price">Contact for Pricing</div>
               </div>
               
               <div class="package-highlights">
@@ -179,7 +175,6 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
-                <div class="price">Contact for Pricing</div>
               </div>
               
               <div class="package-highlights">
@@ -212,7 +207,6 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
-                <div class="price">From $180</div>
               </div>
               
               <div class="package-highlights">
@@ -245,7 +239,6 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
-                <div class="price">From $180</div>
               </div>
               
               <div class="package-highlights">
@@ -535,8 +528,9 @@ useHead({
 
 .package-pricing {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: var(--spacing-sm);
   padding: var(--spacing-md) var(--spacing-lg);
   background: var(--color-light-beige);
   border-radius: var(--border-radius-md);
@@ -546,12 +540,6 @@ useHead({
 .duration {
   font-weight: 600;
   color: var(--color-forest-green-dark);
-}
-
-.price {
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: var(--color-golden-yellow-dark);
 }
 
 .package-highlights {

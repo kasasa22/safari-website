@@ -36,10 +36,6 @@
                 </div>
                 <span>({{ destination.reviewCount }} reviews)</span>
               </div>
-              <div class="stat-item price">
-                <span class="price-label">From</span>
-                <span class="price-amount">USD ${{ destination.price }}</span>
-              </div>
             </div>
           </div>
         </div>
@@ -365,11 +361,6 @@
           <div class="content-right">
             <div class="booking-widget">
               <div class="booking-header">
-                <div class="booking-price">
-                  <span class="price-label">From</span>
-                  <span class="price-amount">USD ${{ destination.price }}</span>
-                  <span class="price-note">per person</span>
-                </div>
                 <div class="booking-rating">
                   <div class="rating-stars">
                     <span v-for="star in 5" :key="star" class="star" :class="{ filled: star <= destination.rating }">★</span>
@@ -531,7 +522,6 @@
             <div class="card-content">
               <h3>{{ related.title }}</h3>
               <p>{{ related.subtitle }}</p>
-              <div class="card-price">From USD ${{ related.price }}</div>
             </div>
           </NuxtLink>
         </div>
@@ -708,10 +698,6 @@ const submitBooking = () => {
   font-size: var(--font-size-base);
 }
 
-.stat-item.price {
-  margin-left: auto;
-}
-
 .stat-icon {
   color: var(--color-golden-yellow);
 }
@@ -728,18 +714,6 @@ const submitBooking = () => {
 
 .star.filled {
   color: var(--color-golden-yellow);
-}
-
-.price-label {
-  font-size: var(--font-size-sm);
-  opacity: 0.8;
-}
-
-.price-amount {
-  font-size: var(--font-size-2xl);
-  font-weight: 700;
-  color: var(--color-golden-yellow);
-  margin-left: var(--spacing-xs);
 }
 
 /* Quick Info Bar */
@@ -1351,27 +1325,6 @@ const submitBooking = () => {
   border-bottom: 1px solid var(--color-light-beige);
 }
 
-.booking-price {
-  margin-bottom: var(--spacing-md);
-}
-
-.booking-price .price-label {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray);
-}
-
-.booking-price .price-amount {
-  font-size: var(--font-size-3xl);
-  font-weight: 700;
-  color: var(--color-forest-green);
-  display: block;
-}
-
-.booking-price .price-note {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray);
-}
-
 .booking-rating {
   display: flex;
   align-items: center;
@@ -1624,12 +1577,6 @@ const submitBooking = () => {
   margin-bottom: var(--spacing-lg);
 }
 
-.card-price {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
-  color: var(--color-golden-yellow);
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .content-grid {
@@ -1661,10 +1608,6 @@ const submitBooking = () => {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-md);
-  }
-  
-  .stat-item.price {
-    margin-left: 0;
   }
   
   .info-grid {

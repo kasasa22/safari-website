@@ -115,11 +115,6 @@
                   </div>
                   <span class="rating-text">({{ destination.reviewCount }})</span>
                 </div>
-                
-                <div class="card-price">
-                  <span class="price-label">From</span>
-                  <span class="price-amount">USD ${{ destination.price }}</span>
-                </div>
               </div>
             </div>
           </NuxtLink>
@@ -573,7 +568,7 @@ watch(activeFilter, () => {
 
 .card-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-light-beige);
@@ -602,22 +597,6 @@ watch(activeFilter, () => {
 .rating-text {
   font-size: var(--font-size-sm);
   color: var(--color-gray);
-}
-
-.card-price {
-  text-align: right;
-}
-
-.price-label {
-  font-size: var(--font-size-xs);
-  color: var(--color-gray);
-  display: block;
-}
-
-.price-amount {
-  font-size: var(--font-size-lg);
-  font-weight: 700;
-  color: var(--color-forest-green);
 }
 
 /* Load More */
@@ -889,8 +868,5 @@ watch(activeFilter, () => {
     align-items: stretch;
   }
   
-  .card-price {
-    text-align: left;
-  }
 }
 </style>
