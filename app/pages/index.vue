@@ -58,24 +58,28 @@
             <div class="adventure-icon">🦍</div>
             <h3>Gorilla Trekking Package</h3>
             <p>1-3 days gorilla trekking in Bwindi Impenetrable Forest with expert guides</p>
+            <div class="package-price">From $1,200 per person</div>
             <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🦁</div>
             <h3>Wildlife Safari Package</h3>
             <p>Multi-day safaris in Queen Elizabeth & Murchison Falls National Parks</p>
+            <div class="package-price">From $600 per person</div>
             <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🏙️</div>
             <h3>City Tour Package</h3>
             <p>Explore Kampala and Jinja with cultural sites and Nile source visits</p>
+            <div class="package-price">From $110 per person</div>
             <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
           <div class="adventure-card">
             <div class="adventure-icon">🌊</div>
             <h3>Adventure Package</h3>
             <p>Boat cruises, white water rafting, and adventure activities</p>
+            <div class="package-price">From $110 per person</div>
             <NuxtLink to="/packages" class="adventure-link">Book Package →</NuxtLink>
           </div>
         </div>
@@ -172,6 +176,9 @@
                     <span class="duration-icon">🕰️</span>
                     <span>3 Days</span>
                   </div>
+                  <div class="tour-price">
+                    <span class="price">$600 - $1,400 per person</span>
+                  </div>
                 </div>
                 <NuxtLink to="/destinations/queen-elizabeth" class="tour-cta">View Destination →</NuxtLink>
               </div>
@@ -198,6 +205,9 @@
                   <div class="tour-duration">
                     <span class="duration-icon">🕰️</span>
                     <span>3 Days</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">$1,600 - $2,000 per person</span>
                   </div>
                 </div>
                 <NuxtLink to="/destinations/murchisons" class="tour-cta">View Destination →</NuxtLink>
@@ -226,6 +236,9 @@
                     <span class="duration-icon">🕰️</span>
                     <span>3 Days</span>
                   </div>
+                  <div class="tour-price">
+                    <span class="price">$760 - $1,900 per person</span>
+                  </div>
                 </div>
                 <NuxtLink to="/destinations/lake-mburo" class="tour-cta">View Destination →</NuxtLink>
               </div>
@@ -252,6 +265,9 @@
                   <div class="tour-duration">
                     <span class="duration-icon">🕰️</span>
                     <span>1 Day</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">$150 - $300 per person</span>
                   </div>
                 </div>
                 <NuxtLink to="/destinations" class="tour-cta">View Destination →</NuxtLink>
@@ -280,6 +296,9 @@
                     <span class="duration-icon">🕰️</span>
                     <span>1 Day</span>
                   </div>
+                  <div class="tour-price">
+                    <span class="price">$110 - $550 per person</span>
+                  </div>
                 </div>
                 <NuxtLink to="/destinations/jinja" class="tour-cta">View Destination →</NuxtLink>
               </div>
@@ -306,6 +325,9 @@
                   <div class="tour-duration">
                     <span class="duration-icon">🕰️</span>
                     <span>1 Day</span>
+                  </div>
+                  <div class="tour-price">
+                    <span class="price">$1,200 per person</span>
                   </div>
                 </div>
                 <NuxtLink to="/destinations/bwindi-impenetrable" class="tour-cta">View Destination →</NuxtLink>
@@ -1252,6 +1274,17 @@ const handleBookingSubmit = async (e: Event) => {
   line-height: 1.6;
 }
 
+.package-price {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-forest-green-dark);
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-light-beige);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+}
+
 .adventure-link {
   color: var(--color-golden-yellow);
   text-decoration: none;
@@ -1417,6 +1450,16 @@ const handleBookingSubmit = async (e: Event) => {
 
 .duration-icon {
   font-size: 20px;
+}
+
+.tour-price {
+  text-align: right;
+}
+
+.price {
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  color: var(--color-forest-green-dark);
 }
 
 .tour-cta {
