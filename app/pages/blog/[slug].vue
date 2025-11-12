@@ -277,10 +277,10 @@ const blogPosts = {
     publishDate: "December 15, 2024",
     readTime: "12 min read",
     author: {
-      name: "David Kilagala",
+      name: "Kiwumulo Merandah Hildah",
       title: "Senior Safari Guide & Wildlife Expert",
       avatar: "/images/her2.jpeg",
-      bio: "With over 15 years of experience leading safari expeditions across Uganda, David has guided hundreds of visitors through their first gorilla encounters. His deep knowledge of Uganda's wildlife and passion for conservation make him one of the most sought-after guides in East Africa.",
+      bio: "With over 15 years of experience leading safari expeditions across Uganda, Kiwumulo has guided hundreds of visitors through their first gorilla encounters. Her deep knowledge of Uganda's wildlife and passion for conservation make her one of the most sought-after guides in East Africa.",
       social: [
         { platform: "Twitter", url: "#" },
         { platform: "Instagram", url: "#" },
@@ -370,7 +370,7 @@ const blogPosts = {
     publishDate: "November 28, 2024",
     readTime: "10 min read",
     author: {
-      name: "Sarah Nakamura",
+      name: "Kiwumulo Merandah Hildah",
       title: "Primate Research Specialist",
       avatar: "/images/her1.jpeg",
       bio: "Sarah has spent over 12 years studying primate behavior in East African forests. Her expertise in chimpanzee tracking and conservation has made her one of the most knowledgeable guides in Uganda's primate tourism sector.",
@@ -417,7 +417,7 @@ const blogPosts = {
     publishDate: "December 10, 2024",
     readTime: "15 min read",
     author: {
-      name: "Michael Ssemakula",
+      name: "Kiwumulo Merandah Hildah",
       title: "Wildlife Conservation Expert",
       avatar: "/images/her2.jpeg",
       bio: "Michael has worked in Queen Elizabeth National Park for over 18 years, initially as a ranger and now as a senior conservation specialist. His intimate knowledge of the park's wildlife and ecosystems makes him an exceptional guide.",
@@ -453,7 +453,7 @@ const blogPosts = {
     publishDate: "December 12, 2024",
     readTime: "6 min read",
     author: {
-      name: "Sarah Nakamura",
+      name: "Kiwumulo Merandah Hildah",
       title: "Wildlife Photography Expert",
       avatar: "/images/her.jpeg",
       bio: "Sarah is an award-winning wildlife photographer with over 15 years of experience documenting Africa's wildlife. She leads specialized photography safaris and workshops across Uganda.",
@@ -535,7 +535,7 @@ const blogPosts = {
     publishDate: "December 8, 2024",
     readTime: "7 min read",
     author: {
-      name: "Grace Nalubega",
+      name: "Kiwumulo Merandah Hildah",
       title: "Cultural Tourism Coordinator",
       avatar: "/images/her1.jpeg",
       bio: "Grace has worked for over a decade promoting sustainable cultural tourism in Uganda, helping communities share their traditions while preserving their heritage.",
@@ -582,7 +582,7 @@ const blogPosts = {
     publishDate: "December 5, 2024",
     readTime: "12 min read",
     author: {
-      name: "Dr. James Okello",
+      name: "Kiwumulo Merandah Hildah",
       title: "Conservation Biologist",
       avatar: "/images/her2.jpeg",
       bio: "Dr. Okello has spent 20 years researching and implementing conservation strategies in Uganda's national parks, with a focus on endangered species recovery.",
@@ -624,10 +624,10 @@ const blogPosts = {
     publishDate: "December 3, 2024",
     readTime: "9 min read",
     author: {
-      name: "Robert Mukasa",
+      name: "Kiwumulo Merandah Hildah",
       title: "Senior Safari Planner",
       avatar: "/images/her2.jpeg",
-      bio: "Robert has been planning safaris for over 15 years and has extensive knowledge of Uganda's seasonal patterns and their impact on wildlife viewing.",
+      bio: "Kiwumulo has been planning safaris for over 15 years and has extensive knowledge of Uganda's seasonal patterns and their impact on wildlife viewing.",
       social: [
         { platform: "Twitter", url: "#" },
         { platform: "Instagram", url: "#" },
@@ -666,10 +666,10 @@ const blogPosts = {
     publishDate: "November 30, 2024",
     readTime: "11 min read",
     author: {
-      name: "David Kilagala",
+      name: "Kiwumulo Merandah Hildah",
       title: "Senior Safari Guide",
       avatar: "/images/her2.jpeg",
-      bio: "David has been guiding safaris in Murchison Falls for over 15 years and knows every corner of this spectacular park.",
+      bio: "Kiwumulo has been guiding safaris in Murchison Falls for over 15 years and knows every corner of this spectacular park.",
       social: [
         { platform: "Twitter", url: "#" },
         { platform: "Instagram", url: "#" },
@@ -708,7 +708,7 @@ const blogPosts = {
     publishDate: "November 25, 2024",
     readTime: "7 min read",
     author: {
-      name: "Michael Ssemakula",
+      name: "Kiwumulo Merandah Hildah",
       title: "Safari Operations Manager",
       avatar: "/images/her2.jpeg",
       bio: "Michael has been organizing safaris for over 12 years and knows exactly what travelers need for a successful Uganda adventure.",
@@ -760,7 +760,7 @@ const blogPosts = {
     publishDate: "November 20, 2024",
     readTime: "10 min read",
     author: {
-      name: "Sarah Nakamura",
+      name: "Kiwumulo Merandah Hildah",
       title: "Mountain Guide",
       avatar: "/images/her1.jpeg",
       bio: "Sarah is a certified mountain guide with over 100 successful Rwenzori expeditions, including multiple Margherita Peak summits.",
@@ -796,7 +796,7 @@ const blogPosts = {
     publishDate: "November 15, 2024",
     readTime: "8 min read",
     author: {
-      name: "Grace Nalubega",
+      name: "Kiwumulo Merandah Hildah",
       title: "Ornithologist",
       avatar: "/images/her.jpeg",
       bio: "Grace is a professional ornithologist who has documented over 800 bird species in Uganda and leads specialized birding safaris.",
@@ -832,7 +832,7 @@ const blogPosts = {
     publishDate: "November 10, 2024",
     readTime: "9 min read",
     author: {
-      name: "Dr. James Okello",
+      name: "Kiwumulo Merandah Hildah",
       title: "Sustainable Tourism Expert",
       avatar: "/images/her2.jpeg",
       bio: "Dr. Okello advises on sustainable tourism practices and community-based conservation initiatives across Uganda's protected areas.",

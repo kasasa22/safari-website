@@ -47,6 +47,7 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
+                <div class="price">$1,200 per person</div>
               </div>
               
               <div class="package-highlights">
@@ -79,6 +80,7 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
+                <div class="price">$1,500 - $1,800 per person</div>
               </div>
               
               <div class="package-highlights">
@@ -111,6 +113,7 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
+                <div class="price">$600 - $1,400 per person</div>
               </div>
               
               <div class="package-highlights">
@@ -143,6 +146,7 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
+                <div class="price">$1,600 - $2,000 per person</div>
               </div>
               
               <div class="package-highlights">
@@ -175,6 +179,7 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
+                <div class="price">$760 - $1,900 per person</div>
               </div>
               
               <div class="package-highlights">
@@ -207,6 +212,7 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
+                <div class="price">$150 - $300 per person</div>
               </div>
               
               <div class="package-highlights">
@@ -239,6 +245,7 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
+                <div class="price">$110 - $550 per person</div>
               </div>
               
               <div class="package-highlights">
