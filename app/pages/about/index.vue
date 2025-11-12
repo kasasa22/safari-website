@@ -256,7 +256,7 @@
               <img src="/images/her2.jpeg" alt="Mubiru Ronnie">
             </div>
             <div class="member-info">
-              <h3>Mubiru Ronnie</h3>
+              <h3>Mubiru </h3>
               <p class="role">Chief Technology Officer & Founder</p>
               <p class="description">Leading the technological advancement and digital presence of Merangorilla Tours And Luxury Safariswhile ensuring seamless safari experiences.</p>
             </div>
