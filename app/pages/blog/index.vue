@@ -9,7 +9,7 @@
       <div class="hero-content">
         <div class="container">
           <div class="hero-text">
-            <span class="hero-badge">📖 SAFARI BLOG</span>
+            <span class="hero-badge">📖 SAFARI Blogs</span>
             <h1 class="hero-title">Safari Stories & Expert Insights</h1>
             <p class="hero-subtitle">Discover Uganda's wilderness through our expert guides' experiences, wildlife encounters, and travel tips from over 15 years in the field</p>
           </div>
@@ -32,7 +32,7 @@
           </div>
           <div class="featured-content">
             <div class="article-meta">
-              <span class="author">By Kiwumulo Merandah Hildah</span>
+              <span class="author">By David Kilagala</span>
               <span class="date">December 15, 2024</span>
               <span class="read-time">8 min read</span>
             </div>
@@ -251,9 +251,9 @@ const articles = ref([
   {
     title: "Ultimate Guide to Gorilla Trekking in Bwindi Impenetrable Forest",
     excerpt: "Everything you need to know about encountering mountain gorillas in their natural habitat. From preparation tips to what to expect during your trek.",
-    image: "/images/bwindi.png",
+    image: "/images/bwindi.jpeg",
     category: "wildlife",
-    author: "Kiwumulo Merandah Hildah",
+    author: "David Kilagala",
     date: "December 15, 2024",
     readTime: "8 min read",
     tags: ["Gorilla Trekking", "Bwindi", "Wildlife", "Travel Tips"],
@@ -264,7 +264,7 @@ const articles = ref([
     excerpt: "Capture stunning wildlife photos on your safari adventure with these expert photography techniques and equipment recommendations.",
     image: "/images/park2.jpeg",
     category: "travel-tips",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Sarah Nakamura",
     date: "December 12, 2024",
     readTime: "6 min read",
     tags: ["Photography", "Safari Tips", "Wildlife"],
@@ -275,7 +275,7 @@ const articles = ref([
     excerpt: "Discover the diverse ecosystems and incredible wildlife that make Queen Elizabeth National Park one of Uganda's premier safari destinations.",
     image: "/images/Queen.jpeg",
     category: "destinations",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Michael Ssemakula",
     date: "December 10, 2024",
     readTime: "10 min read",
     tags: ["Queen Elizabeth", "Wildlife", "Safari", "Uganda"],
@@ -286,7 +286,7 @@ const articles = ref([
     excerpt: "Experience the rich cultural heritage of Uganda through authentic community visits and traditional ceremonies during your safari.",
     image: "/images/group.jpeg",
     category: "culture",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Grace Nalubega",
     date: "December 8, 2024",
     readTime: "7 min read",
     tags: ["Culture", "Community", "Traditional", "Uganda"],
@@ -297,7 +297,7 @@ const articles = ref([
     excerpt: "Learn about the remarkable conservation efforts that have helped protect Uganda's endangered species and pristine wilderness areas.",
     image: "/images/park5.jpeg",
     category: "conservation",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Dr. James Okello",
     date: "December 5, 2024",
     readTime: "12 min read",
     tags: ["Conservation", "Wildlife Protection", "National Parks"],
@@ -308,7 +308,7 @@ const articles = ref([
     excerpt: "Plan your perfect safari with our comprehensive guide to Uganda's seasons, weather patterns, and optimal wildlife viewing times.",
     image: "/images/mburo_main.jpeg",
     category: "travel-tips",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Robert Mukasa",
     date: "December 3, 2024",
     readTime: "9 min read",
     tags: ["Travel Planning", "Seasons", "Wildlife Viewing"],
@@ -319,7 +319,7 @@ const articles = ref([
     excerpt: "Explore the magnificent Murchison Falls National Park, home to the world's most powerful waterfall and incredible wildlife diversity.",
     image: "/images/murchion_main.jpeg",
     category: "destinations",
-    author: "Kiwumulo Merandah Hildah",
+    author: "David Kilagala",
     date: "November 30, 2024",
     readTime: "11 min read",
     tags: ["Murchison Falls", "Waterfall", "Wildlife", "Northern Uganda"],
@@ -330,7 +330,7 @@ const articles = ref([
     excerpt: "Discover our closest living relatives in their natural habitat with expert tips for chimpanzee tracking in Kibale National Park.",
     image: "/images/park3.jpeg",
     category: "wildlife",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Sarah Nakamura",
     date: "November 28, 2024",
     readTime: "8 min read",
     tags: ["Chimpanzees", "Kibale", "Primates", "Tracking"],
@@ -341,7 +341,7 @@ const articles = ref([
     excerpt: "Complete packing checklist for your Uganda safari, including essential gear, clothing, and items for different activities.",
     image: "/images/park.jpeg",
     category: "travel-tips",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Michael Ssemakula",
     date: "November 25, 2024",
     readTime: "7 min read",
     tags: ["Packing", "Safari Gear", "Travel Tips"],
@@ -352,7 +352,7 @@ const articles = ref([
     excerpt: "Challenge yourself with a trek through the mystical Rwenzori Mountains, Africa's third-highest peak and a UNESCO World Heritage Site.",
     image: "/much3.jpeg",
     category: "destinations",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Grace Nalubega",
     date: "November 22, 2024",
     readTime: "14 min read",
     tags: ["Rwenzori", "Trekking", "Mountains", "Adventure"],
@@ -363,7 +363,7 @@ const articles = ref([
     excerpt: "Discover why Uganda is considered one of the world's top birdwatching destinations with over 1,000 recorded bird species.",
     image: "/much4.jpeg",
     category: "wildlife",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Dr. James Okello",
     date: "November 20, 2024",
     readTime: "10 min read",
     tags: ["Birdwatching", "Avian", "Species", "Biodiversity"],
@@ -374,7 +374,7 @@ const articles = ref([
     excerpt: "Learn how responsible tourism practices help support local communities and conservation efforts in Uganda's national parks.",
     image: "/much5.jpeg",
     category: "conservation",
-    author: "Kiwumulo Merandah Hildah",
+    author: "Robert Mukasa",
     date: "November 18, 2024",
     readTime: "8 min read",
     tags: ["Sustainable Tourism", "Community Support", "Responsible Travel"],
