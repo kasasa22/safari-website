@@ -32,7 +32,7 @@
           </div>
           <div class="featured-content">
             <div class="article-meta">
-              <span class="author">By David Kilagala</span>
+              <span class="author">By Samson Kasumba</span>
               <span class="date">December 15, 2024</span>
               <span class="read-time">8 min read</span>
             </div>
