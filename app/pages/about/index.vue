@@ -257,7 +257,7 @@
             </div>
             <div class="member-info">
               <h3>Mubiru Ronnie</h3>
-              <p class="role">Chief Technology Officer & Founder</p>
+              <p class="role">Chief Technology Officer</p>
               <p class="description">Leading the technological advancement and digital presence of Merangorilla Tours And Luxury Safariswhile ensuring seamless safari experiences.</p>
             </div>
           </div>
@@ -268,7 +268,7 @@
             </div>
             <div class="member-info">
               <h3>Kiwumulo Merandah Hildah</h3>
-              <p class="role">Travel Writer & Founder</p>
+              <p class="role">Travel expert</p>
               <p class="description">The visionary behind Merangorilla Tours And Luxury Safaris, passionate about showcasing Uganda's beauty through authentic travel experiences.</p>
             </div>
           </div>

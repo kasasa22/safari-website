@@ -14,6 +14,7 @@
           <div class="hero-slide" style="background-image: url('/much8.jpeg')"></div>
         </div>
       </div>
+
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="container">
