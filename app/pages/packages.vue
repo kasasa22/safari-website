@@ -47,7 +47,7 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
-                <div class="price">$1,200 per person</div>
+                <div class="price">$900 per person ask for pricing </div>
               </div>
               
               <div class="package-highlights">
@@ -79,8 +79,8 @@
               </div>
               
               <div class="package-pricing">
-                <div class="duration">3 Days</div>
-                <div class="price">$1,500 - $1,800 per person</div>
+                <div class="duration"> Day</div>
+                <div class="price">$900 per person Ask for pricing </div>
               </div>
               
               <div class="package-highlights">
@@ -113,7 +113,7 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
-                <div class="price">$600 - $1,400 per person</div>
+                <div class="price">$900 per person ask for pricing</div>
               </div>
               
               <div class="package-highlights">
@@ -133,7 +133,7 @@
             </div>
             <div class="package-content">
               <div class="package-icon">💧</div>
-              <h3>3 Days Murchison Falls Safari</h3>
+              <h3>3 Day Murchison Falls Safari</h3>
               <p>Uganda's largest and oldest park featuring the world's strongest waterfall and 4 of Africa's Big 5, plus rhino tracking at Ziwa.</p>
               
               <div class="package-features">
@@ -145,8 +145,8 @@
               </div>
               
               <div class="package-pricing">
-                <div class="duration">3 Days</div>
-                <div class="price">$1,600 - $2,000 per person</div>
+                <div class="duration">3 Day</div>
+                <div class="price">$900 per person ask for pricing </div>
               </div>
               
               <div class="package-highlights">
@@ -179,7 +179,7 @@
               
               <div class="package-pricing">
                 <div class="duration">3 Days</div>
-                <div class="price">$760 - $1,900 per person</div>
+                <div class="price">$900 per person Ask for pricing</div>
               </div>
               
               <div class="package-highlights">
@@ -212,7 +212,7 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
-                <div class="price">$150 - $300 per person</div>
+                <div class="price">$900 per person Ask for pricing </div>
               </div>
               
               <div class="package-highlights">
@@ -245,7 +245,7 @@
               
               <div class="package-pricing">
                 <div class="duration">1 Day</div>
-                <div class="price">$110 - $550 per person</div>
+                <div class="price">$900 per person ask for pricing</div>
               </div>
               
               <div class="package-highlights">
